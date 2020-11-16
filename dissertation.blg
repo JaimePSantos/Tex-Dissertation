@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: dissertation.aux
+The style file: plainnat.bst
+A level-1 auxiliary file: Chapters/chap2.aux
+A level-1 auxiliary file: Chapters/chap3.aux
+Database file #1: dissertation.bib
+Warning--I didn't find a database entry for "BBHT96"
+You've used 11 entries,
+            2773 wiz_defined-function locations,
+            665 strings with 6320 characters,
+and the built_in function-call counts, 4962 in all, are:
+= -- 445
+> -- 239
+< -- 10
++ -- 83
+- -- 72
+* -- 369
+:= -- 754
+add.period$ -- 35
+call.type$ -- 11
+change.case$ -- 56
+chr.to.int$ -- 11
+cite$ -- 22
+duplicate$ -- 249
+empty$ -- 425
+format.name$ -- 89
+if$ -- 1063
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 12
+newline$ -- 65
+num.names$ -- 44
+pop$ -- 109
+preamble$ -- 1
+purify$ -- 46
+quote$ -- 0
+skip$ -- 200
+stack$ -- 0
+substring$ -- 200
+swap$ -- 39
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 116
+warning$ -- 0
+while$ -- 42
+width$ -- 0
+write$ -- 151
+(There was 1 warning)
