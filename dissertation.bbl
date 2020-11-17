@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,12 @@ Andris Ambainis.
 \newblock Quantum walk algorithm for element distinctness.
 \newblock \emph{SIAM Journal on Computing}, 37\penalty0 (1):\penalty0 210--239,
   2007.
+
+\bibitem[Boyer et~al.(1998)Boyer, Brassard, Høyer, and Tapp]{boyer1996}
+Michael Boyer, Gilles Brassard, Peter Høyer, and Alain Tapp.
+\newblock Tight bounds on quantum searching.
+\newblock \emph{Fortschritte der Physik}, 46\penalty0 (4-5):\penalty0 493--505,
+  1998.
 
 \bibitem[Childs and Goldstone(2004)]{childs2004}
 Andrew~M. Childs and Jeffrey Goldstone.
@@ -30,6 +36,12 @@ Edward Farhi and Sam Gutmann.
 \newblock Quantum computation and decision trees.
 \newblock \emph{Physical Review A, 58:915-928}, 1998.
 \newblock \doi{10.1103/PhysRevA.58.915}.
+
+\bibitem[Grover(1996)]{grover1996}
+Lov~K. Grover.
+\newblock A fast quantum mechanical algorithm for database search.
+\newblock \emph{STOC '96 Proceedings of the twenty-eighth annual ACM symposium
+  on Theory of computing}, pages 212--219, 1996.
 
 \bibitem[Montroll and Weiss(1997)]{montrollweiss1965}
 Elliott~Waters Montroll and George~Herbert Weiss.

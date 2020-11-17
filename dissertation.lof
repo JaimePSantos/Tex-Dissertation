@@ -8,7 +8,7 @@
 \ttl@tocsep 
 \ttl@tocsep 
 \ttl@tocsep 
-\contentsline {figure}{\numberline {1}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\mathinner {|{\Psi (0)}\rangle }=\mathinner {|{0}\rangle }\mathinner {|{x=0}\rangle }$ and the Hadamard coin.\relax }}{7}{figure.caption.1}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\mathinner {|{\Psi (0)}\rangle }=\mathinner {|{0}\rangle }\mathinner {|{x=0}\rangle }$ and the Hadamard coin.\relax }}{8}{figure.caption.1}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\mathinner {|{\Psi (0)}\rangle }=-\mathinner {|{1}\rangle }\mathinner {|{x=0}\rangle }$ and the Hadamard coin.\relax }}{8}{figure.caption.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\mathinner {|{\Psi (0)}\rangle }=\frac {\mathinner {|{0}\rangle }-i\mathinner {|{1}\rangle }}{\sqrt {2}}\mathinner {|{x=0}\rangle }$ and the Hadamard coin.\relax }}{9}{figure.caption.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Multiple walks temp\relax }}{10}{figure.caption.4}%

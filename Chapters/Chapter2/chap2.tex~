@@ -13,4 +13,4 @@
 	   %     aharonov2001.pdf - Modelo computaçao quantica.
 	    
 	\chapter{Quantum Computing}
-	\input{/Sections/groverAlgorithm}
+	\input{Chapters/Chapter2/Sections/groverAlgorithm}
