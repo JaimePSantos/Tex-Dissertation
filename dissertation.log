@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.16)  16 NOV 2020 03:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.16)  17 NOV 2020 00:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1010,44 +1010,7 @@ File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count328
 \l__pdf_internal_box=\box70
-) (./dissertation.aux (./Chapters/chap2.aux) (./Chapters/chap3.aux
-
-LaTeX Warning: Label `eq:12' multiply defined.
-
-
-LaTeX Warning: Label `eq:12@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:12' multiply defined.
-
-
-LaTeX Warning: Label `eq:12@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:coinedwalk3' multiply defined.
-
-
-LaTeX Warning: Label `fig:coinedwalk3@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:contdist1' multiply defined.
-
-
-LaTeX Warning: Label `fig:contdist1@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:contdist2' multiply defined.
-
-
-LaTeX Warning: Label `fig:contdist2@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:ContSearch' multiply defined.
-
-
-LaTeX Warning: Label `fig:ContSearch@cref' multiply defined.
-
-))
+) (./dissertation.aux (./Chapters/Chapter2/chap2.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
@@ -1255,11 +1218,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 85.
- (./dissertation.toc
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/pplj/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-)
+ (./dissertation.toc)
 \tf@toc=\write6
 \openout6 = `dissertation.toc'.
 
@@ -1268,62 +1227,66 @@ Package microtype Info: Character `013' is missing
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 86.
- (./dissertation.lof [5
-
-
-
-
-])
+ (./dissertation.lof)
 \tf@lof=\write7
 \openout7 = `dissertation.lof'.
 
+ [5
 
 
-LaTeX Font Warning: Font shape `OT1/pplj/b/sc' undefined
-(Font)              using `OT1/pplj/b/n' instead on input line 86.
 
-[6]
+
+]
 Package tocbasic Info: character protrusion at lot deactivated on input line 87.
  (./dissertation.lot)
 \tf@lot=\write8
 \openout8 = `dissertation.lot'.
 
- [7
+ [6
 
 
 
 
 ]
 Chapter 1.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/pplj/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.128     \include{Chapters/chap2}
-                                   [1
+l.126        \include{Chapters/Chapter2/chap2}
+                                               [1
 
 
 
 
 ]
-Package marginnote Info: Using workaround for absolute page number on input line 128.
-\openout2 = `Chapters/chap2.aux'.
+\openout2 = `Chapters/Chapter2/chap2.aux'.
 
- (./Chapters/chap2.tex
+ (./Chapters/Chapter2/chap2.tex
 Chapter 2.
+(./Chapters/Chapter2/Sections/groverAlgorithm.tex
 
-Package natbib Warning: Citation `BBHT96' on page 2 undefined on input line 34.
+Package natbib Warning: Citation `grover1996' on page 2 undefined on input line 3.
+
+
+Package natbib Warning: Citation `boyer1996' on page 2 undefined on input line 3.
+
+
+Package natbib Warning: Citation `BBHT96' on page 2 undefined on input line 19.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ...cribe the \textit{single shot Grover}.\par
+l.19 ...cribe the \textit{single shot Grover}.\par
                                                    [2
 
 
 
 ]
-./Chapters/chap2.tex:37: Undefined control sequence.
-l.37 ...c{1}{\sqrt{N}}\sum_{x=0}^{N-1} \ket{x}\tab
+./Chapters/Chapter2/Sections/groverAlgorithm.tex:22: Undefined control sequence.
+l.22 ...c{1}{\sqrt{N}}\sum_{x=0}^{N-1} \ket{x}\tab
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1332,29 +1295,48 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapters/chap2.tex:50: LaTeX Error: \mathcal allowed only in math mode.
+./Chapters/Chapter2/Sections/groverAlgorithm.tex:35: LaTeX Error: \mathcal allowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.50          the action of \mathcal
+l.35          the action of \mathcal
                                     {D} on state $\phi$ will be
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [3] [4]
-\openout2 = `Chapters/chap3.aux'.
+)) [3] [4]
+\openout2 = `Chapters/Chapter3/chap3.aux'.
 
- (./Chapters/chap3.tex
+ (./Chapters/Chapter3/chap3.tex
 Chapter 3.
 [5
 
 
 
 
-] [6]
-<img/CoinedQW/Coinedpsi00.png, id=226, 794.97pt x 578.16pt>
+]
+
+LaTeX Warning: Reference `eq:10' on page 6 undefined on input line 58.
+
+[6]
+
+Package natbib Warning: Citation `andraca2012' on page 7 undefined on input line 65.
+
+
+Package natbib Warning: Citation `childs2002' on page 7 undefined on input line 65.
+
+
+Package natbib Warning: Citation `fahri98' on page 7 undefined on input line 65.
+
+
+Package natbib Warning: Citation `ambainis2003' on page 7 undefined on input line 65.
+
+
+Package natbib Warning: Citation `childs2004' on page 7 undefined on input line 65.
+
+<img/CoinedQW/Coinedpsi00.png, id=130, 794.97pt x 578.16pt>
 File: img/CoinedQW/Coinedpsi00.png Graphic file (type png)
 <use img/CoinedQW/Coinedpsi00.png>
 Package pdftex.def Info: img/CoinedQW/Coinedpsi00.png  used on input line 71.
@@ -1367,22 +1349,34 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 10.42007pt on input line 72.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 72.
+[7 <./img/CoinedQW/Coinedpsi00.png>]
+
+LaTeX Warning: Reference `fig:fig1' on page 8 undefined on input line 77.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `fig:fig1' on page 8 undefined on input line 83.
 
-<img/CoinedQW/Coinedpsi01.png, id=230, 794.97pt x 578.16pt>
+<img/CoinedQW/Coinedpsi01.png, id=139, 794.97pt x 578.16pt>
 File: img/CoinedQW/Coinedpsi01.png Graphic file (type png)
 <use img/CoinedQW/Coinedpsi01.png>
 Package pdftex.def Info: img/CoinedQW/Coinedpsi01.png  used on input line 86.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-[7] [8 <./img/CoinedQW/Coinedpsi00.png> <./img/CoinedQW/Coinedpsi01.png>]
-<img/CoinedQW/Coinedpsi001.png, id=254, 794.97pt x 578.16pt>
+
+LaTeX Warning: Reference `eq:7' on page 8 undefined on input line 91.
+
+
+LaTeX Warning: Reference `eq:12' on page 8 undefined on input line 91.
+
+
+LaTeX Warning: Reference `eq:12' on page 8 undefined on input line 91.
+
+[8 <./img/CoinedQW/Coinedpsi01.png>]
+<img/CoinedQW/Coinedpsi001.png, id=147, 794.97pt x 578.16pt>
 File: img/CoinedQW/Coinedpsi001.png Graphic file (type png)
 <use img/CoinedQW/Coinedpsi001.png>
 Package pdftex.def Info: img/CoinedQW/Coinedpsi001.png  used on input line 99.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-<img/CoinedQW/CoinedMultiplepsi001.png, id=255, 794.97pt x 578.16pt>
+<img/CoinedQW/CoinedMultiplepsi001.png, id=148, 794.97pt x 578.16pt>
 File: img/CoinedQW/CoinedMultiplepsi001.png Graphic file (type png)
 <use img/CoinedQW/CoinedMultiplepsi001.png>
 Package pdftex.def Info: img/CoinedQW/CoinedMultiplepsi001.png  used on input line 136.
@@ -1391,17 +1385,40 @@ Package pdftex.def Info: img/CoinedQW/CoinedMultiplepsi001.png  used on input li
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Package natbib Warning: Citation `montrollweiss1965' on page 9 undefined on input line 143.
+
 [9 <./img/CoinedQW/Coinedpsi001.png>] [10 <./img/CoinedQW/CoinedMultiplepsi001.png>]
-<img/ContQW/ctqwSinglePsi0.png, id=278, 794.97pt x 578.16pt>
+
+LaTeX Warning: Reference `shrodinger' on page 11 undefined on input line 170.
+
+
+LaTeX Warning: Reference `contWalk' on page 11 undefined on input line 174.
+
+
+LaTeX Warning: Reference `Hamilt' on page 11 undefined on input line 190.
+
+
+LaTeX Warning: Reference `fig:contdist0' on page 11 undefined on input line 198.
+
+<img/ContQW/ctqwSinglePsi0.png, id=168, 794.97pt x 578.16pt>
 File: img/ContQW/ctqwSinglePsi0.png Graphic file (type png)
 <use img/ContQW/ctqwSinglePsi0.png>
 Package pdftex.def Info: img/ContQW/ctqwSinglePsi0.png  used on input line 202.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/ContQW/ctqwSinglePsi0LowerGamma.png, id=282, 794.97pt x 578.16pt>
+
+LaTeX Warning: Reference `fig:contdist0' on page 11 undefined on input line 207.
+
+
+LaTeX Warning: Reference `fig:coinedwalk3' on page 11 undefined on input line 207.
+
+
+LaTeX Warning: Reference `fig:contdist1' on page 11 undefined on input line 208.
+
+<img/ContQW/ctqwSinglePsi0LowerGamma.png, id=169, 794.97pt x 578.16pt>
 File: img/ContQW/ctqwSinglePsi0LowerGamma.png Graphic file (type png)
 <use img/ContQW/ctqwSinglePsi0LowerGamma.png>
 Package pdftex.def Info: img/ContQW/ctqwSinglePsi0LowerGamma.png  used on input line 211.
@@ -1410,7 +1427,7 @@ Package pdftex.def Info: img/ContQW/ctqwSinglePsi0LowerGamma.png  used on input 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/ContQW/ctqwMultipleGamma.png, id=293, 794.97pt x 578.16pt>
+<img/ContQW/ctqwMultipleGamma.png, id=181, 794.97pt x 578.16pt>
 File: img/ContQW/ctqwMultipleGamma.png Graphic file (type png)
 <use img/ContQW/ctqwMultipleGamma.png>
 Package pdftex.def Info: img/ContQW/ctqwMultipleGamma.png  used on input line 218.
@@ -1418,7 +1435,13 @@ Package pdftex.def Info: img/ContQW/ctqwMultipleGamma.png  used on input line 21
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/ContQW/ctqwSingleSup.png, id=296, 794.97pt x 578.16pt>
+
+LaTeX Warning: Reference `fig:contdist2' on page 12 undefined on input line 223.
+
+
+LaTeX Warning: Reference `fig:contdist0' on page 12 undefined on input line 223.
+
+<img/ContQW/ctqwSingleSup.png, id=182, 794.97pt x 578.16pt>
 File: img/ContQW/ctqwSingleSup.png Graphic file (type png)
 <use img/ContQW/ctqwSingleSup.png>
 Package pdftex.def Info: img/ContQW/ctqwSingleSup.png  used on input line 227.
@@ -1426,7 +1449,7 @@ Package pdftex.def Info: img/ContQW/ctqwSingleSup.png  used on input line 227.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/ContQW/ctqwMultipleTime.png, id=297, 794.97pt x 578.16pt>
+<img/ContQW/ctqwMultipleTime.png, id=183, 794.97pt x 578.16pt>
 File: img/ContQW/ctqwMultipleTime.png Graphic file (type png)
 <use img/ContQW/ctqwMultipleTime.png>
 Package pdftex.def Info: img/ContQW/ctqwMultipleTime.png  used on input line 234.
@@ -1435,7 +1458,10 @@ Package pdftex.def Info: img/ContQW/ctqwMultipleTime.png  used on input line 234
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12 <./img/ContQW/ctqwSinglePsi0.png>] [13 <./img/ContQW/ctqwSinglePsi0LowerGamma.png> <./img/ContQW/ctqwMultipleGamma.png>] [14 <./img/ContQW/ctqwSingleSup.png> <./img/ContQW/ctqwMultipleTime.png>]
-./Chapters/chap3.tex:267: Undefined control sequence.
+
+Package natbib Warning: Citation `portugal2017b' on page 15 undefined on input line 250.
+
+./Chapters/Chapter3/chap3.tex:267: Undefined control sequence.
 \Z ->\mathds 
              {Z}
 l.267 ...T}_{\alpha}= \{\{2x,2x+1\}\colon x \in \Z
@@ -1446,7 +1472,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapters/chap3.tex:270: Undefined control sequence.
+./Chapters/Chapter3/chap3.tex:270: Undefined control sequence.
 \Z ->\mathds 
              {Z}
 l.270 ...}_{\beta}= \{\{2x+1,2x+2\}\colon x \in \Z
@@ -1460,7 +1486,7 @@ and I'll forget about whatever was undefined.
 [15
 
 ]
-<img/StagQW/stagqwMultiple.png, id=329, 794.97pt x 578.16pt>
+<img/StagQW/stagqwMultiple.png, id=217, 794.97pt x 578.16pt>
 File: img/StagQW/stagqwMultiple.png Graphic file (type png)
 <use img/StagQW/stagqwMultiple.png>
 Package pdftex.def Info: img/StagQW/stagqwMultiple.png  used on input line 300.
@@ -1469,12 +1495,12 @@ Package pdftex.def Info: img/StagQW/stagqwMultiple.png  used on input line 300.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/StagQW/stagqwSingle0.png, id=330, 794.97pt x 578.16pt>
+<img/StagQW/stagqwSingle0.png, id=218, 794.97pt x 578.16pt>
 File: img/StagQW/stagqwSingle0.png Graphic file (type png)
 <use img/StagQW/stagqwSingle0.png>
 Package pdftex.def Info: img/StagQW/stagqwSingle0.png  used on input line 310.
 (pdftex.def)             Requested size: 243.4609pt x 177.05753pt.
-<img/StagQW/stagqwSingle1.png, id=331, 794.97pt x 578.16pt>
+<img/StagQW/stagqwSingle1.png, id=219, 794.97pt x 578.16pt>
 File: img/StagQW/stagqwSingle1.png Graphic file (type png)
 <use img/StagQW/stagqwSingle1.png>
 Package pdftex.def Info: img/StagQW/stagqwSingle1.png  used on input line 314.
@@ -1487,14 +1513,25 @@ Overfull \hbox (44.26807pt too wide) in paragraph at lines 309--317
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Reference `fig:fig5' on page 16 undefined on input line 319.
+
+
+LaTeX Warning: Reference `chapGrover' on page 16 undefined on input line 322.
+
 [16] [17 <./img/StagQW/stagqwMultiple.png> <./img/StagQW/stagqwSingle0.png> <./img/StagQW/stagqwSingle1.png>]
+
+Package natbib Warning: Citation `REN1' on page 18 undefined on input line 325.
+
+
+LaTeX Warning: Reference `fig:undCompGraph' on page 18 undefined on input line 345.
+
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-
-./Chapters/chap3.tex:367: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+./Chapters/Chapter3/chap3.tex:367: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -1508,7 +1545,10 @@ Pretend that you're Hercule Poirot: Examine all clues,
 and deduce the truth by order and method.
 
 
-./Chapters/chap3.tex:385: Package pgfkeys Error: I do not know the key '/tikz/arc below' and I am going to ignore it. Perhaps you misspelled it.
+LaTeX Warning: Reference `fig:dirCompGraph' on page 18 undefined on input line 372.
+
+
+./Chapters/Chapter3/chap3.tex:385: Package pgfkeys Error: I do not know the key '/tikz/arc below' and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -1519,7 +1559,7 @@ l.385 ...             edge node [arc below] {} (3)
 (That was another \errmessage.)
 
 
-./Chapters/chap3.tex:392: Package pgfkeys Error: I do not know the key '/tikz/bend up' and I am going to ignore it. Perhaps you misspelled it.
+./Chapters/Chapter3/chap3.tex:392: Package pgfkeys Error: I do not know the key '/tikz/bend up' and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -1535,7 +1575,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-./Chapters/chap3.tex:405: Undefined control sequence.
+./Chapters/Chapter3/chap3.tex:405: Undefined control sequence.
 l.405 ...    The shift operator, now called \texit
                                                   {flip-flop} shift operator...
 The control sequence at the end of the top line
@@ -1544,39 +1584,91 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[18] [19]
-<img/CoinedQW/search/163264.png, id=380, 794.97pt x 576.7146pt>
+[18]
+
+LaTeX Warning: Reference `coinedUnmarkedOperator' on page 19 undefined on input line 417.
+
+[19]
+
+LaTeX Warning: Reference `eq:43' on page 20 undefined on input line 426.
+
+
+LaTeX Warning: Reference `eq:sysStateSearch' on page 20 undefined on input line 430.
+
+
+Package natbib Warning: Citation `REN1' on page 20 undefined on input line 431.
+
+
+LaTeX Warning: Reference `fig:coinedSearch' on page 20 undefined on input line 431.
+
+<img/CoinedQW/search/163264.png, id=261, 794.97pt x 576.7146pt>
 File: img/CoinedQW/search/163264.png Graphic file (type png)
 <use img/CoinedQW/search/163264.png>
 Package pdftex.def Info: img/CoinedQW/search/163264.png  used on input line 435.
 (pdftex.def)             Requested size: 317.98236pt x 230.68175pt.
- [20 <./img/CoinedQW/search/163264.png>]
-<img/StagQW/search/multipleThetaProb.png, id=395, 794.97pt x 576.7146pt>
+
+LaTeX Warning: Reference `eq:sysStateSearch' on page 20 undefined on input line 440.
+
+
+LaTeX Warning: Reference `stagWalk' on page 20 undefined on input line 440.
+
+[20 <./img/CoinedQW/search/163264.png>]
+
+LaTeX Warning: Reference `fig:undCompGraph' on page 21 undefined on input line 441.
+
+
+LaTeX Warning: Reference `eq:StagHamil' on page 21 undefined on input line 449.
+
+
+LaTeX Warning: Reference `eq:stagWalkUnmodOp' on page 21 undefined on input line 453.
+
+
+LaTeX Warning: Reference `fig:stagMultTheta' on page 21 undefined on input line 462.
+
+<img/StagQW/search/multipleThetaProb.png, id=271, 794.97pt x 576.7146pt>
 File: img/StagQW/search/multipleThetaProb.png Graphic file (type png)
 <use img/StagQW/search/multipleThetaProb.png>
 Package pdftex.def Info: img/StagQW/search/multipleThetaProb.png  used on input line 465.
 (pdftex.def)             Requested size: 317.98236pt x 230.68175pt.
 
+LaTeX Warning: Reference `eq:stagQWSearchUnmodEvo1' on page 21 undefined on input line 469.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [21]
-<img/StagQW/search/163264.png, id=409, 794.97pt x 576.7146pt>
+
+LaTeX Warning: Reference `fig:StagSearch' on page 22 undefined on input line 481.
+
+<img/StagQW/search/163264.png, id=284, 794.97pt x 576.7146pt>
 File: img/StagQW/search/163264.png Graphic file (type png)
 <use img/StagQW/search/163264.png>
 Package pdftex.def Info: img/StagQW/search/163264.png  used on input line 484.
 (pdftex.def)             Requested size: 317.98236pt x 230.68175pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./img/StagQW/search/multipleThetaProb.png>] [23 <./img/StagQW/search/163264.png>]
-<img/ContQW/search/gamma512.png, id=434, 794.97pt x 576.7146pt>
+[22 <./img/StagQW/search/multipleThetaProb.png>]
+
+Package natbib Warning: Citation `zalka1999' on page 23 undefined on input line 510.
+
+
+Package natbib Warning: Citation `zalka1999' on page 23 undefined on input line 514.
+
+
+LaTeX Warning: Reference `fig:gamma512' on page 23 undefined on input line 514.
+
+[23 <./img/StagQW/search/163264.png>]
+<img/ContQW/search/gamma512.png, id=306, 794.97pt x 576.7146pt>
 File: img/ContQW/search/gamma512.png Graphic file (type png)
 <use img/ContQW/search/gamma512.png>
 Package pdftex.def Info: img/ContQW/search/gamma512.png  used on input line 517.
 (pdftex.def)             Requested size: 317.98236pt x 230.68175pt.
-<img/ContQW/search/163264.png, id=436, 794.97pt x 576.7146pt>
+
+
+LaTeX Warning: Reference `fig:ContSearch' on page 24 undefined on input line 522.
+
+<img/ContQW/search/163264.png, id=307, 794.97pt x 576.7146pt>
 File: img/ContQW/search/163264.png Graphic file (type png)
 <use img/ContQW/search/163264.png>
 Package pdftex.def Info: img/ContQW/search/163264.png  used on input line 526.
@@ -1605,33 +1697,45 @@ Appendix A.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
-(./dissertation.aux (./Chapters/chap2.aux) (./Chapters/chap3.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 231.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+(./dissertation.aux (./Chapters/Chapter2/chap2.aux) (./Chapters/Chapter3/chap3.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+Package mparhack Warning: Marginpars may have changed.
+(mparhack)                Rerun to get them right.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 169.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
  ) 
 Here is how much of TeX's memory you used:
- 39623 strings out of 481239
- 770143 string characters out of 5920376
+ 39595 strings out of 481239
+ 770044 string characters out of 5920376
  1350010 words of memory out of 5000000
- 53641 multiletter control sequences out of 15000+600000
- 617035 words of font info for 430 fonts, out of 8000000 for 9000
+ 53624 multiletter control sequences out of 15000+600000
+ 616007 words of font info for 421 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,23n,97p,10107b,1078s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,23n,97p,10107b,1080s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (38 pages, 1598653 bytes).
+Output written on dissertation.pdf (37 pages, 1589754 bytes).
 PDF statistics:
- 625 PDF objects out of 1000 (max. 8388607)
- 513 compressed objects within 6 object streams
- 157 named destinations out of 1000 (max. 500000)
- 63354 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 404 compressed objects within 5 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 62842 words of extra memory for PDF output out of 74296 (max. 10000000)
 

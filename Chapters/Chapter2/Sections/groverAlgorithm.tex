@@ -1,18 +1,3 @@
-	 
-	  % qubits\\ esfera de bloch\\ rotacoes -- implementacoes simples nos pcs da ibm.\\ grover exemplo. Artigo coles 2018 , livro do nielsen tambem.\\isto nao seria state of the art ?\\
-	   % Fazer ao estilo do Nielsen pag. 174, meter exemplos do qiskit
-	    
-	   % \subsection{[TEMP ARTIGOS RELEVANTES]}
-	   %     bennet1996- Strengths and Weaknesses of Quantum Computing - Pasta intromain\\
-	   %     deutsch1992- Rapid solution of problems by quantum computation - Pasta intromain \\
-	   %     gottesman1998- The Heisenberg Representation of Quantum Computers - Pasta intromain \\
-	   %     shor1994- Algorithms for quantum computation: discrete logarithms and factoring  - Pasta intromain \\
-	   %     toffoli1980- REVERSIBLE COMPUTING - Pasta intromain \\
-	   %     wootters1982- A single quantum cannot be cloned - Pasta intromain\\
-	   %     zalka1999- Grover’s quantum searching algorithm is optima - Pasta intromain\\
-	   %     aharonov2001.pdf - Modelo computaçao quantica.
-	    
-	\chapter{Quantum Computing}
         \section{Grover's Algorithm}\label{chapGrover}
         Searching through an unstructured database is a task classically achieved by exhaustively evaluating every element in the database. Assume there exists a black box (oracle) that can be asked to find out if two elements are equal. Since we're looking for a specific element in a database of size N, we'd have to query the oracle on average $\frac{N}{2}$ times, or in the worst case $N$ times.\par
         Grover's algorithm, presented in \cite{grover1996}, comes as a quantum alternative to this type of problems, taking advantage of superposition by increasing desirable states' amplitudes through a process called \textit{amplitude amplification}. This method has a quadratic gain over the classical counterpart \cite{boyer1996}, being able to find a target element with $\mathcal{O}(\sqrt{N})$ oracle complexity.\par
