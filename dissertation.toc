@@ -4,16 +4,16 @@
 \contentsline {section}{\numberline {1.2}{Classical and Quantum Random Walks}}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}{State of the Art quantum walks implementations}}{1}{section.1.3}%
 \contentsline {section}{\numberline {1.4}{Text overview and contributions}}{1}{section.1.4}%
-\contentsline {chapter}{\numberline {2}{Quantum Computing}}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}{Grover's Algorithm}}{2}{section.2.1}%
-\contentsline {chapter}{\numberline {3}{Quantum Walks}}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}{Coined Quantum Walk}}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}{Continuous-Time Quantum Walk}}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}{Staggered Quantum Walk}}{15}{section.3.3}%
-\contentsline {section}{\numberline {3.4}{Search problems with Quantum Walks}}{17}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}{Coined}}{18}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}{Staggered}}{21}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}{Continuous}}{22}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {2}{Quantum Computing}}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}{Grover's Algorithm}}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}{Quantum Walks}}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}{Coined Quantum Walk}}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}{Continuous-Time Quantum Walk}}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}{Staggered Quantum Walk}}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}{Search problems with Quantum Walks}}{18}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}{Coined}}{19}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}{Staggered}}{20}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}{Continuous}}{23}{subsection.3.4.3}%
 \contentsline {chapter}{\numberline {4}{Implementations and Applications}}{26}{chapter.4}%
 \contentsline {subsection}{\numberline {4.0.1}{Coined}}{26}{subsection.4.0.1}%
 \contentsline {subsection}{\numberline {4.0.2}{Continuous}}{26}{subsection.4.0.2}%

@@ -1,4 +1,6 @@
-	 
+\usepackage{xcite}
+\externalcitedocument{bibliography}
+
 	  % qubits\\ esfera de bloch\\ rotacoes -- implementacoes simples nos pcs da ibm.\\ grover exemplo. Artigo coles 2018 , livro do nielsen tambem.\\isto nao seria state of the art ?\\
 	   % Fazer ao estilo do Nielsen pag. 174, meter exemplos do qiskit
 	    
@@ -13,4 +15,4 @@
 	   %     aharonov2001.pdf - Modelo computaçao quantica.
 	    
 	\chapter{Quantum Computing}
-	\input{/Sections/groverAlgorithm}
+	\input{Chapters/Chapter2/Sections/groverAlgorithm}
