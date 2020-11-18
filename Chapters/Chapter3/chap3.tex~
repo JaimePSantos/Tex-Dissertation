@@ -1,0 +1,13 @@
+\usepackage{xcite}
+\externalcitedocument{bibliography}
+	\chapter{Quantum Walks}
+	   % Falar dos varios tipos de caminhada quantica sem circuito \\
+	   % talvez simulaçoes em python?? \\
+    %     ambainis2004 - Pasta introqw/Coin\\
+    %     introducao com random walks classicas\\
+    %     Meter resultados simulaçoes de python.
+            \textcolor{red}{Precisamos fazer uma introdução aqui, descrever o conteúdo do capítulo, algumas referências se necessário. Não precisa ser muito longo.}
+	    \input{Chapters/Chapter3/Sections/CoinedQuantumWalk}
+	    \input{Chapters/Chapter3/Sections/continuousQuantumWalk}
+	    \input{Chapters/Chapter3/Sections/staggeredQuantumWalk}
+	    \input{Chapters/Chapter3/Sections/searchProblemsQuantumWalk}

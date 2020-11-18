@@ -5,44 +5,44 @@ The style file: plainnat.bst
 A level-1 auxiliary file: Chapters/Chapter2/chap2.aux
 A level-1 auxiliary file: Chapters/Chapter3/chap3.aux
 Database file #1: dissertation.bib
-You've used 9 entries,
+You've used 11 entries,
             2773 wiz_defined-function locations,
-            650 strings with 6010 characters,
-and the built_in function-call counts, 3944 in all, are:
-= -- 352
-> -- 190
-< -- 8
-+ -- 66
-- -- 57
-* -- 291
-:= -- 605
-add.period$ -- 29
-call.type$ -- 9
-change.case$ -- 45
-chr.to.int$ -- 9
-cite$ -- 18
-duplicate$ -- 199
-empty$ -- 339
-format.name$ -- 72
-if$ -- 839
+            663 strings with 6326 characters,
+and the built_in function-call counts, 4962 in all, are:
+= -- 445
+> -- 239
+< -- 10
++ -- 83
+- -- 72
+* -- 369
+:= -- 754
+add.period$ -- 35
+call.type$ -- 11
+change.case$ -- 56
+chr.to.int$ -- 11
+cite$ -- 22
+duplicate$ -- 249
+empty$ -- 425
+format.name$ -- 89
+if$ -- 1063
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 55
-num.names$ -- 36
-pop$ -- 88
+missing$ -- 12
+newline$ -- 65
+num.names$ -- 44
+pop$ -- 109
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 46
 quote$ -- 0
-skip$ -- 159
+skip$ -- 200
 stack$ -- 0
-substring$ -- 147
-swap$ -- 28
-text.length$ -- 1
+substring$ -- 200
+swap$ -- 39
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 94
+type$ -- 116
 warning$ -- 0
-while$ -- 33
+while$ -- 42
 width$ -- 0
-write$ -- 125
+write$ -- 151
