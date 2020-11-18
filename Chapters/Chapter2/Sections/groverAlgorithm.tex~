@@ -68,4 +68,5 @@ into state $\ket{\Psi(\frac{N-2}{N}k + \frac{2(N-1)}{N}l, \frac{N-2}{N}l - \frac
 	\end{cases}
 \end{equation}
 %TODO: Perceber/explicar melhor a associacao do valor de psiM com o elemento marcado.
-After the last iteration, the system will be in state $\ket{\Psi_m}$ with a certain amplitude. If that amplitude corresponds to the marked element $x_0$, then it is said that the algorithm was successful.
+After the last iteration, the system will be in state $\ket{\Psi_m}$ with a certain amplitude. If that amplitude corresponds to the marked element $x_0$, then it is said that the algorithm was successful.\par
+\cite{grover1996} proves that there exists a value of $m < \sqrt{2N}$ such that the probability of success is at least $\frac{1}{2}$. However the probability of success does not linearly increase with the number of iterations, in fact for $m=\sqrt{2N}$ the system will succeed less that $1$ in $10$ times. \cite{boyer1996} argues that an explicit value of $m$ is needed, and it is achieved by finding a closed form formula for $k_j$ and $l_j$. The first step is to define an angle $\theta$  
