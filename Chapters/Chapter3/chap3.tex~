@@ -1,5 +1,5 @@
-\usepackage{xcite}
-\externalcitedocument{bibliography}
+%\usepackage{xcite}
+%\externalcitedocument{bibliography}
 	\chapter{Quantum Walks}
 	   % Falar dos varios tipos de caminhada quantica sem circuito \\
 	   % talvez simulaçoes em python?? \\

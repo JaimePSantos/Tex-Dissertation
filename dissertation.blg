@@ -2,12 +2,10 @@ This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
-A level-1 auxiliary file: Chapters/Chapter2/chap2.aux
-A level-1 auxiliary file: Chapters/Chapter3/chap3.aux
 Database file #1: dissertation.bib
 You've used 11 entries,
             2773 wiz_defined-function locations,
-            663 strings with 6326 characters,
+            661 strings with 6272 characters,
 and the built_in function-call counts, 4962 in all, are:
 = -- 445
 > -- 239

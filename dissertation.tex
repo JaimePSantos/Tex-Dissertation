@@ -1,14 +1,13 @@
-
 % example for dissertation.sty
 \documentclass[
-  % Replace oneside by twoside if you are printing your thesis on both sides
-  % of the paper, leave as is for single sided prints or for viewing on screen.
-  oneside,
-  %twoside,
-  11pt, a4paper,
-  footinclude=true,
-  headinclude=true,
-  cleardoublepage=empty
+% Replace oneside by twoside if you are printing your thesis on both sides
+% of the paper, leave as is for single sided prints or for viewing on screen.
+oneside,
+%twoside,
+11pt, a4paper,
+footinclude=true,
+headinclude=true,
+cleardoublepage=empty
 ]{scrbook}
 
 \usepackage{comment}
@@ -21,14 +20,16 @@
 \newcommand*{\Z}{\mathds{Z}}
 \usepackage{indentfirst}
 \usepackage{tikz}
+\usepackage{physics}
 %usetikzlibrary{arrows}
+\usepackage{subfiles}
 
 % ----------------------------------------------------------------
- %University %(untomment if you need to change default values)
- \gdef\school{Escola de Engenharia (ainda a ver)}
- \gdef\department{Física}
- \gdef\university{Uni}
- \gdef\masterdegree{Física da informação.}
+%University %(untomment if you need to change default values)
+\gdef\school{Escola de Engenharia (ainda a ver)}
+\gdef\department{Física}
+\gdef\university{Uni}
+\gdef\masterdegree{Física da informação.}
 
 % Title
 \titleA{Staggered Quantum Walks in Qiskit??}
@@ -36,6 +37,7 @@
 \subtitleA{First Part of Subtitle}
 \subtitleB{Second part of Subtitle} % (if any)
 \usetikzlibrary{arrows}
+
 
 % Author
 \author{Jaime Santos}
@@ -63,104 +65,108 @@
 \ummetadata % add metadata to the document (author, publisher, ...)
 
 \begin{document}
-	% Cover page ---------------------------------------
-	\umfrontcover	
-	\umtitlepage
-	
-	% Add acknowledgements ----------------------------
-	\chapter*{Acknowledgements}
-	Write acknowledgements here
+% Cover page ---------------------------------------
+\umfrontcover	
+\umtitlepage
+
+% Add acknowledgements ----------------------------
+\chapter*{Acknowledgements}
+Write acknowledgements here
 
 
-	% Add abstracts (en,pt) ---------------------------
-	\chapter*{Abstract}
-    Implementation of staggered quantum walks in qiskit.
-    
-	\cleardoublepage
-	\chapter*{Resumo}
-	Pensar no que escrever aqui.
-	Hello!	
-	
-	% Summary Lists ------------------------------------
-	\tableofcontents
-	\listoffigures
-	\listoftables
-	%\lstlistoflistings
-	%\listofabbreviations
-	
-	
-	\pagenumbering{arabic}
-	
-	% CHAPTER - Introduction -------------------------
-	\chapter{Introduction}
-	
-		\section{Brief history of quantum computing}
+% Add abstracts (en,pt) ---------------------------
+\chapter*{Abstract}
+Implementation of staggered quantum walks in qiskit.
+
+\cleardoublepage
+\chapter*{Resumo}
+Pensar no que escrever aqui.
+Hello!	
+
+% Summary Lists ------------------------------------
+\tableofcontents
+\listoffigures
+\listoftables
+%\lstlistoflistings
+%\listofabbreviations
+
+
+\pagenumbering{arabic}
+
+% CHAPTER - Introduction -------------------------
+\chapter{Introduction}
+
+\section{Brief history of quantum computing}
 \cosupervisor{}
-                
-	   % \subsection{[TEMP ARTIGOS RELEVANTES]}
-	   %     kendon2006 - Introducao historia CQ - Pasta introqw/Coin
-	   % 	toffoli1980- Reversible Computing - Pasta intromain \\
-	   % 	gottesman1998- The Heisenberg Representation of Quantum Computers - Pasta intromain\\
-	   % 	rebuscado turing1936 - ON COMPUTABLE NUMBERS, WITH AN APPLICATION TO THE ENTSCHEIDUNGSPROBLEM - Pasta intromain \\
-	   % 	Random walks classicas - %https://pt.wikipedia.org/wiki/Passeio_aleat%C3%B3rio 
-		\section{Classical and Quantum Random Walks}
-		  %  From classical random walks to quantum random walks.\\
-		  %  Balu2017 introduçao\\
-		  %  Quantum walks are typically classified into discrete- and
-    %         continuous-time quantum walks with the main difference
-    %         being whether free evolution is interrupted by quantum
-    %         coin ‘flips’ followed by coin-dependent translations or
-    %         whether evolution is continuous involving entangling between the walker and internal, or coin, degrees of freedom [42] \textbf{topologicalwalks.pdf}
-		\section{State of the Art quantum walks implementations}
-		
-		  %  Mencionar que o proximo capitulo tem implementacoes de outros algoritmos.\\
-		  %  timeline da wikipedia\\
-		  %  ler artigos das implementaçoes circuitos locke a e b; douglas wang\\
-		  %  Quantum walks have become germane to quantum
-    %         computation [20–25] and quantum simulation [26–29]
-    %         and single-walker versions are amenable to experimental implementations including ion traps [30, 31], superconducting systems [32, 33], nuclear magnetic resonance [34, 35], optical lattice [36, 37], and both freespace linear optics [38, 39] and on photonic chips [40, 41] \textbf{topologicalwalks.pdf}
-		 
-		\section{Text overview and contributions}
+% \subsection{[TEMP ARTIGOS RELEVANTES]}
+%     kendon2006 - Introducao historia CQ - Pasta introqw/Coin
+% 	toffoli1980- Reversible Computing - Pasta intromain \\
+% 	gottesman1998- The Heisenberg Representation of Quantum Computers - Pasta intromain\\
+% 	rebuscado turing1936 - ON COMPUTABLE NUMBERS, WITH AN APPLICATION TO THE ENTSCHEIDUNGSPROBLEM - Pasta intromain \\
+% 	Random walks classicas - %https://pt.wikipedia.org/wiki/Passeio_aleat%C3%B3rio 
+\section{Classical and Quantum Random Walks}
+%  From classical random walks to quantum random walks.\\
+%  Balu2017 introduçao\\
+%  Quantum walks are typically classified into discrete- and
+%         continuous-time quantum walks with the main difference
+%         being whether free evolution is interrupted by quantum
+%         coin ‘flips’ followed by coin-dependent translations or
+%         whether evolution is continuous involving entangling between the walker and internal, or coin, degrees of freedom [42] \textbf{topologicalwalks.pdf}
+\section{State of the Art quantum walks implementations}
+%  Mencionar que o proximo capitulo tem implementacoes de outros algoritmos.\\
+%  timeline da wikipedia\\
+%  ler artigos das implementaçoes circuitos locke a e b; douglas wang\\
+%  Quantum walks have become germane to quantum
+%         computation [20–25] and quantum simulation [26–29]
+%         and single-walker versions are amenable to experimental implementations including ion traps [30, 31], superconducting systems [32, 33], nuclear magnetic resonance [34, 35], optical lattice [36, 37], and both freespace linear optics [38, 39] and on photonic chips [40, 41] \textbf{topologicalwalks.pdf}
+\section{Text overview and contributions}
 
-%      Grover Chapter
-       \include{Chapters/Chapter2/chap2}
+\chapter{Quantum Computing}
+\section{Grover's Algorithm}\label{chapGrover}
+\subfile{Chapters/Chapter2/groverAlgorithm}
 
-%       Quantum Walk Chapter
-       \include{Chapters/Chapter3/chap3}
+\chapter{Quantum Walks}
+\section{Coined Quantum Walk}\label{coinedwalk}
+\subfile{Chapters/Chapter3/coinedQuantumWalk}
+\section{Continuous-Time Quantum Walk}\label{contwalk}
+\subfile{Chapters/Chapter3/continuousQuantumWalk}
+\section{Staggered Quantum Walk}\label{stagWalk}
+\subfile{Chapters/Chapter3/staggeredQuantumWalk}
+\section{Search problems with Quantum Walks}
+\subfile{Chapters/Chapter3/searchProblemsQuantumWalk}
 
-	% CHAPTER - Application -------------------------
-	\chapter{Implementations and Applications}
-		meter aqui os circuitos.\par
-		Pagerank? paparo2012 tem coisas\par
-		Simulaçoes em python?\par
-		mencionar PC IBMQ
-		\subsection{Coined}
-		Test to see how many characters it takes to have a linebreak 1 2 3 4 5 6 7 8 9
-		\subsection{Continuous}
-		\subsection{Staggered}
+% CHAPTER - Application -------------------------
+\chapter{Implementations and Applications}
+%meter aqui os circuitos.\par
+%Pagerank? paparo2012 tem coisas\par
+%Simulaçoes em python?\par
+%mencionar PC IBMQ
+%\subsection{Coined}
+\subsection{Continuous}
+\subsection{Staggered}
 
-	% CHAPTER - Conclusion/Future Work -------------- 
-	\chapter{Discussions and Conclusion}
-	discutir os resultados encontrados, o future work, o que falta fazer etc.
-	\section{Conclusions}
-	\section{Prospect for future work}
-			
-	\bookmarksetup{startatroot} % Ends last part.
-	\addtocontents{toc}{\bigskip} % Making the table of contents look good.
-	%\cleardoublepage
+% CHAPTER - Conclusion/Future Work -------------- 
+\chapter{Discussions and Conclusion}
+%discutir os resultados encontrados, o future work, o que falta fazer etc.
+\section{Conclusions}
+\section{Prospect for future work}
 
-	%- Bibliography (needs bibtex) -%
-	\bibliography{dissertation}
+\bookmarksetup{startatroot} % Ends last part.
+\addtocontents{toc}{\bigskip} % Making the table of contents look good.
+%\cleardoublepage
 
-	% Index of terms (needs  makeindex) -------------
-	%\printindex
-	
-	
-	% APPENDIX --------------------------------------
-	\umappendix{Appendix}
-	
-	% Add appendix chapters
-	\chapter{Support material}
+%- Bibliography (needs bibtex) -%
+\bibliography{dissertation}
+
+% Index of terms (needs  makeindex) -------------
+%\printindex
+
+
+% APPENDIX --------------------------------------
+\umappendix{Appendix}
+
+% Add appendix chapters
+\chapter{Support material}
 %	\umbackcover{
 %	NB: place here information about funding, FCT project, etc in which the work is %framed. Leave empty otherwise.
 %	}
