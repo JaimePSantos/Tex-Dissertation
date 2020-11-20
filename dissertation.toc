@@ -7,7 +7,8 @@
 \contentsline {chapter}{\numberline {2}{Quantum Computing}}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}{Grover's Algorithm}}{2}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}{One marked element}}{4}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}{Multiple marked elements and Single-Shot}}{6}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}{Multiple marked elements}}{6}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}{Single-Shot Grover}}{7}{subsection.2.1.3}%
 \contentsline {chapter}{\numberline {3}{Quantum Walks}}{8}{chapter.3}%
 \contentsline {section}{\numberline {3.1}{Coined Quantum Walk}}{8}{section.3.1}%
 \contentsline {section}{\numberline {3.2}{Continuous-Time Quantum Walk}}{12}{section.3.2}%
