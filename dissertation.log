@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.16)  19 NOV 2020 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.16)  20 NOV 2020 13:01
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1027,6 +1027,12 @@ File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \arrowsize=\dimen302
 )) (./dissertation.aux
 
+LaTeX Warning: Label `eq:groverKandJ2' multiply defined.
+
+
+LaTeX Warning: Label `eq:groverKandJ2@cref' multiply defined.
+
+
 LaTeX Warning: Label `eq:12' multiply defined.
 
 
@@ -1045,12 +1051,6 @@ LaTeX Warning: Label `fig:coinedwalk3' multiply defined.
 LaTeX Warning: Label `fig:coinedwalk3@cref' multiply defined.
 
 
-LaTeX Warning: Label `contwalk' multiply defined.
-
-
-LaTeX Warning: Label `contwalk@cref' multiply defined.
-
-
 LaTeX Warning: Label `fig:contdist1' multiply defined.
 
 
@@ -1063,12 +1063,6 @@ LaTeX Warning: Label `fig:contdist2' multiply defined.
 LaTeX Warning: Label `fig:contdist2@cref' multiply defined.
 
 
-LaTeX Warning: Label `stagWalk' multiply defined.
-
-
-LaTeX Warning: Label `stagWalk@cref' multiply defined.
-
-
 LaTeX Warning: Label `fig:ContSearch' multiply defined.
 
 
@@ -1077,31 +1071,31 @@ LaTeX Warning: Label `fig:ContSearch@cref' multiply defined.
 )
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Trying to load font information for OT1+pplj on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Trying to load font information for OT1+pplj on input line 65.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplj.fd
 File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 )
-Package scrbase Info: activating english \contentsname on input line 67.
-Package scrbase Info: activating english \listfigurename on input line 67.
-Package scrbase Info: activating english \listtablename on input line 67.
+Package scrbase Info: activating english \contentsname on input line 65.
+Package scrbase Info: activating english \listfigurename on input line 65.
+Package scrbase Info: activating english \listtablename on input line 65.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count333
@@ -1121,14 +1115,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 67.
+LaTeX Info: Redefining \microtypecontext on input line 65.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 67.
+LaTeX Info: Redefining \showhyphens on input line 65.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1154,7 +1148,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box72
-Package hyperref Info: Link coloring ON on input line 67.
+Package hyperref Info: Link coloring ON on input line 65.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
@@ -1162,10 +1156,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count339
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
-Package soulpos Info: Loading soulutf8 on input line 67.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
+Package soulpos Info: Loading soulutf8 on input line 65.
  (/usr/share/texlive/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
@@ -1183,26 +1177,26 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \c@lstlisting=\count340
 
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 67.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 65.
 
 \GPT@outputbox=\box73
-LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 69.
+LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 67.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 69.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 69.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 69.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 69.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -1210,29 +1204,29 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 69.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 69.
+(Font)              scaled to size 11.40997pt on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 69.
+(Font)              scaled to size 8.33606pt on input line 67.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 69.
+(Font)              scaled to size 6.25204pt on input line 67.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 69.
+(Font)              scaled to size 11.40997pt on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 69.
+(Font)              scaled to size 8.33606pt on input line 67.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 69.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 69.
+(Font)              scaled to size 6.25204pt on input line 67.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
@@ -1243,7 +1237,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 LaTeX Font Warning: Font shape `OT1/phv/c/n' undefined
-(Font)              using `OT1/phv/m/n' instead on input line 69.
+(Font)              using `OT1/phv/m/n' instead on input line 67.
 
 [1
 
@@ -1256,17 +1250,17 @@ LaTeX Font Warning: Font shape `OT1/phv/c/n' undefined
 
 ]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 78.
+(Font)              scaled to size 9.37807pt on input line 76.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 78.
+(Font)              scaled to size 7.29405pt on input line 76.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 78.
+(Font)              scaled to size 5.21004pt on input line 76.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 78.
+(Font)              scaled to size 9.37807pt on input line 76.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 78.
+(Font)              scaled to size 7.29405pt on input line 76.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 78.
+(Font)              scaled to size 5.21004pt on input line 76.
  [1
 
 
@@ -1281,7 +1275,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 87.
+Package tocbasic Info: character protrusion at toc deactivated on input line 85.
  (./dissertation.toc
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/pplj/m/sc/10.95'.
@@ -1294,7 +1288,7 @@ Package microtype Info: Character `013' is missing
 
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 88.
+Package tocbasic Info: character protrusion at lof deactivated on input line 86.
  (./dissertation.lof [5
 
 
@@ -1307,10 +1301,10 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 88.
 
 
 LaTeX Font Warning: Font shape `OT1/pplj/b/sc' undefined
-(Font)              using `OT1/pplj/b/n' instead on input line 88.
+(Font)              using `OT1/pplj/b/n' instead on input line 86.
 
 [6]
-Package tocbasic Info: character protrusion at lot deactivated on input line 89.
+Package tocbasic Info: character protrusion at lot deactivated on input line 87.
  (./dissertation.lot)
 \tf@lot=\write8
 \openout8 = `dissertation.lot'.
@@ -1326,14 +1320,14 @@ Chapter 2.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 \chapter{Quantum Computing}
+l.122 \chapter{Quantum Computing}
                                   [1
 
 
 
 
 ]
-Package marginnote Info: Using workaround for absolute page number on input line 124.
+Package marginnote Info: Using workaround for absolute page number on input line 122.
  (./Chapters/Chapter2/groverAlgorithm.texpdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1341,13 +1335,39 @@ l.22 \begin{equation}
                       [2
 
 
-] [3])
+] [3] [4]
+<img/Grover/GroverOneMarked3264128256.png, id=210, 794.97pt x 578.16pt>
+File: img/Grover/GroverOneMarked3264128256.png Graphic file (type png)
+<use img/Grover/GroverOneMarked3264128256.png>
+Package pdftex.def Info: img/Grover/GroverOneMarked3264128256.png  used on input line 101.
+(pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
+ [5 <./img/Grover/GroverOneMarked3264128256.png>]
+./Chapters/Chapter2/groverAlgorithm.tex:127: Missing } inserted.
+<inserted text> 
+                }
+l.127 ...heta \geq \sin\theta = \sqrt{\frac{t}{N}$
+                                                   then
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<img/Grover/GroverMultipleMarked3264128256.png, id=220, 794.97pt x 578.16pt>
+File: img/Grover/GroverMultipleMarked3264128256.png Graphic file (type png)
+<use img/Grover/GroverMultipleMarked3264128256.png>
+Package pdftex.def Info: img/Grover/GroverMultipleMarked3264128256.png  used on input line 136.
+(pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 Chapter 3.
-[4] (./Chapters/Chapter3/coinedQuantumWalk.tex [5
+[6] [7 <./img/Grover/GroverMultipleMarked3264128256.png>] (./Chapters/Chapter3/coinedQuantumWalk.tex [8
 
 
-] [6]
-<img/CoinedQuantumWalk/Coinedpsi00.png, id=238, 794.97pt x 578.16pt>
+] [9]
+<img/CoinedQuantumWalk/Coinedpsi00.png, id=265, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/Coinedpsi00.png Graphic file (type png)
 <use img/CoinedQuantumWalk/Coinedpsi00.png>
 Package pdftex.def Info: img/CoinedQuantumWalk/Coinedpsi00.png  used on input line 65.
@@ -1360,18 +1380,18 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 10.42007pt on input line 66.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 66.
- [7 <./img/CoinedQuantumWalk/Coinedpsi00.png>]
-<img/CoinedQuantumWalk/Coinedpsi01.png, id=254, 794.97pt x 578.16pt>
+ [10 <./img/CoinedQuantumWalk/Coinedpsi00.png>]
+<img/CoinedQuantumWalk/Coinedpsi01.png, id=281, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/Coinedpsi01.png Graphic file (type png)
 <use img/CoinedQuantumWalk/Coinedpsi01.png>
 Package pdftex.def Info: img/CoinedQuantumWalk/Coinedpsi01.png  used on input line 80.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-<img/CoinedQuantumWalk/Coinedpsi001.png, id=258, 794.97pt x 578.16pt>
+<img/CoinedQuantumWalk/Coinedpsi001.png, id=285, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/Coinedpsi001.png Graphic file (type png)
 <use img/CoinedQuantumWalk/Coinedpsi001.png>
 Package pdftex.def Info: img/CoinedQuantumWalk/Coinedpsi001.png  used on input line 93.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-<img/CoinedQuantumWalk/CoinedMultiplepsi001.png, id=259, 794.97pt x 578.16pt>
+<img/CoinedQuantumWalk/CoinedMultiplepsi001.png, id=286, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/CoinedMultiplepsi001.png Graphic file (type png)
 <use img/CoinedQuantumWalk/CoinedMultiplepsi001.png>
 Package pdftex.def Info: img/CoinedQuantumWalk/CoinedMultiplepsi001.png  used on input line 130.
@@ -1380,54 +1400,53 @@ Package pdftex.def Info: img/CoinedQuantumWalk/CoinedMultiplepsi001.png  used on
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./Chapters/Chapter3/continuousQuantumWalk.tex [8 <./img/CoinedQuantumWalk/Coinedpsi01.png>] [9 <./img/CoinedQuantumWalk/Coinedpsi001.png> <./img/CoinedQuantumWalk/CoinedMultiplepsi001.png>] [10]
-<img/ContQuantumWalk/ctqwSinglePsi0.png, id=290, 794.97pt x 578.16pt>
+) (./Chapters/Chapter3/continuousQuantumWalk.tex [11 <./img/CoinedQuantumWalk/Coinedpsi01.png>] [12 <./img/CoinedQuantumWalk/Coinedpsi001.png> <./img/CoinedQuantumWalk/CoinedMultiplepsi001.png>] [13]
+<img/ContQuantumWalk/ctqwSinglePsi0.png, id=318, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwSinglePsi0.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwSinglePsi0.png>
-Package pdftex.def Info: img/ContQuantumWalk/ctqwSinglePsi0.png  used on input line 63.
+Package pdftex.def Info: img/ContQuantumWalk/ctqwSinglePsi0.png  used on input line 62.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png, id=294, 794.97pt x 578.16pt>
+<img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png, id=322, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png>
-Package pdftex.def Info: img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png  used on input line 72.
+Package pdftex.def Info: img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png  used on input line 71.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-[11]
-<img/ContQuantumWalk/ctqwMultipleGamma.png, id=304, 794.97pt x 578.16pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/ContQuantumWalk/ctqwMultipleGamma.png, id=323, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwMultipleGamma.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwMultipleGamma.png>
-Package pdftex.def Info: img/ContQuantumWalk/ctqwMultipleGamma.png  used on input line 79.
+Package pdftex.def Info: img/ContQuantumWalk/ctqwMultipleGamma.png  used on input line 78.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./img/ContQuantumWalk/ctqwSinglePsi0.png> <./img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png>]
-<img/ContQuantumWalk/ctqwSingleSup.png, id=314, 794.97pt x 578.16pt>
+<img/ContQuantumWalk/ctqwSingleSup.png, id=326, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwSingleSup.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwSingleSup.png>
-Package pdftex.def Info: img/ContQuantumWalk/ctqwSingleSup.png  used on input line 88.
+Package pdftex.def Info: img/ContQuantumWalk/ctqwSingleSup.png  used on input line 87.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/ContQuantumWalk/ctqwMultipleTime.png, id=315, 794.97pt x 578.16pt>
+<img/ContQuantumWalk/ctqwMultipleTime.png, id=327, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwMultipleTime.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwMultipleTime.png>
-Package pdftex.def Info: img/ContQuantumWalk/ctqwMultipleTime.png  used on input line 95.
+Package pdftex.def Info: img/ContQuantumWalk/ctqwMultipleTime.png  used on input line 94.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <./img/ContQuantumWalk/ctqwMultipleGamma.png>] [14 <./img/ContQuantumWalk/ctqwSingleSup.png> <./img/ContQuantumWalk/ctqwMultipleTime.png>]) (./Chapters/Chapter3/staggeredQuantumWalk.tex
-./Chapters/Chapter3/staggeredQuantumWalk.tex:28: Undefined control sequence.
+[14] [15 <./img/ContQuantumWalk/ctqwSinglePsi0.png> <./img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png>] [16 <./img/ContQuantumWalk/ctqwMultipleGamma.png> <./img/ContQuantumWalk/ctqwSingleSup.png>] [17 <./img/ContQuantumWalk/ctqwMultipleTime.png>]) (./Chapters/Chapter3/staggeredQuantumWalk.tex
+./Chapters/Chapter3/staggeredQuantumWalk.tex:26: Undefined control sequence.
 \Z ->\mathds 
              {Z}
-l.28 ...{T}_{\alpha}= \{\{2x,2x+1\}\colon x \in \Z
+l.26 ...{T}_{\alpha}= \{\{2x,2x+1\}\colon x \in \Z
                                                   \}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1435,10 +1454,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapters/Chapter3/staggeredQuantumWalk.tex:31: Undefined control sequence.
+./Chapters/Chapter3/staggeredQuantumWalk.tex:29: Undefined control sequence.
 \Z ->\mathds 
              {Z}
-l.31 ...T}_{\beta}= \{\{2x+1,2x+2\}\colon x \in \Z
+l.29 ...T}_{\beta}= \{\{2x+1,2x+2\}\colon x \in \Z
                                                   \}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1446,42 +1465,42 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[15
+[18
 
 ]
-<img/StagQuantumWalk/stagqwMultiple.png, id=340, 794.97pt x 578.16pt>
+<img/StagQuantumWalk/stagqwMultiple.png, id=367, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/stagqwMultiple.png Graphic file (type png)
 <use img/StagQuantumWalk/stagqwMultiple.png>
-Package pdftex.def Info: img/StagQuantumWalk/stagqwMultiple.png  used on input line 61.
+Package pdftex.def Info: img/StagQuantumWalk/stagqwMultiple.png  used on input line 59.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/StagQuantumWalk/stagqwSingle0.png, id=341, 794.97pt x 578.16pt>
+<img/StagQuantumWalk/stagqwSingle0.png, id=368, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/stagqwSingle0.png Graphic file (type png)
 <use img/StagQuantumWalk/stagqwSingle0.png>
-Package pdftex.def Info: img/StagQuantumWalk/stagqwSingle0.png  used on input line 71.
+Package pdftex.def Info: img/StagQuantumWalk/stagqwSingle0.png  used on input line 69.
 (pdftex.def)             Requested size: 243.4609pt x 177.05753pt.
-<img/StagQuantumWalk/stagqwSingle1.png, id=342, 794.97pt x 578.16pt>
+<img/StagQuantumWalk/stagqwSingle1.png, id=369, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/stagqwSingle1.png Graphic file (type png)
 <use img/StagQuantumWalk/stagqwSingle1.png>
-Package pdftex.def Info: img/StagQuantumWalk/stagqwSingle1.png  used on input line 75.
+Package pdftex.def Info: img/StagQuantumWalk/stagqwSingle1.png  used on input line 73.
 (pdftex.def)             Requested size: 243.4609pt x 177.05753pt.
 
-Overfull \hbox (44.26807pt too wide) in paragraph at lines 70--78
+Overfull \hbox (44.26807pt too wide) in paragraph at lines 68--76
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./Chapters/Chapter3/searchProblemsQuantumWalk.tex [16] [17 <./img/StagQuantumWalk/stagqwMultiple.png> <./img/StagQuantumWalk/stagqwSingle0.png> <./img/StagQuantumWalk/stagqwSingle1.png>]
+) (./Chapters/Chapter3/searchProblemsQuantumWalk.tex [19] [20 <./img/StagQuantumWalk/stagqwMultiple.png> <./img/StagQuantumWalk/stagqwSingle0.png> <./img/StagQuantumWalk/stagqwSingle1.png>]
 
-LaTeX Warning: Reference `fig:undCompGraph' on page 18 undefined on input line 27.
+LaTeX Warning: Reference `fig:undCompGraph' on page 21 undefined on input line 26.
 
-./Chapters/Chapter3/searchProblemsQuantumWalk.tex:87: Undefined control sequence.
-l.87 The shift operator, now called \texit
+./Chapters/Chapter3/searchProblemsQuantumWalk.tex:86: Undefined control sequence.
+l.86 The shift operator, now called \texit
                                           {flip-flop} shift operator, is
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1489,72 +1508,72 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[18]
-<img/CoinedQuantumWalk/Search/CoinedSearch163264.png, id=381, 794.97pt x 578.16pt>
+[21]
+<img/CoinedQuantumWalk/Search/CoinedSearch163264.png, id=407, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/Search/CoinedSearch163264.png Graphic file (type png)
 <use img/CoinedQuantumWalk/Search/CoinedSearch163264.png>
-Package pdftex.def Info: img/CoinedQuantumWalk/Search/CoinedSearch163264.png  used on input line 117.
+Package pdftex.def Info: img/CoinedQuantumWalk/Search/CoinedSearch163264.png  used on input line 116.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19]
+[22]
 
-LaTeX Warning: Reference `fig:undCompGraph' on page 20 undefined on input line 123.
+LaTeX Warning: Reference `fig:undCompGraph' on page 23 undefined on input line 122.
 
-[20 <./img/CoinedQuantumWalk/Search/CoinedSearch163264.png>]
-<img/StagQuantumWalk/Search/Theta163264.png, id=406, 794.97pt x 578.16pt>
+[23 <./img/CoinedQuantumWalk/Search/CoinedSearch163264.png>]
+<img/StagQuantumWalk/Search/Theta163264.png, id=434, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/Search/Theta163264.png Graphic file (type png)
 <use img/StagQuantumWalk/Search/Theta163264.png>
-Package pdftex.def Info: img/StagQuantumWalk/Search/Theta163264.png  used on input line 147.
+Package pdftex.def Info: img/StagQuantumWalk/Search/Theta163264.png  used on input line 146.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-<img/StagQuantumWalk/Search/163264.png, id=409, 794.97pt x 578.16pt>
+<img/StagQuantumWalk/Search/163264.png, id=437, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/Search/163264.png Graphic file (type png)
 <use img/StagQuantumWalk/Search/163264.png>
-Package pdftex.def Info: img/StagQuantumWalk/Search/163264.png  used on input line 166.
+Package pdftex.def Info: img/StagQuantumWalk/Search/163264.png  used on input line 165.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21 <./img/StagQuantumWalk/Search/Theta163264.png>] [22 <./img/StagQuantumWalk/Search/163264.png>]
-<img/ContQuantumWalk/Search/gamma512.png, id=436, 794.97pt x 578.16pt>
+[24 <./img/StagQuantumWalk/Search/Theta163264.png>] [25 <./img/StagQuantumWalk/Search/163264.png>]
+<img/ContQuantumWalk/Search/gamma512.png, id=462, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/Search/gamma512.png Graphic file (type png)
 <use img/ContQuantumWalk/Search/gamma512.png>
-Package pdftex.def Info: img/ContQuantumWalk/Search/gamma512.png  used on input line 199.
+Package pdftex.def Info: img/ContQuantumWalk/Search/gamma512.png  used on input line 198.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-<img/ContQuantumWalk/Search/163264.png, id=438, 794.97pt x 578.16pt>
+<img/ContQuantumWalk/Search/163264.png, id=464, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/Search/163264.png Graphic file (type png)
 <use img/ContQuantumWalk/Search/163264.png>
-Package pdftex.def Info: img/ContQuantumWalk/Search/163264.png  used on input line 208.
+Package pdftex.def Info: img/ContQuantumWalk/Search/163264.png  used on input line 207.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 )
 Chapter 4.
-[23 <./img/ContQuantumWalk/Search/gamma512.png>] [24 <./img/ContQuantumWalk/Search/163264.png>]
+[26 <./img/ContQuantumWalk/Search/gamma512.png>] [27 <./img/ContQuantumWalk/Search/163264.png>]
 Chapter 5.
-[25
+[28
 
 
-] [26
+] [29
 
 
 ] (./dissertation.bbl)
 Appendix A.
-[27
+[30
 
 
 
 
-] [28
+] [31
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
  (./dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 175.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 173.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1565,21 +1584,21 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 40513 strings out of 481239
- 786779 string characters out of 5920376
- 1345011 words of memory out of 5000000
- 54524 multiletter control sequences out of 15000+600000
- 616219 words of font info for 422 fonts, out of 8000000 for 9000
+ 40559 strings out of 481239
+ 787993 string characters out of 5920376
+ 1346011 words of memory out of 5000000
+ 54547 multiletter control sequences out of 15000+600000
+ 616735 words of font info for 430 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,23n,97p,10107b,875s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (37 pages, 1608105 bytes).
+Output written on dissertation.pdf (40 pages, 1739442 bytes).
 PDF statistics:
- 634 PDF objects out of 1000 (max. 8388607)
- 523 compressed objects within 6 object streams
- 161 named destinations out of 1000 (max. 500000)
- 58250 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 659 PDF objects out of 1000 (max. 8388607)
+ 541 compressed objects within 6 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 58252 words of extra memory for PDF output out of 61914 (max. 10000000)
 

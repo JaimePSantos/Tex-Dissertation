@@ -1,6 +1,5 @@
 \documentclass[../../dissertation.tex]{subfiles}
 \begin{document}
-\section{Continuous-Time Quantum Walk}\label{contwalk}
 The continuous-time random walk model on a graph is a Markov process where transitions have a fixed probability per unit time $\gamma$ of moving to adjacent vertices, firstly introduced by \cite{montrollweiss1965}. Consider a graph $G$ with $N$ vertices and no self-loops, this walk can be defined by the linear differential equation that describes the probability of jumping to a connected vertex in any given time \textcolor{red}{pode colocar G(V,E) e depois especificar que (i,j) é uma aresta}
 \begin{equation}
 	\frac{dp_i(t)}{dt} = \gamma \sum_j L_{ij} p_j(t), \label{contWalk}
