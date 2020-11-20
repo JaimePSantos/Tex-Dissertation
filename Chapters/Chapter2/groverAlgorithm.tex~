@@ -53,9 +53,12 @@ and after $t$ steps the state of the system is
 	\ket{\Psi(t)} = \mathcal{U}^t\ket{\Psi_0}.
 	\label{eq:groverFinalState}
 \end{equation}\par
-The optimal number of steps is, as aforementioned, proportional to $\sqrt{N}$. More precisely, if there's only one solution, maximum probability can be reached in $\frac{\pi}{4}\sqrt{N}$ iterations. In order to show that this is the case, an iteration will be formally defined here as the process that transforms the state
+
+\subsection{One marked element}
+The optimal number of steps is, as aforementioned, proportional to $\sqrt{N}$. More precisely, if there's only one solution, maximum probability can be reached in \textit{approximately} $\frac{\pi}{4}\sqrt{N}$ iterations. In order to show that this is the case, an iteration will be formally defined here as the process that transforms the state
 \begin{equation}
 	\ket{\Psi(k,l)} = k\ket{i_0} + \sum_{i\neq i_0}l\ket{i}
+	\label{eq:groverQuantumRegister}
 \end{equation}
 %TODO: duvida aqui com o l e o k. Tentar explicar por outras palavras.
 into state $\ket{\Psi(\frac{N-2}{N}k + \frac{2(N-1)}{N}l, \frac{N-2}{N}l - \frac{2}{N}k)}$. Numbers $l$ and $k$ are real numbers that statisfy $k^2 + (N-1)l^2=1$. Running $m$ iterations over state $\ket{\Psi_0}$ will eventually lead to state $\ket{\Psi_j} = \ket{\Psi(k_j,l_j)}$ after the $j-th$ iteration, where $k_0 = l_0 = \frac{1}{\sqrt{N}}$ and
@@ -69,15 +72,14 @@ into state $\ket{\Psi(\frac{N-2}{N}k + \frac{2(N-1)}{N}l, \frac{N-2}{N}l - \frac
 %TODO: Perceber/explicar melhor a associacao do valor de psiM com o elemento marcado.
 After the last iteration, the system will be in state $\ket{\Psi_m}$ with a certain amplitude. If that amplitude corresponds to the marked element $x_0$, then it is said that the algorithm was successful.\par
 \cite{grover1996} proves that there exists a value of $m < \sqrt{2N}$ such that the probability of success is at least $\frac{1}{2}$. However the probability of success does not linearly increase with the number of iterations, in fact for $m=\sqrt{2N}$ the system will succeed less that $1$ in $10$ times. \cite{boyer1996} argues that an explicit value of $m$ is needed, and it is achieved by finding a closed form formula for $k_j$ and $l_j$. The first step is to define an angle $\theta$ so that $\sin^2\theta = \frac{1}{N}$, and equation \ref{eq:groverKandJ1} will become
-%TODO: Perceber melhor a escolha do valor the $\theta$
+%TODO: Perceber melhor a escolha do valor de theta. Perceber como e que a eq. groverkandj1 fica assim./
 \begin{equation}
 	\begin{cases}
-		k_{j+1} = \sin{(2j+1)\theta} 
+		k_{j+1} = \sin{((2j+1)\theta)} 
 		\\l_{j+1} = \frac{1}{\sqrt{N-1}}\cos{((2j+1)\theta)}.
 	\end{cases}\label{eq:groverKandJ2}
 \end{equation}
-%TODO: Estou a fazer a demonstracao dos multiplos marcados para 1 elemento. Descobrir se isto esta certo. Estou com duvidas na parte do m e m til.
-In order to maximazie the probability of success, one must find a value of $m$ so that $k_m = 1$ and $l_m$ is as close to $0$ as possible. The value of $k$ after $m$ iterations will be at it's maximum when $\sin{((2m+1)\theta)} = \frac{\pi}{2}$, and solving the trigonometric equation leads to a value of $m = \frac{\pi-2\theta}{4\theta}$. Conversely, $l_{\widetilde{m}} = 0$ when $\widetilde{m} = \frac{\pi-2\theta}{4\theta}$ for an integer number of $\widetilde{m}$. Setting $m$ to the lower bound value of $\frac{\pi}{4\theta}$ will lead to
+In order to maximize the probability of success, one must find a value of $m$ so that $k_m = 1$ and $l_m$ is as close to $0$ as possible. The value of $k$ after $m$ iterations will be at it's maximum when $\sin{((2m+1)\theta)} = \frac{\pi}{2}$, and solving the trigonometric equation leads to a value of $m = \frac{\pi-2\theta}{4\theta}$. Conversely, $l_{\widetilde{m}} = 0$ when $\widetilde{m} = \frac{\pi-2\theta}{4\theta}$ for an integer number of $\widetilde{m}$. Setting $m$ to the nearest lower integer of $\frac{\pi}{4\theta}$ will lead to
 \begin{equation}
 	\abs{m-\widetilde{m}} \leq \frac{1}{2} \iff \abs{(2m+1)\theta - (2\widetilde{m}-1)\theta} \leq \frac{\pi}{2}.
 \end{equation}
@@ -96,10 +98,43 @@ Figure \ref{fig:groverOneMarked163264128} was obtained by coding the apropriate 
 \begin{figure}[!h]
 	%TODO: Decidir que figura por aqui, como menciono em cima para Ns grandes talvez aumentar o N ou por 4 ou mais exemplos de Ns diferentes.
 	\centering
-	\includegraphics[scale=0.40]{img/Grover/GroverOneMarked163264128}
-	\caption{Grover temp} 
+	\includegraphics[scale=0.40]{img/Grover/GroverOneMarked3264128256}
+	\caption{Grover one marked element temp.} 
 	\label{fig:groverOneMarked163264128}
 \end{figure}
-The unitary evolution operator was applied approximately $\frac{\pi}{4}\sqrt{N}$ times and the amplitudes associated with those states were stored as a probability distribution. Filtering the probability of the marked element and plotting it against the number of steps, shows that the maximum is indeed reached after the said number of iterations. It also shows that the maximum probability for $N=16$ is lower than for $N=128$, which makes sense since the the probability of success is maximized for larger values of $N$. 
+The unitary evolution operator was applied approximately $\frac{\pi}{4}\sqrt{N}$ times and the amplitudes associated with those states were stored as a probability distribution. Filtering the probability of the marked element and plotting it against the number of steps, shows that the maximum is indeed reached after the said number of iterations. It also shows that the maximum probability for $N=16$ is lower than for $N=128$, which makes sense since the the probability of success is maximized for larger values of $N$.
+%TODO:Talvez fazer aqui uma subseccao para separar 1 marcado de multiplos e single shot?
 
+\subsection{Multiple marked elements and Single-Shot}
+When there's more than one element marked by the oracle, the number of iterations to achieve maximum probability changes. In fact, the latter part of this section will be used to discuss the case where one single iteration of this algorithm is enough to achieve maximum probability.\par
+Firstly, one must define a set $A$ that is composed of all the marked elements and set $B$ of the remaining. The state from equation \ref{eq:groverQuantumRegister} will become
+\begin{equation}
+	\ket{\Psi(k,l)} =\sum_{i\in A} k\ket{i} + \sum_{x \in B}l\ket{x}.
+\end{equation}
+%TODO: Perceber o valor the theta again.
+Assuming $t$ marked elements, iterating over this state will result in
+\begin{equation}
+	\ket{\Psi(\frac{N-2t}{N}k + \frac{2(N-1)}{N}l, \frac{N-2}{N}l - \frac{2}{N}k)}.
+\end{equation}
+Choosing an angle $\theta$ such that $sin^2\theta=\frac{t}{N}$, allows the definition of the amplitudes associated with the states after $j$ iterations 
+\begin{equation}
+	\begin{cases}
+		k_{j} =\frac{1}{\sqrt{t}} \sin{((2j+1)\theta)} 
+		\\l_{j} = \frac{1}{\sqrt{N-t}}\cos{((2j+1)\theta)}.
+	\end{cases}\label{eq:groverKandJ2}
+\end{equation}
+%TODO: Talvez reescrever esta proxima parte. Vou resumir muito.
+Similarly to the one solution case, it can be shown that setting the number of iterations $m$, to the nearest lower integer of $\frac{\pi}{4\theta}$ will result in a probability of failure $(N-t)l^2_m \leq \frac{t}{N}$. Because $\theta \geq \sin\theta = \sqrt{\frac{t}{N}$ then
+%TODO: Perceber esta transicao da prob falha para o range do valor de m.
+\begin{equation}
+	m \leq \frac{\pi}{4\theta} \leq \frac{\pi}{4}\sqrt{\frac{N}{t}}
+\end{equation}
+
+\begin{figure}[!h]
+	%TODO: Decidir que figura por aqui, como menciono em cima para Ns grandes talvez aumentar o N ou por 4 ou mais exemplos de Ns diferentes.
+	\centering
+	\includegraphics[scale=0.40]{img/Grover/GroverMultipleMarked3264128256}
+	\caption{Grover Multiple marked temp.} 
+	\label{fig:groverMultipleMarked3264128256}
+\end{figure}
 \end{document}
