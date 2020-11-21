@@ -49,3 +49,9 @@ error: could not open document
 
 error: could not open document
 
+Gdk-Message: 16:40:56.354: org.pwmt.zathura: Fatal IO error 11 (Resource temporarily unavailable) on X server :10.0.
+
+error: could not open document
+
+error: could not open document
+

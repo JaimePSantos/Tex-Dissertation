@@ -139,10 +139,29 @@ Similarly to the one solution case, it can be shown that setting the number of i
 	\label{eq:multipleMarkedIterations}
 \end{equation}\par
 %TODO: Perceber melhor o 4thetaj no inicio da pagina 3. Sera que vale a pena mencionar?
-In a more practical perspective, if one were to mark two elements of a $64$ element set, maximum probability is expected to be reached in approximately 3 steps, since $\floor{\frac{\pi}{4}\sqrt{\frac{64}{2}}} = 4$. Similarly for $N=256$, the number of iterations is rounded to $8$, and this can be seen plotted along several other values of $N$ in figure \ref{fig:groverMultipleMarked3264128256}. The y-axis is now the sum total probability of the marked elements and the x-axis represents the range of steps that spans from $0$ to $\floor{\frac{\pi}{4}\sqrt{\frac{N}{2}}}$ for each $N$.
-Again, the probability of success approaches $1$ as $N$ increases. However, comparing to figure \ref{fig:groverOneMarked163264128}, the number of iterations that maximize probability is lower for each $N$, in agreement with equation \ref{eq:multipleMarkedIterations}
+From a more practical perspective, if one were to mark two elements of a $64$ element set, maximum probability is expected to be reached in approximately 3 steps, since $\floor{\frac{\pi}{4}\sqrt{\frac{64}{2}}} = 4$. Likewise, for $N=256$, the number of iterations is rounded to $8$, which is plotted along several other values of $N$ in figure \ref{fig:groverMultipleMarked3264128256}. The y-axis is now the sum total probability of the marked elements and the x-axis represents the range of steps that spans from $0$ to $\floor{\frac{\pi}{4}\sqrt{\frac{N}{2}}}$ for each $N$.
+%:TODO: Expandir a explicacao da figura, pensar no que escrever
+Again, the probability of success approaches $1$ as $N$ increases. However, comparing to figure \ref{fig:groverOneMarked163264128}, the number of iterations that maximize probability is lower for each $N$, in agreement with equation \ref{eq:multipleMarkedIterations}.
 \subsection{Single-Shot Grover}
-
-
-
+An interesting case arises when the number of marked elements is set to $t=\frac{N}{4}$, because 
+\begin{equation}
+	sin^2\theta = \frac{\frac{N}{4}}{N} = \frac{1}{4} \iff \sin\theta = \frac{1}{2} \iff \theta = \frac{\pi}{6}. 
+	\label{eq:singleShotTheta}
+\end{equation}
+\begin{figure}[h]
+	%TODO: Decidir que figura por aqui, como menciono em cima para Ns grandes talvez aumentar o N ou por 4 ou mais exemplos de Ns diferentes.
+	%TODO: Se calhar fazer figura A e B para 2 e 3 marcados.
+	\centering
+	\includegraphics[scale=0.40]{img/Grover/GroverSingleShot3264128256}
+	\caption{Single Shot temp} 
+	\label{GroverSingleShot3264128256}
+\end{figure}
+Note that there are an infinite number of negative and positive solutions, but equation \ref{eq:singleShotTheta} reflects the only relevant one in this context. As a consequence, amplitudes associated with state $\ket{\Psi(k_1,l_1)}$ become 
+\begin{equation}
+	\begin{cases}
+		k_{1} = \frac{1}{\sqrt{t}} \sin{((2+1)\theta)} = \frac{1}{\sqrt{\frac{N}{4}}} \sin{(3\frac{\pi}{6})} = \frac{2}{\sqrt{N}}
+		\\l_{1} = \frac{1}{\sqrt{N-t}}\cos{((2+1)\theta)} = \frac{1}{\sqrt{N-\frac{N}{4}}}\cos{(3\frac{\pi}{6})} = 0.
+	\end{cases}\label{eq:groverSingleShotKandJ}
+\end{equation}
+These results show that the amplitudes associated with the marked states double in relation to $\ket{\Psi_0}$ and the remaining states disappear after only one iteration. This behaviour can be seen in figure \ref{GroverSingleShot3264128256}, where the total probability of marked elements reaches $1$ once the number of marked elements is $\frac{1}{4}$ of the total elements.  
 \end{document}
