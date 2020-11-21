@@ -8,25 +8,26 @@
 \ttl@tocsep 
 \ttl@tocsep 
 \contentsline {figure}{\numberline {1}{\ignorespaces Grover one marked element temp.\relax }}{5}{figure.caption.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Grover Multiple marked temp.\relax }}{7}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Grover Multiple marked temp.\relax }}{6}{figure.caption.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Single Shot temp\relax }}{7}{figure.caption.3}%
 \ttl@tocsep 
-\contentsline {figure}{\numberline {3}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=\ket {0}\ket {x=0}$ and the Hadamard coin.\relax }}{10}{figure.caption.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=-\ket {1}\ket {x=0}$ and the Hadamard coin.\relax }}{11}{figure.caption.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=\frac {\ket {0}-i\ket {1}}{\sqrt {2}}\ket {x=0}$ and the Hadamard coin.\relax }}{12}{figure.caption.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Multiple walks temp\relax }}{12}{figure.caption.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Probability distribution for the continuous-time quantum walk on a line, at t = 100, with initial condition $\ket {\Psi (0)}=\ket {0}$ and $\gamma =\frac {1}{2\sqrt {2}}$.\relax }}{15}{figure.caption.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Probability distribution for the continuous-time quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=\ket {0}$ and $\gamma =\frac {1}{6\sqrt {2}}$.\relax }}{15}{figure.caption.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Temporary\relax }}{16}{figure.caption.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Probability distribution for the continuous-time quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=\frac {\ket {0}+\ket {1}}{\sqrt {2}}$ and $\gamma =\frac {1}{2\sqrt {2}}$.\relax }}{16}{figure.caption.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Temporary\relax }}{17}{figure.caption.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Probability distribution for the staggered quantum walk on a line after 50 steps, with initial condition $\ket {\Psi (0)}=\frac {\ket {0}+\ket {1}}{\sqrt {2}}$, for multiple angles.\relax }}{20}{figure.caption.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces $\ket {\Psi (0)}=\ket {0}$\relax }}{20}{figure.caption.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces $\ket {\Psi (0)}=\ket {1}$\relax }}{20}{figure.caption.13}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Discrete-time coined quantum walk search for a complete graph with 16, 32 and 64 nodes.\relax }}{23}{figure.caption.14}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Maximum probability of the marked element as a function of the $\theta $ value plotted from $0$ to $\pi $ for number of nodes $N=64,128$ and $256$.\relax }}{24}{figure.caption.15}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Staggered quantum walk search for a complete graph with 16, 32 and 64 nodes.\relax }}{25}{figure.caption.16}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Value of the difference between the largest eigenvalue and the second largest, plotted as a function of $\gamma N$, for $N=512$. \relax }}{26}{figure.caption.17}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Continuous quantum walk search for a complete graph with 16, 32 and 64 vertices.\relax }}{27}{figure.caption.18}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=\ket {0}\ket {x=0}$ and the Hadamard coin.\relax }}{11}{figure.caption.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=-\ket {1}\ket {x=0}$ and the Hadamard coin.\relax }}{12}{figure.caption.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Probability distribution for the coined quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=\frac {\ket {0}-i\ket {1}}{\sqrt {2}}\ket {x=0}$ and the Hadamard coin.\relax }}{13}{figure.caption.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Multiple walks temp\relax }}{13}{figure.caption.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Probability distribution for the continuous-time quantum walk on a line, at t = 100, with initial condition $\ket {\Psi (0)}=\ket {0}$ and $\gamma =\frac {1}{2\sqrt {2}}$.\relax }}{16}{figure.caption.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Probability distribution for the continuous-time quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=\ket {0}$ and $\gamma =\frac {1}{6\sqrt {2}}$.\relax }}{16}{figure.caption.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Temporary\relax }}{17}{figure.caption.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Probability distribution for the continuous-time quantum walk on a line, after 100 steps, with initial condition $\ket {\Psi (0)}=\frac {\ket {0}+\ket {1}}{\sqrt {2}}$ and $\gamma =\frac {1}{2\sqrt {2}}$.\relax }}{17}{figure.caption.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Temporary\relax }}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Probability distribution for the staggered quantum walk on a line after 50 steps, with initial condition $\ket {\Psi (0)}=\frac {\ket {0}+\ket {1}}{\sqrt {2}}$, for multiple angles.\relax }}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces $\ket {\Psi (0)}=\ket {0}$\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces $\ket {\Psi (0)}=\ket {1}$\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Discrete-time coined quantum walk search for a complete graph with 16, 32 and 64 nodes.\relax }}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Maximum probability of the marked element as a function of the $\theta $ value plotted from $0$ to $\pi $ for number of nodes $N=64,128$ and $256$.\relax }}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Staggered quantum walk search for a complete graph with 16, 32 and 64 nodes.\relax }}{26}{figure.caption.17}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Value of the difference between the largest eigenvalue and the second largest, plotted as a function of $\gamma N$, for $N=512$. \relax }}{27}{figure.caption.18}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Continuous quantum walk search for a complete graph with 16, 32 and 64 vertices.\relax }}{28}{figure.caption.19}%
 \ttl@tocsep 
 \ttl@tocsep 
 \ttl@tocsep 
