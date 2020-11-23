@@ -20,7 +20,8 @@ where
 \begin{equation}
 	e^{i\theta_{k}H_{k}} = \cos{(\theta_k)}I + i\sin{(\theta_k)}H_k
 \end{equation}
-since $H_k^2 = I$.\textcolor{red}{trocar and por since. Posso referir livro do nielsen}\par
+since $H_k^2 = I$.\par
+%TODO:\textcolor{red}{trocar and por since. Posso referir livro do nielsen}\par
 The simplest use case of this quantum walk model is the one-dimensional lattice, where the minimum tessalations are
 \begin{equation}
 	\mathscr{T}_{\alpha}= \{\{2x,2x+1\}\colon x \in \Z\}
@@ -35,7 +36,7 @@ Each element of the tessellation has a corresponding state, and the uniform supe
 \begin{equation}
 	\ket{\beta_x} = \frac{\ket{2x+1}+\ket{2x+2}}{\sqrt{2}}
 \end{equation}\par
-One can now define Hamiltonians $H_\alpha$ and $H_\beta$ as \textcolor{red}{trocar operators por hamiltonians, talvez} 
+One can now define Hamiltonians $H_\alpha$ and $H_\beta$ as 
 \begin{equation}
 	H_\alpha = 2\sum_{x=-\infty}^{+\infty}\ket{\alpha_{x}}\bra{\alpha_x} - I
 \end{equation}
@@ -50,7 +51,8 @@ and applying it to an initial condition $\ket{\Psi(0)}$ results in the time evol
 \begin{equation}
 	U\ket{\Psi(t)} = U^t\ket{\Psi(0)}
 \end{equation}\par
-Having defined the time evolution operator, the walk is ready to be coded with a certain initial condition and $\theta$ value, to better understand how the probability distribution spreads through time. \textcolor{red}{você pode acrescentar que o $\theta$ terá um papel similar ao $\gamma$ no controle do desvio-padrão}
+Having defined the time evolution operator, the walk is ready to be coded with a certain initial condition and $\theta$ value, to better understand how the probability distribution spreads through time. 
+%TODO:\textcolor{red}{você pode acrescentar que o $\theta$ terá um papel similar ao $\gamma$ no controle do desvio-padrão}
 
 For the first case study, the initial condition will be a uniform superposition of states $\ket{0}$ and $\ket{1}$ and the $\theta$ value will be varied in order to understand how this parameter impacts the walk
 
@@ -76,6 +78,7 @@ Another interesting case study is to see how the initial condition affects the d
 \end{figure}
 
 Similarly to the coined case, each initial condition results in asymmetric probability distributions, $\ket{\Psi(0)}=\ket{0}$ leads to a peak  in the left-hand side while condition $\ket{\Psi(0)}=\ket{1}$ results in a peak in the right-hand side. As was shown in \ref{fig:fig5}, the uniform superposition of both these conditions results in a symmetric probability distribution.
-\textcolor{red}{acho que você pode explicar um pouco mais o papel de $\theta$ através dos gráficos e podemos pensar se fazemos gráficos do desvio-padrão para este e o contínuo}
+%TODO: \textcolor{red}{acho que você pode explicar um pouco mais o papel de $\theta$ através dos gráficos e podemos pensar se fazemos gráficos do desvio-padrão para este e o contínuo}
+
 
 \end{document}

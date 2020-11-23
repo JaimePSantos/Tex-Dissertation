@@ -55,3 +55,5 @@ error: could not open document
 
 error: could not open document
 
+Gdk-Message: 19:23:32.545: org.pwmt.zathura: Fatal IO error 104 (Connection reset by peer) on X server :10.0.
+

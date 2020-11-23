@@ -61,7 +61,7 @@ The optimal number of steps is, as aforementioned, proportional to $\sqrt{N}$. M
 	\label{eq:groverQuantumRegister}
 \end{equation}
 %TODO: duvida aqui com o l e o k. Tentar explicar por outras palavras.
-into state $\ket{\Psi(\frac{N-2}{N}k + \frac{2(N-1)}{N}l, \frac{N-2}{N}l - \frac{2}{N}k)}$. Numbers $l$ and $k$ are real numbers that statisfy $k^2 + (N-1)l^2=1$. Running $m$ iterations over state $\ket{\Psi_0}$ will eventually lead to state $\ket{\Psi_j} = \ket{\Psi(k_j,l_j)}$ after the $j-th$ iteration, where $k_0 = l_0 = \frac{1}{\sqrt{N}}$ and
+into state $\ket{\Psi(\frac{N-2}{N}k + \frac{2(N-1)}{N}l, \frac{N-2}{N}l - \frac{2}{N}k)}$. Amplitudes $l$ and $k$ are real numbers that statisfy $k^2 + (N-1)l^2=1$. Running $m$ iterations over state $\ket{\Psi_0}$ will eventually lead to state $\ket{\Psi_j} = \ket{\Psi(k_j,l_j)}$ after the $j-th$ iteration, where $k_0 = l_0 = \frac{1}{\sqrt{N}}$ and
 %TODO: Perceber melhor isto dos ks e js e tentar por mais diferente do bbht.
 \begin{equation}
 	\begin{cases}
@@ -163,5 +163,6 @@ Note that there are an infinite number of negative and positive solutions, but e
 		\\l_{1} = \frac{1}{\sqrt{N-t}}\cos{((2+1)\theta)} = \frac{1}{\sqrt{N-\frac{N}{4}}}\cos{(3\frac{\pi}{6})} = 0.
 	\end{cases}\label{eq:groverSingleShotKandJ}
 \end{equation}
+%:TODO: Escrever mais sobre a figura!
 These results show that the amplitudes associated with the marked states double in relation to $\ket{\Psi_0}$ and the remaining states disappear after only one iteration. This behaviour can be seen in figure \ref{GroverSingleShot3264128256}, where the total probability of marked elements reaches $1$ once the number of marked elements is $\frac{1}{4}$ of the total elements.  
 \end{document}
