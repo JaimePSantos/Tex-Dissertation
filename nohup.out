@@ -57,3 +57,5 @@ error: could not open document
 
 Gdk-Message: 19:23:32.545: org.pwmt.zathura: Fatal IO error 104 (Connection reset by peer) on X server :10.0.
 
+Gdk-Message: 16:49:17.506: org.pwmt.zathura: Fatal IO error 11 (Resource temporarily unavailable) on X server :10.0.
+

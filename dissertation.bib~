@@ -2,6 +2,74 @@
 %% Modificado por Lucas dos Santos Fernandez
 
 %%%%%%%%%%%%%% INTRO MAIN
+
+
+
+@article{finch2003,
+    author = {Steven Finch},
+    title = {"Pólya's Random Walk Constant." in Mathematical Constants},
+    journal = {Cambridge University Press},
+    volume = {},
+    number = {},
+    pages = {322-331},
+    year = {2003},
+    doi = {},
+    URL = {},
+    eprint = {}
+}
+
+@article{montrol1956,
+    author = {Elliott Montroll},
+    title = {Random Walks in Multidimensional Spaces, Especially on Periodic Lattices}, 
+    journal = {Journal of the Society for Industrial and Applied Mathematics},
+    volume = {4},
+    number = {4},
+    pages = {241-260},
+    year = {1956},
+    doi = {10.1137/0104014},
+    URL = {},
+    eprint = {}
+}
+
+@article{polya1921,
+    author = {George Pólya},
+    title = {Über eine Aufgabe der Wahrscheinlichkeitsrechnung betreffend die Irrfahrt im Straßennetz},
+    journal = {Mathematische Annalen},
+    volume = {84},
+    number = {},
+    pages = {149-160},
+    year = {1921},
+    doi = {10.1007/BF01458701},
+    URL = {},
+    eprint = {}
+}
+
+@article{sottinen2001,
+    author = {Tommi Sottinen},
+    title = {Fractional Brownian Motion, Random Walks and Binary Market Models},
+    journal = {Finance and Stochastics},
+    volume = {},
+    number = {5},
+    pages = {343-355},
+    year = {2001},
+    doi = {10.1007/PL00013536},
+    URL = {},
+    eprint = {}
+}
+
+@article{kpearson1905,
+    author = {Karl Pearson},
+    title = {The Problem of the Random Walk},
+    journal = {Nature},
+    volume = {72},
+    number = {1865},
+    pages = {294},
+    year = {1905},
+    doi = {10.1038/072294b0},
+    URL = {},
+    eprint = {}
+}
+	
 @article{aharonov1999,
     author = {Dorit Aharonov and Michael Ben-Or},
     title = {Fault-Tolerant Quantum Computation with Constant Error Rate},

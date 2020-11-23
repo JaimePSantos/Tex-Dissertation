@@ -128,6 +128,8 @@ Hello!
 \subfile{Chapters/Chapter2/groverAlgorithm}
 
 \chapter{Quantum Walks}
+\section{Classical Random Walk}\label{classicalWalk}
+\subfile{Chapters/Chapter3/classicalWalk}
 \section{Coined Quantum Walk}\label{coinedwalk}
 \subfile{Chapters/Chapter3/coinedQuantumWalk}
 \section{Continuous-Time Quantum Walk}\label{contwalk}

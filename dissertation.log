@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.16)  21 NOV 2020 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.16)  23 NOV 2020 22:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1336,73 +1336,80 @@ l.22 \begin{equation}
 
 
 ] [3] [4]
-<img/Grover/GroverOneMarked3264128256.png, id=214, 794.97pt x 578.16pt>
+<img/Grover/GroverOneMarked3264128256.png, id=218, 794.97pt x 578.16pt>
 File: img/Grover/GroverOneMarked3264128256.png Graphic file (type png)
 <use img/Grover/GroverOneMarked3264128256.png>
 Package pdftex.def Info: img/Grover/GroverOneMarked3264128256.png  used on input line 101.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
  [5 <./img/Grover/GroverOneMarked3264128256.png>]
-<img/Grover/GroverMultipleMarked3264128256.png, id=224, 794.97pt x 578.16pt>
+<img/Grover/GroverMultipleMarked3264128256.png, id=228, 794.97pt x 578.16pt>
 File: img/Grover/GroverMultipleMarked3264128256.png Graphic file (type png)
 <use img/Grover/GroverMultipleMarked3264128256.png>
 Package pdftex.def Info: img/Grover/GroverMultipleMarked3264128256.png  used on input line 131.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
  [6 <./img/Grover/GroverMultipleMarked3264128256.png>]
-<img/Grover/GroverSingleShot3264128256.png, id=236, 794.97pt x 578.16pt>
+<img/Grover/GroverSingleShot3264128256.png, id=240, 794.97pt x 578.16pt>
 File: img/Grover/GroverSingleShot3264128256.png Graphic file (type png)
 <use img/Grover/GroverSingleShot3264128256.png>
 Package pdftex.def Info: img/Grover/GroverSingleShot3264128256.png  used on input line 155.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
  [7 <./img/Grover/GroverSingleShot3264128256.png>])
 Chapter 3.
-[8] (./Chapters/Chapter3/coinedQuantumWalk.tex [9
+[8] (./Chapters/Chapter3/classicalWalk.tex
+<img/ClassicalWalk/MultClassicalWalk72180450.png, id=259, 794.97pt x 578.16pt>
+File: img/ClassicalWalk/MultClassicalWalk72180450.png Graphic file (type png)
+<use img/ClassicalWalk/MultClassicalWalk72180450.png>
+Package pdftex.def Info: img/ClassicalWalk/MultClassicalWalk72180450.png  used on input line 8.
+(pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
+ [9
 
 
-] [10]
-<img/CoinedQuantumWalk/Coinedpsi00.png, id=286, 794.97pt x 578.16pt>
+ <./img/ClassicalWalk/MultClassicalWalk72180450.png>]) (./Chapters/Chapter3/coinedQuantumWalk.tex [10]
+<img/CoinedQuantumWalk/Coinedpsi00.png, id=303, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/Coinedpsi00.png Graphic file (type png)
 <use img/CoinedQuantumWalk/Coinedpsi00.png>
-Package pdftex.def Info: img/CoinedQuantumWalk/Coinedpsi00.png  used on input line 73.
+Package pdftex.def Info: img/CoinedQuantumWalk/Coinedpsi00.png  used on input line 71.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 74.
+(Font)              scaled to size 10.42007pt on input line 72.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 74.
+(Font)              scaled to size 7.91925pt on input line 72.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 74.
+(Font)              scaled to size 10.42007pt on input line 72.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 74.
-<img/CoinedQuantumWalk/Coinedpsi01.png, id=289, 794.97pt x 578.16pt>
+(Font)              scaled to size 7.91925pt on input line 72.
+ [11]
+<img/CoinedQuantumWalk/Coinedpsi01.png, id=325, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/Coinedpsi01.png Graphic file (type png)
 <use img/CoinedQuantumWalk/Coinedpsi01.png>
-Package pdftex.def Info: img/CoinedQuantumWalk/Coinedpsi01.png  used on input line 90.
+Package pdftex.def Info: img/CoinedQuantumWalk/Coinedpsi01.png  used on input line 88.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <./img/CoinedQuantumWalk/Coinedpsi00.png>]
-<img/CoinedQuantumWalk/Coinedpsi001.png, id=305, 794.97pt x 578.16pt>
+[12 <./img/CoinedQuantumWalk/Coinedpsi00.png>]
+<img/CoinedQuantumWalk/Coinedpsi001.png, id=336, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/Coinedpsi001.png Graphic file (type png)
 <use img/CoinedQuantumWalk/Coinedpsi001.png>
-Package pdftex.def Info: img/CoinedQuantumWalk/Coinedpsi001.png  used on input line 104.
+Package pdftex.def Info: img/CoinedQuantumWalk/Coinedpsi001.png  used on input line 102.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-<img/CoinedQuantumWalk/CoinedMultiplepsi001.png, id=306, 794.97pt x 578.16pt>
+<img/CoinedQuantumWalk/CoinedMultiplepsi001.png, id=337, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/CoinedMultiplepsi001.png Graphic file (type png)
 <use img/CoinedQuantumWalk/CoinedMultiplepsi001.png>
-Package pdftex.def Info: img/CoinedQuantumWalk/CoinedMultiplepsi001.png  used on input line 113.
+Package pdftex.def Info: img/CoinedQuantumWalk/CoinedMultiplepsi001.png  used on input line 111.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./Chapters/Chapter3/continuousQuantumWalk.tex [12 <./img/CoinedQuantumWalk/Coinedpsi01.png>] [13 <./img/CoinedQuantumWalk/Coinedpsi001.png> <./img/CoinedQuantumWalk/CoinedMultiplepsi001.png>] [14]
-<img/ContQuantumWalk/ctqwSinglePsi0.png, id=340, 794.97pt x 578.16pt>
+) (./Chapters/Chapter3/continuousQuantumWalk.tex [13 <./img/CoinedQuantumWalk/Coinedpsi01.png>] [14 <./img/CoinedQuantumWalk/Coinedpsi001.png> <./img/CoinedQuantumWalk/CoinedMultiplepsi001.png>] [15]
+<img/ContQuantumWalk/ctqwSinglePsi0.png, id=369, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwSinglePsi0.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwSinglePsi0.png>
 Package pdftex.def Info: img/ContQuantumWalk/ctqwSinglePsi0.png  used on input line 68.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-<img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png, id=344, 794.97pt x 578.16pt>
+<img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png, id=373, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png>
 Package pdftex.def Info: img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png  used on input line 78.
@@ -1411,7 +1418,7 @@ Package pdftex.def Info: img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png  used 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/ContQuantumWalk/ctqwMultipleGamma.png, id=345, 794.97pt x 578.16pt>
+<img/ContQuantumWalk/ctqwMultipleGamma.png, id=374, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwMultipleGamma.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwMultipleGamma.png>
 Package pdftex.def Info: img/ContQuantumWalk/ctqwMultipleGamma.png  used on input line 85.
@@ -1419,16 +1426,16 @@ Package pdftex.def Info: img/ContQuantumWalk/ctqwMultipleGamma.png  used on inpu
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/ContQuantumWalk/ctqwSingleSup.png, id=348, 794.97pt x 578.16pt>
+<img/ContQuantumWalk/ctqwSingleSup.png, id=377, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwSingleSup.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwSingleSup.png>
 Package pdftex.def Info: img/ContQuantumWalk/ctqwSingleSup.png  used on input line 94.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-[15 <./img/ContQuantumWalk/ctqwSinglePsi0.png>]
+[16 <./img/ContQuantumWalk/ctqwSinglePsi0.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/ContQuantumWalk/ctqwMultipleTime.png, id=355, 794.97pt x 578.16pt>
+<img/ContQuantumWalk/ctqwMultipleTime.png, id=385, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/ctqwMultipleTime.png Graphic file (type png)
 <use img/ContQuantumWalk/ctqwMultipleTime.png>
 Package pdftex.def Info: img/ContQuantumWalk/ctqwMultipleTime.png  used on input line 101.
@@ -1436,7 +1443,7 @@ Package pdftex.def Info: img/ContQuantumWalk/ctqwMultipleTime.png  used on input
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16 <./img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png> <./img/ContQuantumWalk/ctqwMultipleGamma.png>] [17 <./img/ContQuantumWalk/ctqwSingleSup.png> <./img/ContQuantumWalk/ctqwMultipleTime.png>]) (./Chapters/Chapter3/staggeredQuantumWalk.tex
+[17 <./img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png> <./img/ContQuantumWalk/ctqwMultipleGamma.png>] [18 <./img/ContQuantumWalk/ctqwSingleSup.png> <./img/ContQuantumWalk/ctqwMultipleTime.png>]) (./Chapters/Chapter3/staggeredQuantumWalk.tex
 ./Chapters/Chapter3/staggeredQuantumWalk.tex:27: Undefined control sequence.
 \Z ->\mathds 
              {Z}
@@ -1459,10 +1466,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[18
+[19
 
 ]
-<img/StagQuantumWalk/stagqwMultiple.png, id=382, 794.97pt x 578.16pt>
+<img/StagQuantumWalk/stagqwMultiple.png, id=411, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/stagqwMultiple.png Graphic file (type png)
 <use img/StagQuantumWalk/stagqwMultiple.png>
 Package pdftex.def Info: img/StagQuantumWalk/stagqwMultiple.png  used on input line 61.
@@ -1471,12 +1478,12 @@ Package pdftex.def Info: img/StagQuantumWalk/stagqwMultiple.png  used on input l
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/StagQuantumWalk/stagqwSingle0.png, id=383, 794.97pt x 578.16pt>
+<img/StagQuantumWalk/stagqwSingle0.png, id=412, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/stagqwSingle0.png Graphic file (type png)
 <use img/StagQuantumWalk/stagqwSingle0.png>
 Package pdftex.def Info: img/StagQuantumWalk/stagqwSingle0.png  used on input line 71.
 (pdftex.def)             Requested size: 243.4609pt x 177.05753pt.
-<img/StagQuantumWalk/stagqwSingle1.png, id=384, 794.97pt x 578.16pt>
+<img/StagQuantumWalk/stagqwSingle1.png, id=413, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/stagqwSingle1.png Graphic file (type png)
 <use img/StagQuantumWalk/stagqwSingle1.png>
 Package pdftex.def Info: img/StagQuantumWalk/stagqwSingle1.png  used on input line 75.
@@ -1489,9 +1496,9 @@ Overfull \hbox (44.26807pt too wide) in paragraph at lines 70--78
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./Chapters/Chapter3/searchProblemsQuantumWalk.tex [19] [20 <./img/StagQuantumWalk/stagqwMultiple.png> <./img/StagQuantumWalk/stagqwSingle0.png> <./img/StagQuantumWalk/stagqwSingle1.png>]
+) (./Chapters/Chapter3/searchProblemsQuantumWalk.tex [20] [21 <./img/StagQuantumWalk/stagqwMultiple.png> <./img/StagQuantumWalk/stagqwSingle0.png> <./img/StagQuantumWalk/stagqwSingle1.png>]
 
-LaTeX Warning: Reference `fig:undCompGraph' on page 21 undefined on input line 28.
+LaTeX Warning: Reference `fig:undCompGraph' on page 22 undefined on input line 28.
 
 ./Chapters/Chapter3/searchProblemsQuantumWalk.tex:89: Undefined control sequence.
 l.89 The shift operator, now called \texit
@@ -1502,8 +1509,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[21]
-<img/CoinedQuantumWalk/Search/CoinedSearch163264.png, id=424, 794.97pt x 578.16pt>
+[22]
+<img/CoinedQuantumWalk/Search/CoinedSearch163264.png, id=454, 794.97pt x 578.16pt>
 File: img/CoinedQuantumWalk/Search/CoinedSearch163264.png Graphic file (type png)
 <use img/CoinedQuantumWalk/Search/CoinedSearch163264.png>
 Package pdftex.def Info: img/CoinedQuantumWalk/Search/CoinedSearch163264.png  used on input line 120.
@@ -1513,10 +1520,10 @@ Package pdftex.def Info: img/CoinedQuantumWalk/Search/CoinedSearch163264.png  us
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `fig:undCompGraph' on page 22 undefined on input line 126.
+LaTeX Warning: Reference `fig:undCompGraph' on page 23 undefined on input line 126.
 
-[22]
-<img/StagQuantumWalk/Search/Theta163264.png, id=441, 794.97pt x 578.16pt>
+[23]
+<img/StagQuantumWalk/Search/Theta163264.png, id=469, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/Search/Theta163264.png Graphic file (type png)
 <use img/StagQuantumWalk/Search/Theta163264.png>
 Package pdftex.def Info: img/StagQuantumWalk/Search/Theta163264.png  used on input line 151.
@@ -1525,8 +1532,8 @@ Package pdftex.def Info: img/StagQuantumWalk/Search/Theta163264.png  used on inp
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23 <./img/CoinedQuantumWalk/Search/CoinedSearch163264.png>]
-<img/StagQuantumWalk/Search/163264.png, id=454, 794.97pt x 578.16pt>
+[24 <./img/CoinedQuantumWalk/Search/CoinedSearch163264.png>]
+<img/StagQuantumWalk/Search/163264.png, id=482, 794.97pt x 578.16pt>
 File: img/StagQuantumWalk/Search/163264.png Graphic file (type png)
 <use img/StagQuantumWalk/Search/163264.png>
 Package pdftex.def Info: img/StagQuantumWalk/Search/163264.png  used on input line 170.
@@ -1535,43 +1542,43 @@ Package pdftex.def Info: img/StagQuantumWalk/Search/163264.png  used on input li
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24 <./img/StagQuantumWalk/Search/Theta163264.png>] [25 <./img/StagQuantumWalk/Search/163264.png>]
-<img/ContQuantumWalk/Search/gamma512.png, id=478, 794.97pt x 578.16pt>
+[25 <./img/StagQuantumWalk/Search/Theta163264.png>] [26 <./img/StagQuantumWalk/Search/163264.png>]
+<img/ContQuantumWalk/Search/gamma512.png, id=506, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/Search/gamma512.png Graphic file (type png)
 <use img/ContQuantumWalk/Search/gamma512.png>
 Package pdftex.def Info: img/ContQuantumWalk/Search/gamma512.png  used on input line 204.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
-<img/ContQuantumWalk/Search/163264.png, id=480, 794.97pt x 578.16pt>
+<img/ContQuantumWalk/Search/163264.png, id=508, 794.97pt x 578.16pt>
 File: img/ContQuantumWalk/Search/163264.png Graphic file (type png)
 <use img/ContQuantumWalk/Search/163264.png>
 Package pdftex.def Info: img/ContQuantumWalk/Search/163264.png  used on input line 213.
 (pdftex.def)             Requested size: 317.98236pt x 231.2599pt.
 )
 Chapter 4.
-[26 <./img/ContQuantumWalk/Search/gamma512.png>] [27 <./img/ContQuantumWalk/Search/163264.png>]
+[27 <./img/ContQuantumWalk/Search/gamma512.png>] [28 <./img/ContQuantumWalk/Search/163264.png>]
 Chapter 5.
-[28
+[29
 
 
-] [29
+] [30
 
 
-] (./dissertation.bbl)
+] (./dissertation.bbl [31
+
+
+
+
+])
 Appendix A.
-[30
-
-
-
-
-] [31
+[32] [33
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
  (./dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 177.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 179.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1582,21 +1589,21 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
  ) 
 Here is how much of TeX's memory you used:
- 40598 strings out of 481239
- 789009 string characters out of 5920376
+ 40656 strings out of 481239
+ 790321 string characters out of 5920376
  1345011 words of memory out of 5000000
- 54576 multiletter control sequences out of 15000+600000
- 616993 words of font info for 434 fonts, out of 8000000 for 9000
+ 54616 multiletter control sequences out of 15000+600000
+ 617596 words of font info for 436 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,23n,97p,10107b,875s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (40 pages, 1799203 bytes).
+Output written on dissertation.pdf (42 pages, 1855451 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 174 named destinations out of 1000 (max. 500000)
- 58265 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 715 PDF objects out of 1000 (max. 8388607)
+ 591 compressed objects within 6 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 58790 words of extra memory for PDF output out of 61914 (max. 10000000)
 

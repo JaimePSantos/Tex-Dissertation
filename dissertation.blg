@@ -3,44 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
 Database file #1: dissertation.bib
-You've used 11 entries,
+Warning--there's a number but no volume in sottinen2001
+You've used 16 entries,
             2773 wiz_defined-function locations,
-            661 strings with 6272 characters,
-and the built_in function-call counts, 4962 in all, are:
-= -- 445
-> -- 239
-< -- 10
-+ -- 83
-- -- 72
-* -- 369
-:= -- 754
-add.period$ -- 35
-call.type$ -- 11
-change.case$ -- 56
-chr.to.int$ -- 11
-cite$ -- 22
-duplicate$ -- 249
-empty$ -- 425
-format.name$ -- 89
-if$ -- 1063
+            698 strings with 6970 characters,
+and the built_in function-call counts, 6972 in all, are:
+= -- 639
+> -- 289
+< -- 16
++ -- 103
+- -- 87
+* -- 508
+:= -- 1058
+add.period$ -- 54
+call.type$ -- 16
+change.case$ -- 76
+chr.to.int$ -- 16
+cite$ -- 33
+duplicate$ -- 358
+empty$ -- 625
+format.name$ -- 109
+if$ -- 1503
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 65
-num.names$ -- 44
-pop$ -- 109
+missing$ -- 17
+newline$ -- 94
+num.names$ -- 64
+pop$ -- 143
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 61
 quote$ -- 0
-skip$ -- 200
+skip$ -- 275
 stack$ -- 0
-substring$ -- 200
-swap$ -- 39
-text.length$ -- 2
+substring$ -- 310
+swap$ -- 53
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
-warning$ -- 0
-while$ -- 42
+type$ -- 171
+warning$ -- 1
+while$ -- 63
 width$ -- 0
-write$ -- 151
+write$ -- 224
+(There was 1 warning)
