@@ -1,13 +1,15 @@
 \documentclass[../../dissertation.tex]{subfiles}
 \begin{document}
 In classical computation, a \textit{spatial search problem} focuses on finding marked points in a finite region of space. Defining this region with graphs is fairly straightforward, the vertices of the graph are the search space, and the edges define what transitions are possible through the search space. As was previously mentioned in \ref{chapGrover}, exhaustively searching through an unstructured space, by means of a classical random walk for example, would mean that in the worst case, one would have to take as many steps to find the marked points as there are vertices in the graph. Quantum computing provides an alternative to this complexity through Grover's algorithm, and applying some of his ideas to the coined quantum walk not only allows a quantum counterpart to the random walk search, but also further insight into the algorithm itself.\par
-\textcolor{red}{acho que você precisa delimitar o que fará ao longo desta seção, dizer que tratará os três modelos e a busca}
+%TODO:\textcolor{red}{acho que você precisa delimitar o que fará ao longo desta seção, dizer que tratará os três modelos e a busca}
 \subsection{Coined}
-Following \cite{REN1}'s definition, a good first step is to borrow the diffusion from Grover's algorithm and invert the sign of the state corresponding to the marked vertex while leaving unmarked vertices unchanged. This is done through the following operator \textcolor{red}{eu trocaria a notação de $\mathcal{F}$ por $\mathcal{O}$ e dizer que é um oráculo}
+Following \cite{REN1}'s definition, a good first step is to borrow the diffusion from Grover's algorithm and invert the sign of the state corresponding to the marked vertex while leaving unmarked vertices unchanged. This is done through the following operator 
+%TODO:\textcolor{red}{eu trocaria a notação de $\mathcal{F}$ por $\mathcal{O}$ e dizer que é um oráculo}
 \begin{equation}
 	\mathcal{F'} = I - 2 \sum_{x\in M} \ket{x}\bra{x}
 \end{equation}
-where M is the set of marked vertices and $\mathcal{F'}$ is an analogue to Grover's oracle. For one marked vertex, this oracle can be written as \textcolor{red}{você pode até dizer que $M=\{0\}$}
+where M is the set of marked vertices and $\mathcal{F'}$ is an analogue to Grover's oracle. For one marked vertex, this oracle can be written as 
+%TODO:\textcolor{red}{você pode até dizer que $M=\{0\}$}
 \begin{equation}
 	\mathcal{F'} = I - 2 \ket{0}\bra{0}
 \end{equation}
@@ -23,7 +25,8 @@ Similarly to the simple coined case, the walker starts at $\ket{\Psi(0)}$ and ev
 	\label{eq:sysStateSearch}
 \end{equation}\par
 
-For a better understanding of the search problem in the coined quantum walk model, consider a graph where all the vertices are connected and each vertex has a loop that allows transitions to itself, as shown in figure \ref{fig:undCompGraph}. \textcolor{red}{não precisa dizer que são arcos também}
+For a better understanding of the search problem in the coined quantum walk model, consider a graph where all the vertices are connected and each vertex has a loop that allows transitions to itself, as shown in figure \ref{fig:undCompGraph}. 
+%TODO: \textcolor{red}{não precisa dizer que são arcos também}
 %                \begin{figure}[!h]
 %                \centering
 %                \begin{tikzpicture}[shorten >=1pt,auto,node distance=3cm,
@@ -91,7 +94,8 @@ The coin operator is defined as
 \begin{equation}
 	C = I_N \otimes G
 \end{equation}
-where \textcolor{red}{prefiro s a D}
+where 
+%TODO:\textcolor{red}{prefiro s a D}
 \begin{equation}
 	G = 2\ket{D}\bra{D} - I
 \end{equation}
@@ -127,7 +131,8 @@ The associated polygon can then be described as the balanced superposition of al
 \begin{equation}
 	\ket{\alpha} = \frac{1}{\sqrt{N}} \sum_{v=0}^{N-1} \ket{v}.
 \end{equation}\par
-The Hamiltonian, as defined in \ref{eq:StagHamil}, is \textcolor{red}{falta índice no somatório}
+The Hamiltonian, as defined in \ref{eq:StagHamil}, is 
+%TODO: \textcolor{red}{falta índice no somatório}
 \begin{equation}
 	H_\alpha = 2\sum_0^1\ket{\alpha}\bra{\alpha} - I = 2\ket{\alpha_0}\bra{\alpha_0} - I
 \end{equation}\par
@@ -169,7 +174,7 @@ The walk achieves the same result as Grover's algorithm after $\frac{\pi}{4}\sqr
 %probabilidade em pi/4 sqrt(N)
 %probabilidade mais perto de 1 quanto maior o N, devido à natureza discreta da walk.
 
-\textcolor{red}{precisa de um fechamento também aqui}
+%TODO:\textcolor{red}{precisa de um fechamento também aqui}
 
 \subsection{Continuous}
 As was previously seen, the continuous-time quantum walk model is defined by an evolution operator obtained by solving Schrödinger's equation
@@ -188,7 +193,8 @@ The degree matrix is again $D=dI$, which means it will commute with $A+\ket{0}\b
 \begin{equation}
 	U'(t) = e^{-i\gamma(A+\ket{0}\bra{0})t}e^{i\gamma D t} = \phi(t)e^{-i\gamma(A+\ket{0}\bra{0})t}.
 \end{equation}\par
-As was show by \cite{zalka1999}, the value of $\gamma$ is crucial for the success of the search. As $\gamma$ increases, the contribution of the marked element in the Hamiltonian decreases, and as $\gamma$ approaches $0$ the contribution of the adjacency matrix decreases. To find the optimum value, the Hamiltonian can be rewritten by adding multiples of the identity matrix to the adjacency matrix \textcolor{red}{H' é uma notação ruim, confunde com derivada e acredito não ser necessário aqui}
+As was show by \cite{zalka1999}, the value of $\gamma$ is crucial for the success of the search. As $\gamma$ increases, the contribution of the marked element in the Hamiltonian decreases, and as $\gamma$ approaches $0$ the contribution of the adjacency matrix decreases. To find the optimum value, the Hamiltonian can be rewritten by adding multiples of the identity matrix to the adjacency matrix 
+%TODO:\textcolor{red}{H' é uma notação ruim, confunde com derivada e acredito não ser necessário aqui}
 \begin{equation}
 	H' = -\gamma(A+NI) - \ket{0}\bra{0} = -\gamma N\ket{s}\bra{s} - \ket{0}\bra{0}
 \end{equation}

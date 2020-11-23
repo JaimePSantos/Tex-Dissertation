@@ -581,6 +581,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT img/CoinedQuantumWalk/Coinedpsi01.png
+INPUT ./img/CoinedQuantumWalk/Coinedpsi01.png
+INPUT ./img/CoinedQuantumWalk/Coinedpsi01.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
@@ -590,9 +593,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
-INPUT img/CoinedQuantumWalk/Coinedpsi01.png
-INPUT ./img/CoinedQuantumWalk/Coinedpsi01.png
-INPUT ./img/CoinedQuantumWalk/Coinedpsi01.png
 INPUT img/CoinedQuantumWalk/Coinedpsi001.png
 INPUT ./img/CoinedQuantumWalk/Coinedpsi001.png
 INPUT ./img/CoinedQuantumWalk/Coinedpsi001.png
@@ -601,10 +601,6 @@ INPUT ./img/CoinedQuantumWalk/CoinedMultiplepsi001.png
 INPUT ./img/CoinedQuantumWalk/CoinedMultiplepsi001.png
 INPUT Chapters/Chapter3/continuousQuantumWalk.tex
 INPUT Chapters/Chapter3/continuousQuantumWalk.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplb9o.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
@@ -644,6 +640,10 @@ INPUT ./img/StagQuantumWalk/stagqwSingle1.png
 INPUT ./img/StagQuantumWalk/stagqwSingle1.png
 INPUT Chapters/Chapter3/searchProblemsQuantumWalk.tex
 INPUT Chapters/Chapter3/searchProblemsQuantumWalk.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplb9o.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
 INPUT img/CoinedQuantumWalk/Search/CoinedSearch163264.png
 INPUT ./img/CoinedQuantumWalk/Search/CoinedSearch163264.png
 INPUT ./img/CoinedQuantumWalk/Search/CoinedSearch163264.png

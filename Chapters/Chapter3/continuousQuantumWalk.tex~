@@ -1,6 +1,7 @@
 \documentclass[../../dissertation.tex]{subfiles}
 \begin{document}
-The continuous-time random walk model on a graph is a Markov process where transitions have a fixed probability per unit time $\gamma$ of moving to adjacent vertices, firstly introduced by \cite{montrollweiss1965}. Consider a graph $G$ with $N$ vertices and no self-loops, this walk can be defined by the linear differential equation that describes the probability of jumping to a connected vertex in any given time \textcolor{red}{pode colocar G(V,E) e depois especificar que (i,j) é uma aresta}
+The continuous-time random walk model on a graph is a Markov process where transitions have a fixed probability per unit time $\gamma$ of moving to adjacent vertices, firstly introduced by \cite{montrollweiss1965}. Consider a graph $G$ with $N$ vertices and no self-loops, this walk can be defined by the linear differential equation that describes the probability of jumping to a connected vertex in any given time 
+%TODO: \textcolor{red}{pode colocar G(V,E) e depois especificar que (i,j) é uma aresta}
 \begin{equation}
 	\frac{dp_i(t)}{dt} = \gamma \sum_j L_{ij} p_j(t), \label{contWalk}
 \end{equation}
@@ -23,7 +24,8 @@ where $\hat{H} = -\gamma L$ is the Hamiltonian of the system. More explicitly,
 	\end{cases}.
 	\label{Hamilt}
 \end{equation}\par
-A general state of a system $\ket{\Psi(t)}$ can be written as a function of it's complex amplitudes \textcolor{red}{acredito que seja contrária a relação, as amplitudes que são descritas pelo estado através da equação 28}
+A general state of a system $\ket{\Psi(t)}$ can be written as a function of it's complex amplitudes 
+%TODO: \textcolor{red}{acredito que seja contrária a relação, as amplitudes que são descritas pelo estado através da equação 28}
 \begin{equation}
 	q_i = \braket{i|\Psi(t)},
 \end{equation}
@@ -31,12 +33,15 @@ which means \ref{shrodinger} can be rewritten as
 \begin{equation}
 	i\hbar \frac{dq_i(t)}{dt} = \sum_j \hat{H}_{ij} q_j(t).
 \end{equation}
-This highlights the similarities between the Schrödinger equation and \ref{contWalk}. One of the main differences is the complex phase $i$, which will result in a very different behaviour. \textcolor{red}{você pode dizer que a 29 é uma quantização da 24}\par
-Setting $\hbar = 1$ and solving the differential equation results in the evolution operator of this walk \textcolor{red}{acho que podemos ajustar, talvez a equação 32 deva subir, porque ela que é solução da equação diferencial}%mencionar redimens. devido ao planck modificado
+This highlights the similarities between the Schrödinger equation and \ref{contWalk}. One of the main differences is the complex phase $i$, which will result in a very different behaviour. 
+%TODO: \textcolor{red}{você pode dizer que a 29 é uma quantização da 24}\par
+Setting $\hbar = 1$ and solving the differential equation results in the evolution operator of this walk 
+%TODO: \textcolor{red}{acho que podemos ajustar, talvez a equação 32 deva subir, porque ela que é solução da equação diferencial}%mencionar redimens. devido ao planck modificado
 \begin{equation}
 	U(t) = e^{-iHt} = e^{i(-\gamma L)t} = e^{-i\gamma(A+D)t}
 \end{equation}
-In the regular graph case, where $D$ is simply the degree of the whole graph multiplied by the identity matrix, $A$ and $D$ will commute, meaning that the evolution operator can be written in terms of the adjacency matrix \textcolor{red}{ficou muito bom isso daqui}
+In the regular graph case, where $D$ is simply the degree of the whole graph multiplied by the identity matrix, $A$ and $D$ will commute, meaning that the evolution operator can be written in terms of the adjacency matrix 
+%TODO: \textcolor{red}{ficou muito bom isso daqui}
 \begin{equation}
 	U(t) = e^{-i\gamma A t + i\gamma D t} = e^{-i\gamma A t} e^{i\gamma D t} = \phi(t) e^{-i\gamma A t} 
 \end{equation}
@@ -55,7 +60,8 @@ Considering a uni-dimensional quantum system, each vertex will have at most 2 ot
 		0, & \mbox{if } i\neq j\mbox{ and not adjacent}.
 	\end{cases}
 \end{equation}\par
-For a more detailed visualization, this quantum walk model was coded in python and figure \ref{fig:contdist0} was obtained setting the transition rate to $\gamma=\frac{1}{2\sqrt{2}}$ the initial condition to $\ket{\Psi(0)} = \ket{0}$ \textcolor{red}{cortou a figura}
+For a more detailed visualization, this quantum walk model was coded in python and figure \ref{fig:contdist0} was obtained setting the transition rate to $\gamma=\frac{1}{2\sqrt{2}}$ the initial condition to $\ket{\Psi(0)} = \ket{0}$ 
+%TODO: \textcolor{red}{cortou a figura}
 
 \begin{figure}[!h]
 	\centering
@@ -65,7 +71,8 @@ For a more detailed visualization, this quantum walk model was coded in python a
 \end{figure}
 
 A brief look at figure \ref{fig:contdist0} reveals several similarities to the coined quantum walk model of figure \ref{fig:coinedwalk3}. Both have two peaks away from the origin and low probability near the origin.
-However, in the previous quantum walk, these characteristics were altered as a function of the chosen coin and initial condition, whereas in this case different values of $\gamma$ will influence the probability distribution. For example, a lower value of $\gamma$ will limit the spread of the probability distribution, as is shown in figure \ref{fig:contdist1}. \textcolor{red}{você pode dizer que o desvio padrão é proporcional ao $\gamma$ também}
+However, in the previous quantum walk, these characteristics were altered as a function of the chosen coin and initial condition, whereas in this case different values of $\gamma$ will influence the probability distribution. For example, a lower value of $\gamma$ will limit the spread of the probability distribution, as is shown in figure \ref{fig:contdist1}. 
+%TODO:\textcolor{red}{você pode dizer que o desvio padrão é proporcional ao $\gamma$ também}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.40]{img/ContQuantumWalk/ctqwSinglePsi0LowerGamma.png}
@@ -96,7 +103,7 @@ Moreover, the effects of altering the initial condition will also differ in the 
 	\label{fig:contdist2}
 \end{figure}
 
-\textcolor{red}{precisa de um fechamento aqui também, alguns resultdos e referências mais talvez}
+%TODO: \textcolor{red}{precisa de um fechamento aqui também, alguns resultdos e referências mais talvez}
 
 \clearpage
 
