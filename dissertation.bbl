@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -37,16 +37,35 @@ Edward Farhi and Sam Gutmann.
 \newblock \emph{Physical Review A, 58:915-928}, 1998.
 \newblock \doi{10.1103/PhysRevA.58.915}.
 
+\bibitem[Finch(2003)]{finch2003}
+Steven Finch.
+\newblock "pólya's random walk constant." in mathematical constants.
+\newblock \emph{Cambridge University Press}, pages 322--331, 2003.
+
 \bibitem[Grover(1996)]{grover1996}
 Lov~K. Grover.
 \newblock A fast quantum mechanical algorithm for database search.
 \newblock \emph{STOC '96 Proceedings of the twenty-eighth annual ACM symposium
   on Theory of computing}, pages 212--219, 1996.
 
+\bibitem[Montroll(1956)]{montrol1956}
+Elliott Montroll.
+\newblock Random walks in multidimensional spaces, especially on periodic
+  lattices.
+\newblock \emph{Journal of the Society for Industrial and Applied Mathematics},
+  4\penalty0 (4):\penalty0 241--260, 1956.
+\newblock \doi{10.1137/0104014}.
+
 \bibitem[Montroll and Weiss(1997)]{montrollweiss1965}
 Elliott~Waters Montroll and George~Herbert Weiss.
 \newblock Random walks on lattices. ii.
 \newblock \emph{Journal of Mathematical Physics}, page 167–181, 1997.
+
+\bibitem[Pearson(1905)]{kpearson1905}
+Karl Pearson.
+\newblock The problem of the random walk.
+\newblock \emph{Nature}, 72\penalty0 (1865):\penalty0 294, 1905.
+\newblock \doi{10.1038/072294b0}.
 
 \bibitem[Portugal(2018)]{REN1}
 Renato Portugal.
@@ -58,6 +77,20 @@ Renato Portugal.
 Renato Portugal, M.~C. de~Oliveira, and J.~K. Moqadam.
 \newblock Staggered quantum walks with hamiltonians.
 \newblock \emph{Physical Review A}, 95\penalty0 (1):\penalty0 012328, 2017.
+
+\bibitem[Pólya(1921)]{polya1921}
+George Pólya.
+\newblock Über eine aufgabe der wahrscheinlichkeitsrechnung betreffend die
+  irrfahrt im straßennetz.
+\newblock \emph{Mathematische Annalen}, 84:\penalty0 149--160, 1921.
+\newblock \doi{10.1007/BF01458701}.
+
+\bibitem[Sottinen(2001)]{sottinen2001}
+Tommi Sottinen.
+\newblock Fractional brownian motion, random walks and binary market models.
+\newblock \emph{Finance and Stochastics}, \penalty0 (5):\penalty0 343--355,
+  2001.
+\newblock \doi{10.1007/PL00013536}.
 
 \bibitem[Venegas-Andraca(2012)]{andraca2012}
 Salvador~Elías Venegas-Andraca.
