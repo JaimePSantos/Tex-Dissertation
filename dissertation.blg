@@ -4,45 +4,45 @@ The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
 Database file #1: dissertation.bib
 Warning--there's a number but no volume in sottinen2001
-You've used 16 entries,
+You've used 15 entries,
             2773 wiz_defined-function locations,
-            698 strings with 6970 characters,
-and the built_in function-call counts, 6972 in all, are:
-= -- 639
-> -- 289
-< -- 16
-+ -- 103
-- -- 87
-* -- 508
-:= -- 1058
-add.period$ -- 54
-call.type$ -- 16
-change.case$ -- 76
-chr.to.int$ -- 16
-cite$ -- 33
-duplicate$ -- 358
-empty$ -- 625
-format.name$ -- 109
-if$ -- 1503
+            693 strings with 6845 characters,
+and the built_in function-call counts, 6595 in all, are:
+= -- 604
+> -- 268
+< -- 15
++ -- 96
+- -- 81
+* -- 483
+:= -- 997
+add.period$ -- 50
+call.type$ -- 15
+change.case$ -- 71
+chr.to.int$ -- 15
+cite$ -- 31
+duplicate$ -- 339
+empty$ -- 595
+format.name$ -- 100
+if$ -- 1424
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 17
-newline$ -- 94
-num.names$ -- 64
-pop$ -- 143
+missing$ -- 16
+newline$ -- 88
+num.names$ -- 60
+pop$ -- 134
 preamble$ -- 1
-purify$ -- 61
+purify$ -- 57
 quote$ -- 0
-skip$ -- 275
+skip$ -- 259
 stack$ -- 0
-substring$ -- 310
-swap$ -- 53
+substring$ -- 308
+swap$ -- 52
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 171
+type$ -- 160
 warning$ -- 1
-while$ -- 63
+while$ -- 60
 width$ -- 0
-write$ -- 224
+write$ -- 210
 (There was 1 warning)

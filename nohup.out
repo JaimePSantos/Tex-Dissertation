@@ -59,3 +59,30 @@ Gdk-Message: 19:23:32.545: org.pwmt.zathura: Fatal IO error 104 (Connection rese
 
 Gdk-Message: 16:49:17.506: org.pwmt.zathura: Fatal IO error 11 (Resource temporarily unavailable) on X server :10.0.
 
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0148,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0148,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0148,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0148,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x230084,name=PBrowser::Msg_RealKeyEvent) Channel error: cannot send/recv
+
+error: could not open document
+
+error: could not open document
+
+error: could not open document
+
+error: could not open document
+
+error: could not open document
+
+error: could not open document
+
