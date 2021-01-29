@@ -35,6 +35,7 @@ This operator applies a conditional phase shift, with every computational basis 
 \begin{equation}
 	\ket{\phi} = \sum_{k=0}^{N-1} \alpha_k\ket{k}
 \end{equation}
+%TODO: Falta explicar o que e o alpha.
 the action of $\mathcal{D}$ on state $\phi$ will be
 \begin{equation}
 	\mathcal{D}\ket{\phi} = \sum_{k=0}^{N-1}(-\alpha_k + 2\langle \alpha \rangle)\ket{k}
@@ -72,7 +73,7 @@ into state $\ket{\Psi(\frac{N-2}{N}k + \frac{2(N-1)}{N}l, \frac{N-2}{N}l - \frac
 %TODO: Perceber/explicar melhor a associacao do valor de psiM com o elemento marcado.
 After the last iteration, the system will be in state $\ket{\Psi_m}$ with a certain amplitude. If that amplitude corresponds to the marked element $x_0$, then it is said that the algorithm was successful.\par
 \cite{grover1996} proves that there exists a value of $m < \sqrt{2N}$ such that the probability of success is at least $\frac{1}{2}$. However the probability of success does not linearly increase with the number of iterations, in fact for $m=\sqrt{2N}$ the system will succeed less that $1$ in $10$ times. \cite{boyer1996} argues that an explicit value of $m$ is needed, and it is achieved by finding a closed form formula for $k_j$ and $l_j$. The first step is to define an angle $\theta$ so that $\sin^2\theta = \frac{1}{N}$, and equation \ref{eq:groverKandJ1} will become
-%TODO: Perceber melhor a escolha do valor de theta. Perceber como e que a eq. groverkandj1 fica assim./
+%TODO: Perceber melhor a escolha do valor de theta. Perceber como e que a eq. groverkandj1 fica assim. A funcao seno e coseno obedecem a equacao k2 + (n-t)l2 = 1. Ver no livro do renato.
 \begin{equation}
 	\begin{cases}
 		k_{j+1} = \sin{((2j+1)\theta)} 
@@ -88,7 +89,7 @@ By definition, $(2\widetilde{m}+1)\theta = \frac{\pi}{2}$ which means that $\abs
 \begin{equation}
 	(N-1)l_m^2 = \cos^2{((2m+1)\theta)} \leq \sin^2\theta = \frac{1}{N}.
 \end{equation}
-%TODO: IMPORTANTE - Perceber e reescrever esta parte!!!
+%TODO: IMPORTANTE - Perceber e reescrever esta parte!!! Theta e aprox sin theta para pequenas oscilacoes logo fazemos esta aproximacao.
 Failure decreases as the number of elements increases. The run time of the algorithm will be
 \begin{equation}
 	m \leq \frac{\pi}{4\theta} \leq \frac{\pi}{4}\sqrt{N}
@@ -139,7 +140,7 @@ Similarly to the one solution case, it can be shown that setting the number of i
 	\label{eq:multipleMarkedIterations}
 \end{equation}\par
 %TODO: Perceber melhor o 4thetaj no inicio da pagina 3. Sera que vale a pena mencionar?
-From a more practical perspective, if one were to mark two elements of a $64$ element set, maximum probability is expected to be reached in approximately 3 steps, since $\floor{\frac{\pi}{4}\sqrt{\frac{64}{2}}} = 4$. Likewise, for $N=256$, the number of iterations is rounded to $8$, which is plotted along several other values of $N$ in figure \ref{fig:groverMultipleMarked3264128256}. The y-axis is now the sum total probability of the marked elements and the x-axis represents the range of steps that spans from $0$ to $\floor{\frac{\pi}{4}\sqrt{\frac{N}{2}}}$ for each $N$.
+From a more practical perspective, if one were to mark two elements of a $64$ element set, maximum probability is expected to be reached in approximately 4 steps, since $\floor{\frac{\pi}{4}\sqrt{\frac{64}{2}}} = 4$. Likewise, for $N=256$, the number of iterations is rounded to $8$, which is plotted along several other values of $N$ in figure \ref{fig:groverMultipleMarked3264128256}. The y-axis is now the sum total probability of the marked elements and the x-axis represents the range of steps that spans from $0$ to $\floor{\frac{\pi}{4}\sqrt{\frac{N}{2}}}$ for each $N$.
 %:TODO: Expandir a explicacao da figura, pensar no que escrever
 Again, the probability of success approaches $1$ as $N$ increases. However, comparing to figure \ref{fig:groverOneMarked163264128}, the number of iterations that maximize probability is lower for each $N$, in agreement with equation \ref{eq:multipleMarkedIterations}.
 \subsection{Single-Shot Grover}

@@ -663,6 +663,10 @@ INPUT ./img/ContQuantumWalk/Search/gamma512.png
 INPUT img/ContQuantumWalk/Search/163264.png
 INPUT ./img/ContQuantumWalk/Search/163264.png
 INPUT ./img/ContQuantumWalk/Search/163264.png
+INPUT Chapters/Chapter4/coinedQWQiskit.tex
+INPUT Chapters/Chapter4/coinedQWQiskit.tex
+INPUT img/StagQuantumWalk/stagqwMultiple.png
+INPUT ./img/StagQuantumWalk/stagqwMultiple.png
 INPUT dissertation.bbl
 INPUT dissertation.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb9o.tfm
