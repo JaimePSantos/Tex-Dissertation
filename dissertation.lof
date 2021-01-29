@@ -29,6 +29,7 @@
 \contentsline {figure}{\numberline {19}{\ignorespaces Value of the difference between the largest eigenvalue and the second largest, plotted as a function of $\gamma N$, for $N=512$. \relax }}{28}{figure.caption.18}%
 \contentsline {figure}{\numberline {20}{\ignorespaces Continuous quantum walk search for a complete graph with 16, 32 and 64 vertices.\relax }}{29}{figure.caption.19}%
 \ttl@tocsep 
+\contentsline {figure}{\numberline {21}{\ignorespaces Probability distribution for the staggered quantum walk on a line after 50 steps, with initial condition $\ket {\Psi (0)}=\frac {\ket {0}+\ket {1}}{\sqrt {2}}$, for multiple angles.\relax }}{30}{figure.caption.20}%
 \ttl@tocsep 
 \ttl@tocsep 
 \ttl@tocsep 

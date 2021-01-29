@@ -153,8 +153,7 @@ Hello!
 %TODO: explicacao de circuito do grover, livro qiskit , artigo figgat.
 %TODO: O difusor tambem tem um phase oracle.
 \section{Coined} %Fazer primeiro.
-%TODO: Coined quantum walk na linha sem busca. Ver state vector.
-%TODO: Busca na coined quantum walk.
+%TODO: 1. Recapitular a eq do incremento/decremento com base no douglas Wang. 2. Explicar o quantumwalk como incremento/decremento controlado. 3. Colocar histogramas com 1,2 e 3 steps.
 \section{Continuous}
 %TODO: Explicar transformada de fourier. Mencionar grafos circulantes.
 %TODO: Trotter.
