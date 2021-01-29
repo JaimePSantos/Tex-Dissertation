@@ -152,9 +152,8 @@ Hello!
 \section{Grover}
 %TODO: explicacao de circuito do grover, livro qiskit , artigo figgat.
 %TODO: O difusor tambem tem um phase oracle.
-\section{Coined}\label{coinedQWQiskit}
+\section{Coined} %Fazer primeiro.
 %TODO: 1. Recapitular a eq do incremento/decremento com base no douglas Wang. 2. Explicar o quantumwalk como incremento/decremento controlado. 3. Colocar histogramas com 1,2 e 3 steps.
-\subfile{Chapters/Chapter4/coinedQWQiskit}
 \section{Continuous}
 %TODO: Explicar transformada de fourier. Mencionar grafos circulantes.
 %TODO: Trotter.

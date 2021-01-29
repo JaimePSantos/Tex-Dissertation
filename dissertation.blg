@@ -2,49 +2,47 @@ This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
-A level-1 auxiliary file: Chapters/Chapter2/chap2.aux
-A level-1 auxiliary file: Chapters/Chapter3/chap3.aux
 Database file #1: dissertation.bib
-Warning--I didn't find a database entry for "BBHT96"
-You've used 11 entries,
+Warning--there's a number but no volume in sottinen2001
+You've used 15 entries,
             2773 wiz_defined-function locations,
-            665 strings with 6338 characters,
-and the built_in function-call counts, 4962 in all, are:
-= -- 445
-> -- 239
-< -- 10
-+ -- 83
-- -- 72
-* -- 369
-:= -- 754
-add.period$ -- 35
-call.type$ -- 11
-change.case$ -- 56
-chr.to.int$ -- 11
-cite$ -- 22
-duplicate$ -- 249
-empty$ -- 425
-format.name$ -- 89
-if$ -- 1063
+            693 strings with 6845 characters,
+and the built_in function-call counts, 6595 in all, are:
+= -- 604
+> -- 268
+< -- 15
++ -- 96
+- -- 81
+* -- 483
+:= -- 997
+add.period$ -- 50
+call.type$ -- 15
+change.case$ -- 71
+chr.to.int$ -- 15
+cite$ -- 31
+duplicate$ -- 339
+empty$ -- 595
+format.name$ -- 100
+if$ -- 1424
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 65
-num.names$ -- 44
-pop$ -- 109
+missing$ -- 16
+newline$ -- 88
+num.names$ -- 60
+pop$ -- 134
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 57
 quote$ -- 0
-skip$ -- 200
+skip$ -- 259
 stack$ -- 0
-substring$ -- 200
-swap$ -- 39
-text.length$ -- 2
+substring$ -- 308
+swap$ -- 52
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
-warning$ -- 0
-while$ -- 42
+type$ -- 160
+warning$ -- 1
+while$ -- 60
 width$ -- 0
-write$ -- 151
+write$ -- 210
 (There was 1 warning)
