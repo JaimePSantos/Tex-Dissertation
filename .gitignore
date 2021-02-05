@@ -1,3 +1,16 @@
 *~
 *.swp
 *.swo
+*.aux
+*.bbl
+*.log
+*.lof
+*.fls
+*.fdb*
+*.dvi
+*.log
+*.lot
+*.sty
+*.toc
+*.upa
+*.out
