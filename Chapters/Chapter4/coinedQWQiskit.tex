@@ -1,8 +1,25 @@
 \documentclass[../../dissertation.tex]{subfiles}
 \begin{document}
 
+Consider again the example of a quantum walker on a discretely numbered line. It was seen that the evolution operator associated with such a system is, as was defined in equation \ref{eq:coinedUnmarkedOperator}
+\begin{equation}
+	   U = S(C\otimes I), 
+           \label{eq:coinedUnmarkedOperatorQiskit}
+\end{equation}
+%TODO: Decidir se menciono as equacoes do shift e da coin.
+where $S$ is a shift operator, defined in equation \ref{eq:coinedShiftOperator} as 
+\begin{equation}
+          S = \ket{0}\bra{0} \otimes \sum_{x=-\infty}^{x=\infty} \ket{x+1}\bra{x} + \ket{1}\bra{1}\otimes \sum_{x=-\infty}^{x=\infty} \ket{x-1}\bra{x},
+\end{equation} 
+that increments or decrements the position of the walker according to the coin operator $C$.\par
+%TODO: Reescrever prox paragrafo.
+Previously, this system was simulated in Python by implenting it's equations. Now, the focus is to study a quantum circuit based on the work presented by \cite{douglaswang07}. This approach relies on multi-controlled C-NOT gates in order to shift the state of the walker by $+1$ or $-1$, each with a probability associated with the chosen coin, as can be seen in figure \ref{fig:douglasWangShift}. 
+
 %TODO: Decidir se ficam 3 pontos verticais.
-\begin{figure}[h]
+%TODO: Substituir todas as minipages por subfigures.
+\begin{figure}[!htb]
+	\centering
+	\begin{subfigure}[t]{0.40\textwidth}
         \[ \Qcircuit @C=1em @R=.7em {& \targ    & \qw      & \qw      & \qw      & \qw \\
         			  & 	     & 	        &          &          &  . \\
         			  & 	     & 	        &          &          &  . \\
@@ -11,12 +28,10 @@
         			  & \ctrl{-1} & \ctrl{-1} & \targ    & \qw      & \qw\\ 
         			  & \ctrl{-1} & \ctrl{-1} & \ctrl{-1} & \qw      & \qw
 			  } \]
-	\centering
 	\caption{Douglas wang increment}
 	\label{fig:coinedIncrement}
-\end{figure}
-
-\begin{figure}[h]
+	\end{subfigure}
+	\begin{subfigure}[t]{0.40\textwidth}
         \[ \Qcircuit @C=1em @R=.7em {& \targ    & \qw      & \qw      & \qw      & \qw \\
         			  & 	     & 	        &          &          &  . \\
         			  & 	     & 	        &          &          &  . \\
@@ -28,6 +43,9 @@
 	\centering
 	\caption{Douglas wang Decrement}
 	\label{fig:coinedDecrement}
+	\end{subfigure}
+	\caption{Douglas wang shift operator}
+	\label{fig:douglasWangShift}
 \end{figure}
 
 %TODO; Descobrir como separar a moeda do resto do circuito. Adicionar node e subnode?

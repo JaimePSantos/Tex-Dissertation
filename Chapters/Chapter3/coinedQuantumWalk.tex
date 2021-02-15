@@ -17,6 +17,7 @@
 
 %TODO: IMPORTANTE! Substituir as captions das figuras.
 %TODO: IMPORTANTE! Falar do espaco de hilbert. Decidir se aqui ou noutro capitulo. 
+%TODO: Este primeiro paragrafo nao esta muito bom.
 In the quantum case, the walker is a quantum system whose position on a discretely numbered line, is described by a vector $\ket{x}$ in Hilbert Space. The next position of the system will depend, in part, of a unitary operator, which can be viewed as a quantum coin.
 %TODO: \textcolor{red}{O operador unitário não é somente da moeda, precisa falar do espaço do caminhante também}
 The analogy is, if the coin is tossed and rolls "heads", for example, the system transitions to position $\ket{x+1}$, otherwise it advances to $\ket{x-1}$. From a physical perspective, this coin can be the spin of an electron or the chirality of a particle, for example, and the outcome of measuring these properties decides whether the walker moves left or right. The coin is a unitary operator defined as
@@ -51,12 +52,14 @@ The transition from $\ket{x}$ to either $\ket{x+1}$ or $\ket{x-1}$ must be descr
 that can also be described by
 \begin{equation}
 	S = \ket{0}\bra{0} \otimes \sum_{x=-\infty}^{x=\infty} \ket{x+1}\bra{x} + \ket{1}\bra{1}\otimes \sum_{x=-\infty}^{x=\infty} \ket{x-1}\bra{x}.
+	\label{eq:coinedShiftOperator}
 \end{equation}
 It follows that the operator that describes the dynamics of the quantum walk will be given by 
 %TODO: \textcolor{red}{Não necessariamente é o Hadamard, poderia ser uma coin qualquer. Você pode explicar também que a H é a sem viés.}
 %TODO: Perceber melhor a deducao do operador unitario e decidir se o demonstro aqui.
 \begin{equation}
-	U = S(C\otimes I) = S(H\otimes I). \label{coinedUnmarkedOperator}
+	U = S(C\otimes I) = S(H\otimes I). 
+	\label{eq:coinedUnmarkedOperator}
 \end{equation}\par
 Consider a quantum system located at $\ket{x = 0}$ with coin state $\ket{0}$, for $t=0$. It's state will be described by
 \begin{equation}
