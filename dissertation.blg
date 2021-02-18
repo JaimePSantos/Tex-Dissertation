@@ -5,45 +5,45 @@ The style file: plainnat.bst
 Database file #1: dissertation.bib
 Warning--empty journal in douglaswang07
 Warning--there's a number but no volume in sottinen2001
-You've used 16 entries,
+You've used 18 entries,
             2773 wiz_defined-function locations,
-            697 strings with 6946 characters,
-and the built_in function-call counts, 6957 in all, are:
-= -- 635
-> -- 289
-< -- 16
-+ -- 103
-- -- 87
-* -- 506
-:= -- 1054
-add.period$ -- 53
-call.type$ -- 16
-change.case$ -- 76
-chr.to.int$ -- 16
-cite$ -- 34
-duplicate$ -- 358
-empty$ -- 625
-format.name$ -- 109
-if$ -- 1499
+            713 strings with 7402 characters,
+and the built_in function-call counts, 8127 in all, are:
+= -- 734
+> -- 383
+< -- 17
++ -- 135
+- -- 117
+* -- 615
+:= -- 1246
+add.period$ -- 62
+call.type$ -- 18
+change.case$ -- 92
+chr.to.int$ -- 18
+cite$ -- 38
+duplicate$ -- 398
+empty$ -- 700
+format.name$ -- 141
+if$ -- 1734
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 17
-newline$ -- 93
-num.names$ -- 64
-pop$ -- 146
+missing$ -- 19
+newline$ -- 106
+num.names$ -- 72
+pop$ -- 174
 preamble$ -- 1
-purify$ -- 61
+purify$ -- 75
 quote$ -- 0
-skip$ -- 275
+skip$ -- 308
 stack$ -- 0
-substring$ -- 310
-swap$ -- 52
+substring$ -- 347
+swap$ -- 55
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 171
+type$ -- 193
 warning$ -- 2
-while$ -- 63
+while$ -- 70
 width$ -- 0
-write$ -- 221
+write$ -- 252
 (There were 2 warnings)
