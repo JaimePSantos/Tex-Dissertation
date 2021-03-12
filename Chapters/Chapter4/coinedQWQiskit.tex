@@ -79,9 +79,6 @@ In order to run this circuit on a real quantum computer using Qiskit, one must f
 	U = \phi AXBXC,
 \end{equation}
 where $ABC=I$, $X$ is the Pauli-X and $\phi$ is a phase operator described by $\phi=e^{i\delta} \times I$.\par
-In order to understand this method, a good first example is the Toffoli gate, as is shown in figure \ref{fig:toffoliDecompCircuit}. 
-%TODO: Explicar a decomposicao da cnot? Ver a dissertacao.
-%TODO: Target nao fica alinhado com as unitarias.
 \begin{figure}[!h]
 	\[ \Qcircuit @C=1em @R=1em { & \ctrl{2} & \qw & \\
 			&\ctrl{1} &\qw & = &  \\
@@ -95,6 +92,9 @@ In order to understand this method, a good first example is the Toffoli gate, as
 	\caption{Toffoli decomposition}
 	\label{fig:toffoliDecompCircuit}
 \end{figure}
+In order to understand this method, a good first example is the Toffoli gate, as is shown in figure \ref{fig:toffoliDecompCircuit}. 
+%TODO: Explicar a decomposicao da cnot? Ver a dissertacao.
+%TODO: Target nao fica alinhado com as unitarias.
 %TODO: Reescrever isto. A primeira rotacao nao e Rz.
 The first rotation in the circuit is defined by the $R_z$ matrix 
 \begin{equation}
@@ -117,9 +117,9 @@ and $\phi = \frac{\pi}{2}$. The following rotations are simply $R_z^\dagger$ and
 		0 & e^{i\delta}
 		 \end{pmatrix}
 \end{equation}
-where $\delta = -\frac{\pi}{2}$. This phase correction is needed because otherwise
+where $\delta = -\frac{\pi}{2}$. This phase correction is considered because otherwise
 \begin{equation}
-	R_z(\frac{\pi}{2})R_y(\frac{\pi}{2})XR_y(-\frac{\pi}{2})R_z(-\frac{\pi}{2}) = 
+	R_z(\frac{\pi}{2})R_y(\frac{\pi}{2})XR_y(-\frac{\pi}{2})XR_z(-\frac{\pi}{2}) = 
 	\begin{pmatrix}
 		0 & -i \\
 		-i & 0
@@ -171,13 +171,44 @@ A more generalized version of this method can be seen in figure \ref{fig:general
 	\caption{General decomposition}
 	\label{fig:generalDecompCircuit}
 \end{figure}
-This was the chosen method because it provides a way of implementing arbitrarily controlled CNOT gates without the use of ancillary qubits, which are a scarce resource.
+This was the chosen method because it provides a way of implementing arbitrarily controlled CNOT gates without the use of ancillary qubits, which are a scarce resource.\par
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.40]{img/Qiskit/CoinedQuantumWalk/CoinedQW_N3_S0123.png}
-	\caption{Probability distribution for the staggered quantum walk on a line after 50 steps, with initial condition $\ket{\Psi(0)}=\frac{\ket{0}+\ket{1}}{\sqrt{2}}$, for multiple angles.} 
-	\label{fig:fig5}
+	\includegraphics[scale=0.35]{img/Qiskit/CoinedQuantumWalk/Circuits/circCoinedQW_N3_S3.png}
+	\caption{Temp} 
+	\label{fig:coinedQWCircuitQistkit}
 \end{figure}
+
+This circuit was implemented in Qiskit, as can be seen in figure \ref{fig:coinedQWCircuitQistkit}. In this example, the increment and decrement sequence was applied three times on a graph of size $2^3 =8$ nodes. The starting position of the walker was set to $\Psi(0) = \ket{4}$ and the Hadamard coin was used. The first block after the barrier is the sequence of operations that will increment the state of the walker, as is shown in figure \ref{fig:incrCircuitQistkit}. The circuit is simply the CNOT decomposition of figure \ref{fig:generalDecompCircuit} applied to the increment circuit of figure \ref{fig:coinedIncrement} for the $N=4$, qubit case.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{img/Qiskit/CoinedQuantumWalk/Circuits/circIncr_N3_S3.png}
+	\caption{Temp} 
+	\label{fig:incrCircuitQistkit}
+\end{figure}
+The following block represents the decrement of the state of the walker, which is just an increment block with it's controls negated as is shown in figure \ref{fig:decrCircuitQistkit}. The rest of the circuit is just the repetition of these operations as a function of the number of time steps required.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{img/Qiskit/CoinedQuantumWalk/Circuits/circDecr_N3_S3.png}
+	\caption{Temp} 
+	\label{fig:decrCircuitQistkit}
+\end{figure}
+Lastly, the circuit is measured and the results can be seen in figure \ref{fig:coinedQWQiskitDist}.These results can be verified by calculating the time evolution of the wave function associated with the system
+\begin{gather}
+	\ket{\Psi(0)} = \ket{4}\\
+	\ket{\Psi(1)} = \frac{\ket{0}\ket{x=3}+\ket{1}\ket{x=5}}{\sqrt{2}}\label{eq:10} \\
+	\ket{\Psi(2)} = \frac{\ket{0}\ket{x=2}+\ket{1}\ket{x=4}+\ket{0}\ket{x=4}-\ket{1}\ket{x=6}}{2}\\ \label{eq:11}
+	\ket{\Psi(3)} = \frac{\ket{1}\ket{x=1}-\ket{0}\ket{x=3}+2(\ket{0}+\ket{1})\ket{x=5}+\ket{0}\ket{x=7}}{2\sqrt{2}}.\label{eq:12}
+\end{gather}
+Taking the modulus squared of the amplitudes associated with the states, confirms that the probability distribution presented in figure \ref{fig:coinedQWQiskitDist} is correct. 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.40]{img/Qiskit/CoinedQuantumWalk/CoinedQW_N3_S0123.png}
+	\caption{Temp} 
+	\label{fig:coinedQWQiskitDist}
+\end{figure}
+%TODO: Pensar numa conclusao para esta seccao. Talvez por N=5? Explicar cada passo de N=5 nao e fazivel.
 
 \end{document}
