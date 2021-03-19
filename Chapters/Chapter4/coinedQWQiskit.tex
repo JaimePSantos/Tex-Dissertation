@@ -1,5 +1,5 @@
 \documentclass[../../dissertation.tex]{subfiles}
-\begin{document}
+\begin{Document}
 
 Consider the example of a quantum walker on a discretely numbered cycle. It was seen that the evolution operator associated with such a system is, as was defined in equation \ref{eq:coinedUnmarkedOperator}
 \begin{equation}
@@ -179,6 +179,7 @@ This was the chosen method because it provides a way of implementing arbitrarily
 	\caption{Temp} 
 	\label{fig:coinedQWCircuitQistkit}
 \end{figure}
+%TODO: Fazer um bloco para condicao init.
 
 This circuit was implemented in Qiskit, as can be seen in figure \ref{fig:coinedQWCircuitQistkit}. In this example, the increment and decrement sequence was applied three times on a graph of size $2^3 =8$ nodes. The starting position of the walker was set to $\Psi(0) = \ket{4}$ and the Hadamard coin was used. The first block after the barrier is the sequence of operations that will increment the state of the walker, as is shown in figure \ref{fig:incrCircuitQistkit}. The circuit is simply the CNOT decomposition of figure \ref{fig:generalDecompCircuit} applied to the increment circuit of figure \ref{fig:coinedIncrement} for the $N=4$, qubit case.
 \begin{figure}[!h]
@@ -198,9 +199,9 @@ The following block represents the decrement of the state of the walker, which i
 Lastly, the circuit is measured and the results can be seen in figure \ref{fig:coinedQWQiskitDist}.These results can be verified by calculating the time evolution of the wave function associated with the system
 \begin{gather}
 	\ket{\Psi(0)} = \ket{4}\\
-	\ket{\Psi(1)} = \frac{\ket{0}\ket{x=3}+\ket{1}\ket{x=5}}{\sqrt{2}}\label{eq:10} \\
-	\ket{\Psi(2)} = \frac{\ket{0}\ket{x=2}+\ket{1}\ket{x=4}+\ket{0}\ket{x=4}-\ket{1}\ket{x=6}}{2}\\ \label{eq:11}
-	\ket{\Psi(3)} = \frac{\ket{1}\ket{x=1}-\ket{0}\ket{x=3}+2(\ket{0}+\ket{1})\ket{x=5}+\ket{0}\ket{x=7}}{2\sqrt{2}}.\label{eq:12}
+	\ket{\Psi(1)} = \frac{\ket{0}\ket{x=3}+\ket{1}\ket{x=5}}{\sqrt{2}} \\
+	\ket{\Psi(2)} = \frac{\ket{0}\ket{x=2}+\ket{1}\ket{x=4}+\ket{0}\ket{x=4}-\ket{1}\ket{x=6}}{2}\\
+	\ket{\Psi(3)} = \frac{\ket{1}\ket{x=1}-\ket{0}\ket{x=3}+2(\ket{0}+\ket{1})\ket{x=5}+\ket{0}\ket{x=7}}{2\sqrt{2}}.
 \end{gather}
 Taking the modulus squared of the amplitudes associated with the states, confirms that the probability distribution presented in figure \ref{fig:coinedQWQiskitDist} is correct. 
 \begin{figure}[!h]
@@ -210,5 +211,6 @@ Taking the modulus squared of the amplitudes associated with the states, confirm
 	\label{fig:coinedQWQiskitDist}
 \end{figure}
 %TODO: Pensar numa conclusao para esta seccao. Talvez por N=5? Explicar cada passo de N=5 nao e fazivel.
+%TODO: Implementar nos computadores da IBM e fazer cnot em func dos steps.
 
 \end{document}
