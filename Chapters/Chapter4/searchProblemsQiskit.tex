@@ -1,7 +1,21 @@
 \documentclass[../../dissertation.tex]{subfiles}
-%\begin{Document}
+\begin{document}
 
 \subsection{Grover}
+Like it was seen in section \ref{sec:chapGrover} Grover's algorithm is a tool that provides quadratic speedups to unstructured search problems. The routine consists on applying an oracle
+\begin{equation}
+        \mathcal{O}\ket{x} = (-1)^{f(x)}\ket{x},
+\end{equation}\par
+that flips the solution states followed by an amplitude amplification process by means of the diffusion operator 
+\begin{equation}
+        %TODO: Decidir se mantenho os H's.
+        \mathcal{D} = (2\ket{\Psi_0}\bra{\Psi_0} - I) = H^{\otimes n}(2\ket{0}\bra{0} - I)H^{\otimes n},
+\end{equation}
+where $\ket{\Psi_0}  = \frac{1}{\sqrt{N}}\sum_{x=0}^{N-1} \ket{x}$. The unitary operator that describes the algorithm will then be
+\begin{equation}
+        \mathcal{U} = \mathcal{D}\mathcal{O}.
+\end{equation}
+As was before mentioned, this evolution will be done several times, depending on the number of qubit.Optimal probability of success finding a single solution will be reached after approximately $\sqrt{N}$ steps, and $\sqrt{\frac{N}{K}}$ for $K$ solutions.
 
 %\begin{figure}[!h]
 %	\centering
@@ -23,4 +37,4 @@
 \subsection{Continuous}
 \subsection{Staggered}
 
-%\end{Document}
+\end{document}
