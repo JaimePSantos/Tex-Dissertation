@@ -69,7 +69,7 @@ where $\Lambda$ is a diagonal operator that encodes the eigenvalues
 \end{equation}\par
 %TODO: Mostrar o raciocinio da algebra.
 The unitary operator of the walk can then be rewritten as
-\begin{equation}\label{eq:uqft}
+\begin{equation}\label{eq:diagUniOpCont}
     U = F^{\dagger}e^{i\gamma \Lambda t} F
 \end{equation}
 where
@@ -77,25 +77,44 @@ where
     e^{i\gamma \Lambda t} = \sum_{j} e^{i\gamma \lambda_j t} \ket{j}\bra{j}.
 \end{equation}\par
 %TODO: Explicar a diagonal()?
-The circuit can now be constructed making use of the \textit{diagonal} function provided by Qiskit, which decomposes diagonal operators based on the method presented in theorem 7 of \cite{Shende06}. The other tool used was the Quantum Fourier Transform, also provided by the Qiskit package. Figure 
+The circuit can now be constructed making use of the \textit{diagonal} function provided by Qiskit, which decomposes diagonal operators based on the method presented in theorem 7 of \cite{Shende06}. The other tool used was the Quantum Fourier Transform, also provided by the Qiskit package. Figure \ref{fig:contQWCircuitQistkit} shows the implementation of the circuit for 3 qubits or $2^3=8$ graph nodes and $t=3$.
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.35]{img/Qiskit/ContQuantumWalk/Circuits/circContQW_N3_S1.png}
+	\includegraphics[scale=0.30]{img/Qiskit/ContQuantumWalk/Circuits/circContQW_N3_S1.png}
 	\caption{Temp} 
 	\label{fig:contQWCircuitQistkit}
 \end{figure}
+%TODO: Perceber como explicar a QFT.
+The circuit for the Quantum Fourier transform is well known and presented in figure \ref{fig:qftCircuitQiskit}. The circuit associated with $F^{\dagger}$ is similarly constructed by negating the previous figure's rotations.\par
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.30]{img/Qiskit/ContQuantumWalk/Circuits/circQft_N3_S1.png}
+	\caption{Temp} 
+	\label{fig:qftCircuitQiskit}
+\end{figure}
+The circuit associated with the diagonal operator is show in figure \ref{fig:diagCircuitQiskit}. Furthermore equation \ref{eq:diagUniOpCont} says that time is simply a constant inside the exponential, which means that the diagonal operator's circuit will not need extra gates when increasing time, it will only need different rotations and differ in global phase. 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.30]{img/Qiskit/ContQuantumWalk/Circuits/circDiag_N3_S1.png}
+	\caption{temp}
+	\label{fig:diagCircuitQiskit}
+\end{figure}
+This is an advantage when comparing to the previous model, seen in figure \ref{fig:coinedQWCircuitQistkit}, where each extra step required another increment and decrement gates.  Further evidence of this behaviour can be seen in figure \ref{fig:gateCountQiskit}, where it was created a circuit for $t=0$ up to $t=100$ with increments of $1$. It was then counted the number of gates, for each circuit, and plotted against the respective time. 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{img/Qiskit/ContQuantumWalk/gateCount_N3.png}
+	\caption{Temp} 
+	\label{fig:gateCountQiskit}
+\end{figure}
+%TODO: Acabar analise de resultados!!
+This graph clearly shows that both the number of $R_z$ rotations and CNot operations remain constant throughout the entire time interval.\par
+Finally, the circuit was measured, and the result can be seen in figure \ref{fig:contQWQiskitDist} 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{img/Qiskit/ContQuantumWalk/ContQW_N3_S0123.png}
+	\caption{Temp} 
+	\label{fig:contQWQiskitDist}
+\end{figure}
 
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.40]{img/Qiskit/ContQuantumWalk/Circuits/circQft_N3_S1.png}
-	\caption{Temp} 
-	\label{fig:qftCircuitQistkit}
-\end{figure}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.40]{img/Qiskit/ContQuantumWalk/Circuits/circDiag_N3_S1.png}
-	\caption{Temp} 
-	\label{fig:diagCircuitQistkit}
-\end{figure}
 \end{document}
