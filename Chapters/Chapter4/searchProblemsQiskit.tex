@@ -2,37 +2,58 @@
 \begin{document}
 
 \subsection{Grover}
-Like it was seen in section \ref{sec:chapGrover} Grover's algorithm is a tool that provides quadratic speedups to unstructured search problems. The routine consists on applying an oracle
+Like it was seen in section \ref{sec:chapGrover}, Grover's algorithm is a quantum alternative to unstructured search problems. Consider the case of finding element $x_0$ out of an unordered list of size $N$. Worst case scenario, a classical algorithm would need to check every element of the list, requiring $N$ steps.\par
+The first stage of Grover's algorithm is to create an uniform superposition of all states in the system
 \begin{equation}
-        \mathcal{O}\ket{x} = (-1)^{f(x)}\ket{x},
-\end{equation}\par
-that flips the solution states, followed by an amplitude amplification process by means of the diffusion operator 
+	\ket{\Psi_0}  = \frac{1}{\sqrt{N}}\sum_{x=0}^{N-1} \ket{x}.
+\end{equation}
+Next is the application of the Grover iteration process, which starts with an oracle that adds a negative phase to the solution states
+\begin{equation}
+        \mathcal{O}\ket{x} = (-1)^{f(x)}\ket{x}.
+\end{equation}
+This operator can be seen as an identity matrix with negative entries corresponding to the solution states, and the operator can be rewritten as 
+%TODO: Reescrever com o somatorio dos estados marcados?
+\begin{equation}
+	\mathcal{O} = I - 2\ket{x_0}\bra{x_0}.
+	\label{eq:groverQiskitOracle}
+\end{equation}
+where $I$ is the identity matrix and $x_0$ is the solution state.
+ and ends with an amplitude amplification process by means of the diffusion operator 
 \begin{equation}
         %TODO: Decidir se mantenho os H's.
-        \mathcal{D} = (2\ket{\Psi_0}\bra{\Psi_0} - I) = H^{\otimes n}(2\ket{0}\bra{0} - I)H^{\otimes n},
+        \mathcal{D} = (2\ket{\Psi_0}\bra{\Psi_0} - I) = H^{\otimes n}(2\ket{0}\bra{0} - I)H^{\otimes n}.
+	\label{eq:groverQiskitDiffusion}
 \end{equation}
-where $\ket{\Psi_0}  = \frac{1}{\sqrt{N}}\sum_{x=0}^{N-1} \ket{x}$. The unitary operator that describes the algorithm will then be
+The unitary operator that describes the Grover iteration process will then be
 \begin{equation}
         \mathcal{U} = \mathcal{D}\mathcal{O}.
-\end{equation}
+\end{equation}\par
 %TODO: Se calhar desenhar o circuito sem ser no qiskit onde e obvio que se aplicam as cenas varias vezes?
-As was before mentioned, this evolution will be done several times, depending on the number of elements. Optimal probability of success finding a single solution will be reached after approximately $\sqrt{N}$ steps, and $\sqrt{\frac{N}{K}}$ for $K$ solutions. Consider the $3$ qubit case, where $N=8$, with $3$ iterations, as shown in figure \ref{fig:groverCircuitQistkit}.
+As was shown in section \ref{sec:chapGrover} this iteration process will be done several times, depending on the number of elements. Optimal probability of success finding a single solution will be reached after $\floor{\frac{\pi}{4}\sqrt{N}}$ steps, and $\floor{\frac{\pi}{4}\sqrt{\frac{N}{K}}}$ for $K$ solutions, which is a quadratic gain when compared to the classical case.\par
+
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.30]{img/Qiskit/GroverQiskit/Circuits/GroverQiskitCirc_N3_M4_S3.png}
 	\caption{Temp}
 	\label{fig:groverCircuitQistkit}
 \end{figure}\par
-%TODO: Escrever mais
-The oracle circuit is shown in figure \ref{fig:groverOracleCircuitQistkit}. 
+Consider the $3$ qubit case, where $N=8$ and solution state $\ket{4}$. The optimal number of iterations is approximately $2$, and figure \ref{fig:groverCircuitQistkit} is the circuit for $3$ iterations.
+
+%TODO:Melhorar 
+The system starts with the creation of an uniform superposition state, which means applying Hadamard gates to each qubit. Then, immediately following the barrier, the first operator of the iteration process is the oracle, which is shown in figure \ref{fig:groverOracleCircuitQistkit}. 
+Because the oracle operator is simply the identity matrix with negative entries corresponding to the solution states, it can be simply translated into a circuit by means of the diagonal function in Qiskit. The last part of the iteration is the diffusion operator, whose circuit is shown in figure \ref{fig:groverDiffCircuitQistkit}.
+
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.30]{img/Qiskit/GroverQiskit/Circuits/GroverQiskitCircOracle_N3_M4_S3.png}
 	\caption{Temp}
 	\label{fig:groverOracleCircuitQistkit}
-\end{figure}\par
-%TODO Escrever mais
-The diffusion circuit is shown in figure \ref{fig:groverDiffCircuitQistkit}
+\end{figure}
+\par
+
+%TODO Isto esta muito fraco. 
+Comparing equations \ref{eq:groverQiskitOracle} and \ref{eq:groverQiskitDiffusion}, it is easy to see why figures \ref{fig:groverOracleCircuitQistkit} and \ref{fig:groverDiffCircuitQistkit} are very similar. The diffusion circuit will simply be the oracle circuit for state $\ket{0}$ in between Hadamard operations.
+
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.30]{img/Qiskit/GroverQiskit/Circuits/GroverQiskitCircDiff_N3_M4_S3.png}
