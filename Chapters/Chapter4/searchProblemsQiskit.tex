@@ -117,8 +117,6 @@ Consider the case of a complete graph, where every vertex is adjacent to one ano
 	\caption{Douglas wang coined quantum walk circuit}
 	\label{fig:coinedSearchCircuit}
 \end{figure}
-\par
-This was implemented in Qiskit, for a graph of size $N=2^3=8$, which means $6$ qubits will be required. 
 %\begin{figure}[!h]
 %	\[ \Qcircuit @C=1em @R=2.0em { &\lstick{\ket{qv}} & {/} \qw & \qw & \qswap & \qw &\qw & \qw \\
 %				      &\lstick{\ket{qc}} & {/} \qw & \qw & \qswap \qwx & \qw  & \qw & \qw 
@@ -128,6 +126,38 @@ This was implemented in Qiskit, for a graph of size $N=2^3=8$, which means $6$ q
 %	\label{fig:coinedSearchShiftCircuit}
 %\end{figure}
 %
+\par
+This was implemented in Qiskit, for a graph of size $N=2^3=8$, which means $6$ qubits will be required. For the case of one marked element, the number of iterations that maximizes the amplitude of the solution state is $\floor{\frac{\pi}{2} \sqrt{N}}$, and figure \ref{fig:coinedQWSearchCircuitQistkit}
+shows the circuit for 5 iterations of the walk.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.27]{img/Qiskit/CoinedQuantumWalk/Search/Circuits/CoinedSearchQiskitCirc_N3_M0_S5.png}
+	\caption{Temp} 
+	\label{fig:coinedQWSearchCircuitQistkit}
+\end{figure}\par
+The circuit starts in a uniform superposition of the states corresponding to the vertices of the graph, and the first step of the iteration is the oracle. This operator will flip the amplitude of the vertex state $\ket{4}$, as is shown in figure \ref{fig:coinedQWSearchOracleCircuitQistkit}. It is the same operator as in figure \ref{}, but applied only to states belonging in the position space of the walk.\par
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.27]{img/Qiskit/CoinedQuantumWalk/Search/Circuits/CoinedSearchQiskitCircOracle_N3_M4_S5.png}
+	\caption{Temp} 
+	\label{fig:coinedQWSearchOracleCircuitQistkit}
+\end{figure}\par
+
+The states associated with the coin space of the walk will be transformed according to Grover's diffusion, as is seen in figure \ref{fig:coinedQWSearchDiffCircuitQistkit}.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.27]{img/Qiskit/CoinedQuantumWalk/Search/Circuits/CoinedSearchQiskitCircDiff_N3_M4_S5.png}
+	\caption{Temp} 
+	\label{fig:coinedQWSearchDiffCircuitQistkit}
+\end{figure}\par
+The final part of the iteration is the shift operator, as can be seen in figure \ref{fig:coinedQWSearchShiftCircuitQistkit}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.27]{img/Qiskit/CoinedQuantumWalk/Search/Circuits/CoinedSearchQiskitCircShift_N3_M4_S5.png}
+	\caption{Temp} 
+	\label{fig:coinedQWSearchShiftCircuitQistkit}
+\end{figure}
 %\begin{figure}[!h]
 %	\centering
 %	\includegraphics[scale=0.40]{img/Qiskit/CoinedQuantumWalk/Search/CoinedQiskitSearch_N4_M1_S01234}
