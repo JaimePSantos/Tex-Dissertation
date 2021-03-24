@@ -83,13 +83,50 @@ The results of measurement are shown in figure \ref{fig:groverQiskitDist}. As wa
 As previously done in section \ref{sec:chap3CoinedSearch}, this chapter aims to expand the coined quantum walk model incorporating concepts like the oracle and diffusion operator of the Grover algorithm. In fact, for the complete graph case, the coined qua::ntum walk and Grover's algorithm are equivalent.\par
 The unitary evolution operator is
 \begin{equation}
-        U' = S (\mmathcal{O} \otimes G),\label{eq:modifiedEvoCoinedQiskit}
+        U' = S (\mathcal{O} \otimes G),\label{eq:modifiedEvoCoinedQiskit}
 \end{equation}
 %TODO: Relembrar equacoes para cada um dos operadores? Parece me desnecessario.
 as was defined in equation \ref{eq:modifiedEvoCoined}, where $S$ is the flip-flop shift operator, $\mathcal{O}$ is the oracle operator and $G$ is the Grover diffusion as a coin operator.\par
-Considering the case of a complete graph with size $N=2^3=8$, the circuit will be as in figure
+Consider the case of a complete graph, where every vertex is adjacent to one another. The quantum circuit to implement this, as shown in figure \ref{fig:coinedSearchCircuit}, will require $N$ qubits to represent the state of the walker and $N$ qubits for the state of the coin.  The shift operator was constructed based on the work of \cite{douglaswang07}, where the state of the walker is flip-flopped with the state of the coin, which can be done through swap gates.
+%\begin{figure}[!h]
+%	\[ \Qcircuit @C=1em @R=0em { &\qw & \multigate{2}{Oracle} & \qw &\multigate{5}{Shift} & \qw \\
+%				     &\qw & \ghost{Oracle} & \qw  & \ghost{Shift} & \qw \\
+%               			     &\qw & \ghost{Oracle} & \qw & \ghost{Shift} & \qw \\ 
+%				     &\qw & \qw & \multigate{2}{Diff} & \ghost{Shift} & \qw \\
+%            			     &\qw & \qw & \ghost{Diff} & \ghost{Shift} & \qw \\ 
+%            			     &\qw & \qw & \ghost{Diff} & \ghost{Shift} & \qw  
+%		          } \]
+%	\centering
+%	\caption{Douglas wang coined quantum walk circuit}
+%	\label{fig:coinedSearchCircuit}
+%\end{figure}
+%\begin{figure}[!h]
+%	\[ \Qcircuit @C=1em @R=1.0em { &\lstick{\ket{qv}} & {/} \qw &\gate{H^{\otimes n}}  & \gate{O^{\otimes n}} & \qw &\multigate{1}{Shift^{\otimes 2n}} & \qw \\
+%				     &\lstick{\ket{qc}}& \qw &{/} \qw & \gate{G^{\otimes n}}& \qw  & \ghost{Shift^{\otimes 2n}} & \qw 
+%		          } \]
+%	\centering
+%	\caption{Douglas wang coined quantum walk circuit}
+%	\label{fig:coinedSearchCircuit}
+%\end{figure}
 
-the shift operator will no longer be described by a succession of increment and decrement gates. 
+\begin{figure}[!h]
+	\[ \Qcircuit @C=1em @R=1.0em { &\lstick{\ket{qv}} & {/} \qw &\gate{H^{\otimes n}}  & \gate{O^{\otimes n}} & \qw &\qswap & \qw &\qw  \\
+				     &\lstick{\ket{qc}}& \qw &{/} \qw & \gate{G^{\otimes n}}& \qw  &\qswap \qwx& \qw &\qw
+		          } \]
+	\centering
+	\caption{Douglas wang coined quantum walk circuit}
+	\label{fig:coinedSearchCircuit}
+\end{figure}
+\par
+This was implemented in Qiskit, for a graph of size $N=2^3=8$, which means $6$ qubits will be required. 
+%\begin{figure}[!h]
+%	\[ \Qcircuit @C=1em @R=2.0em { &\lstick{\ket{qv}} & {/} \qw & \qw & \qswap & \qw &\qw & \qw \\
+%				      &\lstick{\ket{qc}} & {/} \qw & \qw & \qswap \qwx & \qw  & \qw & \qw 
+%		          } \]
+%	\centering
+%	\caption{Douglas wang coined quantum walk circuit}
+%	\label{fig:coinedSearchShiftCircuit}
+%\end{figure}
 %
 %\begin{figure}[!h]
 %	\centering
