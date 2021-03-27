@@ -17,7 +17,7 @@ This operator can be seen as an identity matrix with negative entries correspond
 	\mathcal{O} = I - 2\sum_{m\in M} \ket{m}\bra{m}.
 	\label{eq:groverQiskitOracle}
 \end{equation}
-where $I$ is the identity matrix and $M$ is a set of solutions where $f(m) = -1$. The matrix associated with this operator will be
+where $I$ is the identity matrix and $M$ is a set of solutions where $f(m) = 1$, otherwise it's $0$. The matrix associated with this operator will be
 \begin{equation}
 	\mathcal{O} = 
 	\begin{pmatrix}
@@ -81,7 +81,7 @@ The results of measurement are shown in figure \ref{fig:groverQiskitDist}. As wa
 %
 \subsection{Coined}
 As previously done in section \ref{sec:chap3CoinedSearch}, this chapter aims to expand the coined quantum walk model incorporating concepts like the oracle and diffusion operator of the Grover algorithm. In fact, for the complete graph case, the coined qua::ntum walk and Grover's algorithm are equivalent.\par
-The unitary evolution operator is
+The modified unitary evolution operator is
 \begin{equation}
         U' = S (\mathcal{O} \otimes G),\label{eq:modifiedEvoCoinedQiskit}
 \end{equation}
@@ -135,35 +135,43 @@ shows the circuit for 5 iterations of the walk.
 	\caption{Temp} 
 	\label{fig:coinedQWSearchCircuitQistkit}
 \end{figure}\par
-The circuit starts in a uniform superposition of the states corresponding to the vertices of the graph, and the first step of the iteration is the oracle. This operator will flip the amplitude of the vertex state $\ket{4}$, as is shown in figure \ref{fig:coinedQWSearchOracleCircuitQistkit}. It is the same operator as in figure \ref{}, but applied only to states belonging in the position space of the walk.\par
+The circuit starts in a uniform superposition of the states corresponding to the vertices of the graph, and the first step of the iteration is the oracle. This operator will flip the amplitude of the vertex state $\ket{4}$, as is shown in figure \ref{fig:coinedQWSearchOracleCircuitQistkit}. It is the same operator as in figure \ref{fig:groverOracleCircuitQistkit}, but applied only to states belonging in the position space of the walk.
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.27]{img/Qiskit/CoinedQuantumWalk/Search/Circuits/CoinedSearchQiskitCircOracle_N3_M4_S5.png}
+	\includegraphics[scale=0.30]{img/Qiskit/CoinedQuantumWalk/Search/Circuits/CoinedSearchQiskitCircOracle_N3_M4_S5.png}
 	\caption{Temp} 
 	\label{fig:coinedQWSearchOracleCircuitQistkit}
 \end{figure}\par
-
+%TODO: Reescrever
 The states associated with the coin space of the walk will be transformed according to Grover's diffusion, as is seen in figure \ref{fig:coinedQWSearchDiffCircuitQistkit}.
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.27]{img/Qiskit/CoinedQuantumWalk/Search/Circuits/CoinedSearchQiskitCircDiff_N3_M4_S5.png}
+	\includegraphics[scale=0.30]{img/Qiskit/CoinedQuantumWalk/Search/Circuits/CoinedSearchQiskitCircDiff_N3_M4_S5.png}
 	\caption{Temp} 
 	\label{fig:coinedQWSearchDiffCircuitQistkit}
 \end{figure}\par
-The final part of the iteration is the shift operator, as can be seen in figure \ref{fig:coinedQWSearchShiftCircuitQistkit}
+The final part of the iteration is the shift operator, as can be seen in figure \ref{fig:coinedQWSearchShiftCircuitQistkit}. The flip-flop shift operator was defined in equation \ref{eq:chap3FlipFlop} as 
+\begin{equation}
+        S\ket{v1}\ket{v2} = \ket{v2}\ket{v1},
+        \label{eq:chap4FlipFlop}
+\end{equation}
+where $\ket{v1}$ represents the position of the walker and $\ket{v2}$ is the state of the coin. It is trivial to implement this as shift operations between the vertex states and coin states.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.27]{img/Qiskit/CoinedQuantumWalk/Search/Circuits/CoinedSearchQiskitCircShift_N3_M4_S5.png}
 	\caption{Temp} 
 	\label{fig:coinedQWSearchShiftCircuitQistkit}
+\end{figure}\par
+%TODO: Estudar porque e que a dist muda logo para 0 (diffusion) em steps = 5
+%TODO: Melhorar texto.
+Lastly, measurements were performed, and the results plotted in figure \ref{fig:coinedSearchQiskitDist}. Maximum probability of the marked element was reached after $4$ steps, and extra steps reduce said probability. 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.40]{img/Qiskit/CoinedQuantumWalk/Search/CoinedQiskitSearch_N3_M4_S0245}
+	\caption{Temp } 
+	\label{fig:coinedSearchQiskitDist}
 \end{figure}
-%\begin{figure}[!h]
-%	\centering
-%	\includegraphics[scale=0.40]{img/Qiskit/CoinedQuantumWalk/Search/CoinedQiskitSearch_N4_M1_S01234}
-%	\caption{Probability distribution for the staggered quantum walk on a line after 50 steps, with initial condition $\ket{\Psi(0)}=\frac{\ket{0}+\ket{1}}{\sqrt{2}}$, for multiple angles.} 
-%	\label{fig:fig5}
-%\end{figure}
 
 %TODO: Fazer com outra moeda usando u3 com valores intermedios entre pi/2 ou pi/4
 \subsection{Continuous}
