@@ -70,17 +70,18 @@ Because the oracle operator is simply the identity matrix with negative entries 
 %TODO Isto esta muito fraco. 
 Comparing equations \ref{eq:groverQiskitOracle} and \ref{eq:groverQiskitDiffusion}, it is easy to see why figures \ref{fig:groverOracleCircuitQistkit} and \ref{fig:groverDiffCircuitQistkit} are very similar. The diffusion circuit will simply be the oracle circuit for state $\ket{0}$ in between Hadamard operations.
 
-%TODO: Escrever mais
-The results of measurement are shown in figure \ref{fig:groverQiskitDist}. As was expected, maximum probability for the marked element was reached after $2$ iterations and it decreases in subsequent steps.
+
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.40]{img/Qiskit/GroverQiskit/GroverQiskitSearch_N3_M4_S0123}
 	\caption{Temp}
 	\label{fig:groverQiskitDist}
 \end{figure}
-%
+%TODO: Escrever mais
+The results of measurement are shown in figure \ref{fig:groverQiskitDist}. As was expected, maximum probability for the marked element was reached after $2$ iterations and it decreases in subsequent steps.
+
 \subsection{Coined}
-As previously done in section \ref{sec:chap3CoinedSearch}, this chapter aims to expand the coined quantum walk model incorporating concepts like the oracle and diffusion operator of the Grover algorithm. In fact, for the complete graph case, the coined qua::ntum walk and Grover's algorithm are equivalent.\par
+As previously done in section \ref{sec:chap3CoinedSearch}, this chapter aims to expand the coined quantum walk model incorporating concepts like the oracle and diffusion operator of the Grover algorithm. In fact, for the complete graph case, the coined quantum walk and Grover's algorithm are equivalent.\par
 The modified unitary evolution operator is
 \begin{equation}
         U' = S (\mathcal{O} \otimes G),\label{eq:modifiedEvoCoinedQiskit}
@@ -175,6 +176,73 @@ Lastly, measurements were performed, and the results plotted in figure \ref{fig:
 
 %TODO: Fazer com outra moeda usando u3 com valores intermedios entre pi/2 ou pi/4
 \subsection{Continuous}
+As was seen in section \ref{sec:chap3ContSearch}, the unitary operator associated with the continuous time quantum walk model can be modified as to mark an element for amplitude amplification
+\begin{equation}
+	U'(t) = e^{iH't} = \phi(t)e^{-i\gamma(A+O)t},
+	\label{eq:qiskitU'}
+\end{equation}
+where $\phi(t)$ is a global phase, $A$ is the adjacency matrix and the oracle is defined as 
+\begin{equation}
+	O = \sum_{m \in M} \ket{m}\bra{m},
+\end{equation}
+where $M$ is the set of marked elements.\par
+%TODO: !!ESCREVER MATRIZ ADJACENCIA GRAFO COMPLETO !!
+This section will focus on constructing and analyzing the circuit form of the continuous-time quantum walk search problem, and the first step is to borrow the diagonal definition of the adjacency matrix from equation \ref{eq:qiskitContQWAdj} 
+\begin{equation}
+    A = F^{\dagger} \Lambda F,
+    \label{eq:qiskitContSearchAdj}
+\end{equation}
+and use the Suzuki-Trotter expansion
+\begin{equation}
+	e^{i(H_0+H_1)t}=\lim_{n \rightarrow \infty}(e^{i\frac{H_0t}{n}}e^{i\frac{H_1t}{n}})^n ,
+\end{equation}
+to decompose the operator in equation \ref{eq:qiskitU'}
+\begin{equation}
+	e^{i\gamma(A+O)t} =\lim_{n \rightarrow \infty}(F^{\dagger} e^{i\gamma\frac{\Lambda t}{n}} F e^{i\gamma\frac{Ot}{n}})^n, 
+	\label{eq:suzTrotter}
+\end{equation}
+which can be easily translated into circuit form as in figure \ref{fig:contSearchCircuit}. 
+\begin{figure}[!h]
+	\[ \Qcircuit @C=1em @R=1.0em {& & & & & \mbox{Repeat n times} & &\\
+	&\lstick{\ket{qv^{\otimes n}}} & {/} \qw &\gate{H^{\otimes n}}  & \gate{e^{i\gamma\frac{Ot}{2}^{\otimes n}}} & \gate{F^{\otimes n}} &\gate{e^{i\gamma\frac{\Lambda t}{2}^{\otimes n}}} & \gate{F^{\dagger^{\otimes n}}} &\qw \gategroup{2}{5}{2}{8}{.8em}{--}
+		          } \]
+	\centering
+	\caption{Temp}
+	\label{fig:contSearchCircuit}
+\end{figure}\par
+Consider the case of a graph of size $N=3$ and trotter number of $n=2$. The corresponding Qiskit circuit is as shown in figure \ref{fig:contSearchCircuit}. The system starts out in an uniform superposition followed by a state transformation according to the oracle operator that can be seen in figure \ref{fig:contSearchOracleCircQistkit}. Note that the circuit was obtained by using the Qiskit diagonal function that takes the diagonal entries of the operator corresponding to the oracle, as in equation \ref{eq:suzTrotter}. 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.34]{img/Qiskit/ContQuantumWalk/Search/Circuits/circContSearch_N3_S2.png}
+	\caption{Temp}
+	\label{fig:contSearchCircQistkit}
+\end{figure}
+%TODO: Escrever mais sobre a adjacencia.
+The following transformations will be the quantum Fourier transform, which is the same as in figure \ref{fig:qftCircuitQiskit}, and the operator associated with the adjacency matrix. Since $A$ is the diagonal adjacency matrix of a complete graph, it is easily implemented using Qiskit, as can be seen in figure \ref{fig:contSearchAdjCircQistkit}.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.34]{img/Qiskit/ContQuantumWalk/Search/Circuits/circOracle_N3_S2.png}
+	\caption{Temp}
+	\label{fig:contSearchOracleCircQistkit}
+\end{figure}
+\par
+%TODO: Escrever mais sobre resultados.
+The results of measurement are shown in figure \ref{fig:contSearchResultCircQistkit}. 
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.34]{img/Qiskit/ContQuantumWalk/Search/Circuits/circAjd_N3_S2.png}
+	\caption{Temp}
+	\label{fig:contSearchAdjCircQistkit}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.40]{img/Qiskit/ContQuantumWalk/Search/ContQW_N3_S2.png}
+	\caption{Temp}
+	\label{fig:contSearchResultCircQistkit}
+\end{figure}
+
 \subsection{Staggered}
 
 \end{document}
