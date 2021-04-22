@@ -2,48 +2,57 @@ This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
-Database file #1: dissertation.bib
+Database file #1: bibliography.bib
+Too many commas in name 1 of "J. Pollard, Lenstra Arjen, H. Lenstra, Mark Manasse" for entry Pollard93
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "J. Pollard, Lenstra Arjen, H. Lenstra, Mark Manasse" for entry Pollard93
+while executing---line 1347 of file plainnat.bst
 Warning--empty journal in douglaswang07
+Too many commas in name 1 of "J. Pollard, Lenstra Arjen, H. Lenstra, Mark Manasse" for entry Pollard93
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "J. Pollard, Lenstra Arjen, H. Lenstra, Mark Manasse" for entry Pollard93
+while executing---line 1429 of file plainnat.bst
+Warning--empty journal in Pollard93
 Warning--there's a number but no volume in sottinen2001
-You've used 19 entries,
+You've used 20 entries,
             2773 wiz_defined-function locations,
-            726 strings with 7725 characters,
-and the built_in function-call counts, 8699 in all, are:
-= -- 789
-> -- 413
-< -- 17
-+ -- 145
-- -- 126
-* -- 673
-:= -- 1335
-add.period$ -- 68
-call.type$ -- 19
-change.case$ -- 98
-chr.to.int$ -- 19
-cite$ -- 40
-duplicate$ -- 419
-empty$ -- 745
-format.name$ -- 151
-if$ -- 1853
+            733 strings with 7835 characters,
+and the built_in function-call counts, 9011 in all, are:
+= -- 817
+> -- 423
+< -- 18
++ -- 149
+- -- 129
+* -- 691
+:= -- 1386
+add.period$ -- 72
+call.type$ -- 20
+change.case$ -- 102
+chr.to.int$ -- 20
+cite$ -- 43
+duplicate$ -- 438
+empty$ -- 775
+format.name$ -- 155
+if$ -- 1917
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 20
-newline$ -- 114
-num.names$ -- 76
-pop$ -- 181
+missing$ -- 21
+newline$ -- 120
+num.names$ -- 80
+pop$ -- 191
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 83
 quote$ -- 0
-skip$ -- 322
+skip$ -- 334
 stack$ -- 0
-substring$ -- 382
-swap$ -- 57
+substring$ -- 384
+swap$ -- 58
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 204
-warning$ -- 2
-while$ -- 74
+type$ -- 215
+warning$ -- 3
+while$ -- 77
 width$ -- 0
-write$ -- 271
-(There were 2 warnings)
+write$ -- 284
+(There were 4 error messages)
