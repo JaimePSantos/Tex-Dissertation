@@ -3,56 +3,50 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
 Database file #1: bibliography.bib
-Too many commas in name 1 of "J. Pollard, Lenstra Arjen, H. Lenstra, Mark Manasse" for entry Pollard93
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "J. Pollard, Lenstra Arjen, H. Lenstra, Mark Manasse" for entry Pollard93
-while executing---line 1347 of file plainnat.bst
+Warning--empty journal in Cheung2004
+Warning--empty journal in Coppersmith94
 Warning--empty journal in douglaswang07
-Too many commas in name 1 of "J. Pollard, Lenstra Arjen, H. Lenstra, Mark Manasse" for entry Pollard93
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "J. Pollard, Lenstra Arjen, H. Lenstra, Mark Manasse" for entry Pollard93
-while executing---line 1429 of file plainnat.bst
 Warning--empty journal in Pollard93
 Warning--there's a number but no volume in sottinen2001
-You've used 20 entries,
+You've used 23 entries,
             2773 wiz_defined-function locations,
-            733 strings with 7835 characters,
-and the built_in function-call counts, 9011 in all, are:
-= -- 817
-> -- 423
-< -- 18
-+ -- 149
-- -- 129
-* -- 691
-:= -- 1386
-add.period$ -- 72
-call.type$ -- 20
-change.case$ -- 102
-chr.to.int$ -- 20
-cite$ -- 43
-duplicate$ -- 438
-empty$ -- 775
-format.name$ -- 155
-if$ -- 1917
+            749 strings with 8326 characters,
+and the built_in function-call counts, 10359 in all, are:
+= -- 931
+> -- 511
+< -- 19
++ -- 179
+- -- 156
+* -- 805
+:= -- 1602
+add.period$ -- 83
+call.type$ -- 23
+change.case$ -- 120
+chr.to.int$ -- 23
+cite$ -- 51
+duplicate$ -- 498
+empty$ -- 879
+format.name$ -- 185
+if$ -- 2191
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 21
-newline$ -- 120
-num.names$ -- 80
-pop$ -- 191
+missing$ -- 24
+newline$ -- 137
+num.names$ -- 92
+pop$ -- 228
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 98
 quote$ -- 0
-skip$ -- 334
+skip$ -- 379
 stack$ -- 0
-substring$ -- 384
-swap$ -- 58
+substring$ -- 417
+swap$ -- 59
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 215
-warning$ -- 3
-while$ -- 77
+type$ -- 248
+warning$ -- 5
+while$ -- 87
 width$ -- 0
-write$ -- 284
-(There were 4 error messages)
+write$ -- 323
+(There were 5 warnings)
