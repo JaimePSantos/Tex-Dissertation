@@ -1,18 +1,18 @@
 \documentclass[../../dissertation.tex]{subfiles}
 \begin{document}
 As was seen in section \ref{sec:chapGrover}, quantum computers can perform certain tasks more efficiently than classical computers. Another such example is the problem of finding the prime factorization of an $n$-bit integer, which the most efficient solution to date, proposed by \cite{Pollard93}, requires $e^{O(n^{\frac{1}{3}}\log^{\frac{2}{3}}n)}$ operations. In contrast, a classical algorithm proposed by \cite{Coppersmith94} accomplishes the same task in $O((\log n)^2 (\log \log n) (\log \log \log n))$ operations , which is an exponential gain due to the efficiency of the quantum Fourier transform.\par
-The quantum Fourier transform is an implementation of the discrete Fourier transform over amplitudes of quantum states. It offers no speed ups when used in computing Fourier transforms of classical data, since the amplitudes cannot be accessed directly by measurement. Moreover, there is no known generalized efficient way of preparing the initial state to be Fourier Transform. What this means is that the uses of the QFT are not in the straightforward way of calculating discrete Fourier transforms, but in the form of algorithms, such as \textit{phase estimation}, that take advantage of it's properties. This transform can be described as the following operation over an orthonormal basis $\ket{0}, \ket{1},\cdots,\ket{N-1}$,
+The quantum Fourier transform is an implementation of the discrete Fourier transform over amplitudes of quantum states. It offers no speed ups when used in computing Fourier transforms of classical data, since the amplitudes cannot be accessed directly by measurement. Moreover, there is no known generalized efficient way of preparing the initial state to be Fourier Transform. What this means is that the uses of the QFT are not in the straightforward way of calculating discrete Fourier transforms, but in the form of algorithms, such as \textit{phase estimation}, that take advantage of it's properties. This transform can be described as the following operation over an orthonormal basis $\ket{0}, \ket{1},\cdots,\ket{N-1}$
 \begin{equation}
-	QFT(\ket{j}) = \frac{1}{\sqrt{N}} \sum_{k=0}^{N-1} e^{\frac{2\pi i j k}{N}} {\ket{k}}.
+	QFT(\ket{j}) = \frac{1}{\sqrt{N}} \sum_{k=0}^{N-1} e^{\frac{2\pi i j k}{N}} {\ket{k}},
 \end{equation}
 %TODO: Melhorar isto?
-With a little bit of algebra, this can be rewritten as a product
+where $N = 2^n$. With a little bit of algebra, this can be rewritten as a product
 \begin{equation}
 	\label{eq:QFTCircuitRep}
 	QFT(\ket{x_1,...x_n})  =\frac{(\ket{0} + e^{2 \pi i 0.x_n} \ket{1}) (\ket{0} + e^{2 \pi i 0.x_{n-1}x_n} \ket{1})\cdots  (\ket{0} + e^{2 \pi i 0.x_1x_2\cdots x_n} \ket{1})}{2^{\frac{N}{2}}},
 \end{equation}
-where the notation $0.x_1x_{l+1}\cdots x_n$ represents the binary fraction $\frac{x_l}{2i^0}+\frac{x_{l+1}}{2^1} \cdots \frac{x_m}{2^{m-l+1}}$. This is a very useful representation because it makes constructing an efficient circuit much simpler, as can be seen in figure \ref{fig:QFTCircuit}. However, the circuit implementation of the QFT requires exponentially smaller phase-shift gates as the number of qubits increases. This can be somewhat mitigated by eliminating the smaller phase-shitft gates at the cost of some accuracy, as was shown in \cite{Coppersmith94} where he defined the \textit{approximate} quantum Fourier transform. This approximation requires only $O(n \log n)$ gates, and work by \cite{Barenco96} and \cite{Cheung2004} established lower bounds for the probability of the approximate state accurately representing the state without approximation. 
-\begin{figure}[t]
+where $x = x_1 2^{n-1} + x_2 2^{n-2} + \cdots + x_n 2^0$ and the notation $0.x_1x_{l+1}\cdots x_n$ represents the binary fraction $\frac{x_l}{2i^0}+\frac{x_{l+1}}{2^1} \cdots \frac{x_m}{2^{m-l+1}}$. This is a very useful representation because it makes constructing an efficient circuit much simpler, as can be seen in figure \ref{fig:QFTCircuit}. However, the circuit implementation of the QFT requires exponentially smaller phase-shift gates as the number of qubits increases. This can be somewhat mitigated by eliminating the smaller phase-shitft gates at the cost of some accuracy, as was shown in \cite{Coppersmith94} where he defined the \textit{approximate} quantum Fourier transform. This approximation requires only $O(n \log n)$ gates, and work by \cite{Barenco96} and \cite{Cheung2004} established lower bounds for the probability of the approximate state accurately representing the state without approximation. 
+\begin{figure}[h]
         \centering
 	\[ \Qcircuit @C=0.8em @R=0.7em {&\lstick{\ket{x_1}} &\qw    &\gate{H} &\gate{R_2}&\qw &\cdots &      & \gate{R_{m-1}} & \gate{R_m}&\qw&\qw      &\qw       &\qw  &\qw            &\qw         &\qw      &\qw &\qw    &\qw  &\rstick{\ket{y_1}} &\\
 				   &\lstick{\ket{x_2}}    &\qw    &\qw      &\ctrl{-1}&\qw  &\qw    & \qw  &\qw             &\qw        &\gate{H}&\qw &\cdots &     &\gate{R_{m-1}} &\gate{R_m}  &\qw     &\qw &\qw &\qw     &\rstick{\ket{y_2}} &\\
@@ -22,7 +22,8 @@ where the notation $0.x_1x_{l+1}\cdots x_n$ represents the binary fraction $\fra
 		   }\]
         \caption{Temp}
         \label{fig:QFTCircuit}
-\end{figure}\par
+\end{figure}
+\par
 The rotation $R_k$ in figure \ref{fig:QFTCircuit} is defined as the controlled version of 
 \begin{equation}
 	R_k = \begin{pmatrix}
