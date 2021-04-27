@@ -2,48 +2,51 @@ This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
-Database file #1: dissertation.bib
+Database file #1: bibliography.bib
+Warning--empty journal in Cheung2004
+Warning--empty journal in Coppersmith94
 Warning--empty journal in douglaswang07
+Warning--empty journal in Pollard93
 Warning--there's a number but no volume in sottinen2001
-You've used 19 entries,
+You've used 25 entries,
             2773 wiz_defined-function locations,
-            726 strings with 7725 characters,
-and the built_in function-call counts, 8699 in all, are:
-= -- 789
-> -- 413
-< -- 17
-+ -- 145
-- -- 126
-* -- 673
-:= -- 1335
-add.period$ -- 68
-call.type$ -- 19
-change.case$ -- 98
-chr.to.int$ -- 19
-cite$ -- 40
-duplicate$ -- 419
-empty$ -- 745
-format.name$ -- 151
-if$ -- 1853
+            763 strings with 8669 characters,
+and the built_in function-call counts, 11226 in all, are:
+= -- 1016
+> -- 531
+< -- 22
++ -- 187
+- -- 162
+* -- 860
+:= -- 1727
+add.period$ -- 90
+call.type$ -- 25
+change.case$ -- 128
+chr.to.int$ -- 25
+cite$ -- 55
+duplicate$ -- 547
+empty$ -- 964
+format.name$ -- 193
+if$ -- 2387
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 20
-newline$ -- 114
-num.names$ -- 76
-pop$ -- 181
+missing$ -- 26
+newline$ -- 148
+num.names$ -- 100
+pop$ -- 243
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 104
 quote$ -- 0
-skip$ -- 322
+skip$ -- 417
 stack$ -- 0
-substring$ -- 382
-swap$ -- 57
-text.length$ -- 3
+substring$ -- 470
+swap$ -- 70
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 204
-warning$ -- 2
-while$ -- 74
+type$ -- 270
+warning$ -- 5
+while$ -- 96
 width$ -- 0
-write$ -- 271
-(There were 2 warnings)
+write$ -- 351
+(There were 5 warnings)
