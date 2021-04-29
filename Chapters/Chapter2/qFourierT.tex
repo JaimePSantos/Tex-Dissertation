@@ -12,7 +12,7 @@ where $N = 2^n$. With a little bit of algebra, this can be rewritten as a produc
 	\begin{split}
 		\frac{1}{\sqrt{N}} \sum_{k=0}^{N-1} e^{\frac{2\pi i j k}{2^n}} \ket{k} & = 
 	\frac{1}{\sqrt{N}} \sum_{k_1=0}^1 \cdots \sum_{k_n=0}^{1} e^{2\pi i j (\sum_{l=1}^{n} k_l 2^{-l})} {\ket{k_1\cdots k_n}}  \\
-																 &= \frac{1}{\sqrt{N}} \sum_{k_1=0}^1 \cdots \sum_{k_n=0}^{1} \prod_{l=1}^n e^{2\pi i j k_l 2^{-l} } \ket{k_l} \\
+																 &= \frac{1}{\sqrt{N}} \sum_{k_1=0}^1 \cdots \sum_{k_n=0}^{1} \bigotimes_{l=1}^n e^{2\pi i j k_l 2^{-l} } \ket{k_l} \\
 																 &= \frac{1}{\sqrt{N}} \bigotimes_{l=1}^{n}( \sum_{k_l=0}^{1}  e^{2\pi i j k_l 2^{-l} } \ket{k_l} ) \\
 																 &= \frac{1}{\sqrt{N}} \bigotimes_{l=1}^{n}( \ket{0} +  e^{2\pi i j 2^{-l} } \ket{1} )
 	\end{split}
