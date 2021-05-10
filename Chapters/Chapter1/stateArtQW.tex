@@ -10,8 +10,33 @@
 %% >> pyCTQW : A continuous-time quantum walk simulator on distributed memory computers (izaac2014) 
 %% >> QSWalk: A Mathematica package for quantum stochastic walks on arbitrary graphs (falloon2017)
 %% >> QSWalk.jl: Julia package for quantum stochastic walks analysis (falloon2017) 
-
-
+One of the earliest works on a more computational approach to quantum random
+walks was by \cite{marquezino2008}, where they created a general simulator for
+discrete-time quantum walks on one- and two-dimensional lattices. They argued
+that this framework allowed reasearchers to focus more on the mathematical
+aspect of quantum walks, instead of the specific numerical implementations.
+Further work on these lattices was later presented by \cite{sawerwain2010},
+where they studied the simulation of quantum walks by taking advantage of the
+GPU and CUDA techonlogy. Another interesting package for simulating discre-time
+quantum walks came with the work of \cite{berry2011}. This package allows for
+direct simulation of these walks, and visualisation of the time-evolution on
+arbitrary undirected graphs. It also allowed for plotting of continuous-time
+quantum walks, provided the data was provided externally. 
+%TODO: Sera que faco um paragrafo aqui?
+There are, however, direct simulators of continuous-time quantum walks, the
+earliest being by \cite{izaac2015}. Their distributed memory software claims to
+be able to perform efficient simulation of multi-particle continuous-time
+quantum walk based systems, on \textit{High Performance Computing} platforms.
+\cite{falloon2017a} provide a \textit{Mathematica} package that implements a
+simulator of \textit{Quantum Stochastic Walks}, which are a generalization of
+the continuous-time model. These walks incorporate both coherent and incoherent
+dynamics, which means that quantum stochastic walks can be instantiated as both
+quantum walks and classical random walks. What this paper then provides is a
+way of implementing quantum walks on directed graphs, opening the door to
+applications ranging from the capture of energy by photosyntethic protein
+complexes, to page ranking algorithms used by search engines. This package was
+ported to and expanded in the \textit{Julia} programming language by
+\cite{glos2018}.
 % Circuitos quantum walks
 %% Muitas destas refs vem do loke2016a.
 %% > Discrete
@@ -41,4 +66,5 @@
 %% > T. Schaetz. Experimental simulation and limitations of quantum walks with trapped ions.
 %% > E. Flurin, V. V. Ramasesh, S. Hacohen-Gourgy, L. S. Martin, N. Y. Yao, and I. Siddiqi. Observing topological invariants using quantum walks in superconducting circuits.
 %% > S. Dadras, A. Gresch, C. Groiseau, S. Wimberger, and G. S. Summy. Experimental realization of a momentum-space quantum walk.
+
 \end{document}
