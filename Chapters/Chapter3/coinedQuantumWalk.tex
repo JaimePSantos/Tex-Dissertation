@@ -112,7 +112,7 @@ Another interesting case study is to find if this behaviour is preserved for a s
 	\label{fig:coinedQWDist1}
 \end{figure}
 The Hadamard operator flips the sign of state $\ket{1}$, hence more terms are cancelled when the coin state is $\ket{1}$. Since $\ket{0}$ was defined to induce movement to the right, the result is as shown in \ref{fig:coinedQWDist0}. Following this logic, it would be expected that an initial condition 
-%TODO: \textcolor{red}{cuidado com a notação embaixo dos kets, e esse sinal negativo é necessário? acredito que não.} Pagina 31 do renato, perceber melhor o sinal.
+%TODO: \textcolor{red}{cuidado com a notação embaixo dos kets, e esse sinal negativo é necessário? acredito que não.} Pagina 30 do renato, perceber melhor o sinal.
 \begin{equation}
 	\ket{\Psi(0)} = \ket{1}\ket{x=0},
 	\label{eq:coinedQWInitCond1}
@@ -125,6 +125,7 @@ In order to obtain a symmetrical distribution, one must superpose the state in e
 	\ket{\Psi(0)} = \frac{\ket{0}+i\ket{1}}{\sqrt{2}}\ket{x=0}.
 	\label{eq:12}
 \end{equation}
+%TODO: muito parecido ao renato.
 This works because the entries of the Hadamard operator are real numbers. Terms with the imaginary unit will not cancel out with terms without it, thus the walk can proceed to both left and right, as it is shown in figure \ref{fig:coinedQWDist01}. 
 \begin{figure}[!ht]
 	\centering
@@ -133,7 +134,7 @@ This works because the entries of the Hadamard operator are real numbers. Terms 
 	\label{fig:coinedQWDist01}
 \end{figure}\par
 %TODO: Talvez escrever mais um bocado sobre a figura?
-The probability distribution is now symmetric and it is spread over the range $[-\frac{t}{\sqrt{2}},-\frac{t}{\sqrt{2}}]$ with peaks around $\abs{x} \approx \pm \frac{t}{\sqrt{2}}$. This means that if the position of the walker was measured at the end, it would be equally probable to find him either in the left side or the right side of the graph , which is not possible in a classical ballisitic motion.\par
+The probability distribution is now symmetric and it is spread over the range $[-\frac{t}{\sqrt{2}},-\frac{t}{\sqrt{2}}]$ with peaks around $x \approx \pm \frac{t}{\sqrt{2}}$. This means that if the position of the walker was measured at the end, it would be equally probable to find him either in the left side or the right side of the graph , which is not possible in a classical diffusive motion.\par
 All of the previous examples are in sharp contrast with the classical random walk distribution in figure \ref{fig:MultClassicalWalk72180450}. There, maximum probability is reached at $x=0$ since there are approximately equal steps in both directions. Furthermore, the further the vertex is away from the origin, the less likely the walker is to be found there. However, in the quantum case, the walker is more likely to be found away from the origin as the number of steps increases. More specifically, the walk spreads quadratically faster than the classical counterpart.\par
 %TODO: Melhorar o preview das proximas seccoes.
 This is but one model of a quantum random walk. As it will be seen in further sections, there are other approaches to creating both discrete and continuous quantum walk models that do not use a coin. 
