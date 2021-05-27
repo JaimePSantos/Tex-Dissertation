@@ -56,7 +56,30 @@ they posses translational symmetry in the columns of the transitional matrix.
 More specifically, they identified that the class of cyclic and bipartite
 graphs are compatible with this approach.  Another interesting result in this
 paper was the creation of circuits that implement a quantum analogue of
-Google's \textit{Page Rank} algorithm, in terms of Szegedy walks.
+Google's \textit{Page Rank} algorithm, in terms of Szegedy walks. \par
+%Implementation.TODO: Decidir se so ponho IBM aqui.
+On the experimental side, there have been various implementations of
+quantum walks on quantum computers. On IBM's hardware, work by \cite{balu2017}
+presents an efficient implementation of topological quantum walks where they
+ran the circuit on a five qubit computer over a $4$ vertex lattice.
+\cite{Georgopoulos2019} implements two instances of the discrete-time quantum
+walk. The first is based on the work of \cite{douglaswang07} using generalized
+CNOT gates, and the second uses a rotational approach to the CNOT
+decomposition, which saves using an extra ancilla qubit register. They noted
+that IBM's simulator backend corresponded to the theoretical predictions,
+however the circuit for over three qubits was too much for the quantum hardware
+at that time. The paper presented by \cite{shakeel2020} also uses IBM's
+hardware to perform their formulation of the discrete-time quantum walk. For
+the staggered quantum walk model, work by \cite{acasiete2020} obtains
+meaningful results when using the quantum computers to study the dynamics of
+this model on various graphs with $16$ elements, requiring $4$ qubits. They
+also modify these circuits to accomodate an oracle, showing that a spatial
+search algorithm could be performed on IBM's quantum computers for a search
+space of size $8$, and with a bit of noise but still satisfactory for size
+$16$.
+%Search problems have also been implemented, \cite{figgat2017} showed how to
+%perform the Grover's algorithm for three qubits using Qiskit and IBM's quantum
+%computers. A quantum walk analogue of Grover's was defined by \cite{acasiete2020}, where they use thestaggered model modified with an oracle to obtain 
 
 % Simuladores de caminhadas quanticas 
 %QUANTUM WALKS AND THEIR ALGORITHMIC APPLICATIONS (TODO: maybe?)
