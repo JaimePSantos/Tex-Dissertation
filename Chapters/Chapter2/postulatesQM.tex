@@ -1,5 +1,48 @@
 \documentclass[../../dissertation.tex]{subfiles}
+\newtheorem{post}{Postulate}
 \begin{document}
+
+%TODO:Referencia sem ser do sakurai? 
+Quantum mechanics, firstly discovered in the decade of 1920, is a mathematical
+framework for developing physical theories. In this section, the goal is to
+provide the basic postulates of quantum mechanics, which are formalized through
+Dirac notation. Further reading on this notation includes the work of
+\cite{sakurai1994}, and for an extensive review of quantum computation the
+book by \cite{nielsen2011}.\par  
+The first postulate defines where the processes of quantum mechanics take
+place. The \textit{state} of a system describes it's physical characteristics,
+so some rules are required for these mathematical objects to have a connection
+to the real world.
+\begin{post}[State Space] 
+	Any isolated physical system has an associated Hilbert Space,
+	$\mathcal{H}$, known as the state space. The state of the system is
+	wholly described by it's state vector $\ket{\psi} \in \mathcal{H}$. The
+	physical system's degrees of freedom dictate the dimension of
+	$\mathcal{H}$
+\end{post}
+Note that this postulate does not tell us the Hilbert space of any given
+physical system, nor does it tell us it's state vector. It is generally hard to
+define the Hilbert space of an arbitrary system, which makes the work physicist
+have done developing certain theories, like quantum eletrodynamics, even more
+remarkable.\par 
+Considering the computational basis $\{\ket{0},\ket{1}\}$, the simplest quantum
+system, the \textit{qubit}, can be defined as 
+\begin{equation}
+	\ket{\psi} = \alpha \ket{0} + \beta \ket{1},
+\end{equation}
+where $\alpha,\beta$ are complex numbers and
+\begin{equation}
+	\ket{0} = \begin{pmatrix} 1 \\0 \end{pmatrix}  \; \; ;  \;  \;  \ket{1} = \begin{pmatrix} 0 \\1 \end{pmatrix}.
+\end{equation}
+Because Hilbert spaces are also vector spaces, linear combinations of these
+states are also allowed 
+\begin{equation}
+1=1
+\end{equation}
+
+\begin{post}
+	Bla bla
+\end{post}
 
 
 
