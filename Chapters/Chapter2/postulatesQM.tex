@@ -18,7 +18,7 @@ to the real world.
 	$\mathcal{H}$, known as the state space. The state of the system is
 	wholly described by it's state vector $\ket{\psi} \in \mathcal{H}$. The
 	physical system's degrees of freedom dictate the dimension of
-	$\mathcal{H}$
+	$\mathcal{H}$\par
 \end{post}
 Note that this postulate does not tell us the Hilbert space of any given
 physical system, nor does it tell us it's state vector. It is generally hard to
@@ -32,7 +32,7 @@ system, the \textit{qubit}, can be defined as
 \end{equation}
 where $\alpha,\beta$ are complex numbers and
 \begin{equation}
-	\ket{0} = \begin{pmatrix} 1 \\0 \end{pmatrix}  \; \; ;  \;  \;  \ket{1} = \begin{pmatrix} 0 \\1 \end{pmatrix}.
+	\ket{0} = \begin{pmatrix} 1 \\0 \end{pmatrix}  \; \; and  \;  \;  \ket{1} = \begin{pmatrix} 0 \\1 \end{pmatrix}.
 \end{equation}
 Because Hilbert spaces are also vector spaces, linear combinations of these
 states are also allowed 
@@ -48,12 +48,42 @@ known as \textit{superpositions}, in which the states are not in a definite
 value before measurement. This is a well studied quantum phenomenon that leads
 to constructive and destructive interference between states, which is an aspect
 of quantum computation many algorithms exploit.\par
+
 The second postulate aims to describe how a quantum system evolves with time,
 and it can be formulated in the following way. 
-\begin{post}
-	
+\begin{post}[Evolution]
+	The time evolution of a closed quantum system is described by a unitary
+	operator. Considering an initial condition $\ket{\psi_0}$, then for any
+	time evolution of a closed quantum system, a unitary operator $U$ exists
+	such that $\ket{\psi_f}=U\ket{\psi_0}$.\par
 \end{post}
-
-
+Just as the first postulate does not specify a Hilbert space, the evolution
+postulate does not state which unitary operators $U$ describe an arbitrary
+physical system. What it does state is that the evolution of a closed quantum
+system follows those rules. More specifically, the second postulate describes
+the dynamics of such systems. In the case of a qubit, any U can be performed in
+a realistic system as long as $U U^\dag = U^\dag U = I$, which is another way
+of saying that $U$ is unitary.\par  
+There are a few unitary operators very relevant to quantum computation, known
+as \textit{Pauli matrices}, that are usually composed to create more general
+matrices. These are defined as
+\begin{equation}
+	I = \begin{pmatrix} 
+		1 && 0\\
+		0 && 1
+	    \end{pmatrix}, \; \;
+	X = \begin{pmatrix} 
+		0 && 1\\
+		1 && 0
+	    \end{pmatrix}, \; \;
+	Y = \begin{pmatrix} 
+		0 && -i\\
+		i && 0
+	    \end{pmatrix} \;\; and \; \;
+	Z = \begin{pmatrix} 
+		1 && 0\\
+		0 && -1
+	    \end{pmatrix}.
+\end{equation}
 
 \end{document}
