@@ -5,6 +5,7 @@ As was seen in section \ref{sec:chapGrover}, quantum computers can perform certa
 The quantum Fourier transform is an implementation of the discrete Fourier transform over amplitudes of quantum states. It offers no speed ups when used in computing Fourier transforms of classical data, since the amplitudes cannot be accessed directly by measurement. Moreover, there is no known generalized efficient way of preparing the initial state to be Fourier Transform. What this means is that the uses of the QFT are not in the straightforward way of calculating discrete Fourier transforms, but in the form of algorithms, such as \textit{phase estimation}, that take advantage of it's properties. This transform can be described as the following operation over an orthonormal basis $\ket{0}, \ket{1},\cdots,\ket{N-1}$
 \begin{equation}
 	QFT(\ket{j}) = \frac{1}{\sqrt{N}} \sum_{k=0}^{N-1} e^{\frac{2\pi i j k}{N}} {\ket{k}},
+	\label{eq:qftGeneral}
 \end{equation}
 %TODO: Melhorar isto?
 where $N = 2^n$. With a little bit of algebra, this can be rewritten as a product
@@ -12,11 +13,12 @@ where $N = 2^n$. With a little bit of algebra, this can be rewritten as a produc
 	\begin{split}
 		\frac{1}{\sqrt{N}} \sum_{k=0}^{N-1} e^{\frac{2\pi i j k}{2^n}} \ket{k} & = 
 	\frac{1}{\sqrt{N}} \sum_{k_1=0}^1 \cdots \sum_{k_n=0}^{1} e^{2\pi i j (\sum_{l=1}^{n} k_l 2^{-l})} {\ket{k_1\cdots k_n}}  \\
-																 &= \frac{1}{\sqrt{N}} \sum_{k_1=0}^1 \cdots \sum_{k_n=0}^{1} \bigotimes_{l=1}^n e^{2\pi i j k_l 2^{-l} } \ket{k_l} \\
+																 %&= \frac{1}{\sqrt{N}} \sum_{k_1=0}^1 \cdots \sum_{k_n=0}^{1} \bigotimes_{l=1}^n e^{2\pi i j k_l 2^{-l} } \ket{k_l} \\
 																 &= \frac{1}{\sqrt{N}} \bigotimes_{l=1}^{n}( \sum_{k_l=0}^{1}  e^{2\pi i j k_l 2^{-l} } \ket{k_l} ) \\
 																 &= \frac{1}{\sqrt{N}} \bigotimes_{l=1}^{n}( \ket{0} +  e^{2\pi i j 2^{-l} } \ket{1} )
 	\end{split}
-\end{equation}
+\end{equation}\par
+The quantum Fourier transform applied to a state as in equation \ref{eq:qftGeneral} can then be rewritten as 
 \begin{equation} \label{eq:QFTCircuitRep} 
 	QFT(\ket{x_1,...x_n})  =\frac{(\ket{0} + e^{2 \pi i 0.x_n} \ket{1}) (\ket{0} + e^{2 \pi i 0.x_{n-1}x_n} \ket{1})\cdots  (\ket{0} + e^{2 \pi i 0.x_1x_2\cdots x_n} \ket{1})}{2^{\frac{N}{2}}},
 \end{equation}

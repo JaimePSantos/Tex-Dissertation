@@ -52,6 +52,7 @@ of quantum computation many algorithms exploit.\par
 The second postulate aims to describe how a quantum system evolves with time,
 and it can be formulated in the following way. 
 \begin{post}[Evolution]
+	\label{post:evolution}
 	The time evolution of a closed quantum system is described by a unitary
 	operator. Considering an initial condition $\ket{\psi_0}$, then for any
 	time evolution of a closed quantum system, a unitary operator $U$ exists
@@ -64,6 +65,7 @@ system follows those rules. More specifically, the second postulate describes
 the dynamics of such systems. In the case of a qubit, any U can be performed in
 a realistic system as long as $U U^\dag = U^\dag U = I$, which is another way
 of saying that $U$ is unitary.\par  
+%TODO: Esta prox frase esta fraca.
 There are a few unitary operators very relevant to quantum computation, known
 as \textit{Pauli matrices}, that are usually composed to create more general
 matrices. These are defined as
@@ -84,6 +86,29 @@ matrices. These are defined as
 		1 && 0\\
 		0 && -1
 	    \end{pmatrix}.
+\end{equation}\par
+Postulate \ref{post:evolution} tells us the relationship between the states of
+the system at two different times. An improved version of this postulate takes
+time as a continuous variable, stating that the temporal evolution of a closed
+quantum system can be described by the Schrodinger equation 
+\begin{equation}
+	i \hbar \frac{d\ket{\psi}}{dt} = H \ket{\psi},
 \end{equation}
+%TODO: Decidir se devo falar sobre os valores proprios de energia e assim.
+where $\hbar$ is the \textit{Planck's constant} and $H$ is a hermitian operator
+known as the \textit{Hamiltonian} of the system. In principle, the Hamiltonian
+can be used to describe a system in it's entirety, however figuring out the
+Hamiltonian is generally a hard task.\par
+
+Thus far only isolated quantum systems have been considered. The next postulate
+describes how one can create composite quantum systems made of smaller distinct
+systems.
+\begin{post}[Composite Systems]
+	The state space of a system composed of smaller sub-systems can be
+	described by the tensor product of the individual state spaces
+	$\mathcal{H_1}\otimes\mathcal{H_2}$. Moreover, if the first system's
+	state is $\ket{\psi_1}$ and the second is $\ket{\psi_2}$ then the state
+	of the composite system is $\ket{\psi_1} \otimes \ket{\psi_2}$.  
+\end{post}
 
 \end{document}
