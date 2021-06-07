@@ -7,7 +7,7 @@ Quantum mechanics, firstly discovered in the decade of 1920, is a mathematical
 framework for developing physical theories. In this section, the goal is to
 provide the basic postulates of quantum mechanics, which are formalized through
 Dirac notation. Further reading on this notation includes the work of
-\cite{sakurai1994}, and for an extensive review of quantum computation the
+\cite{sakurai1994} or *liboff*, and for an extensive review of quantum computation the
 book by \cite{nielsen2011}.\par  
 The first postulate defines where the processes of quantum mechanics take
 place. The \textit{state} of a system describes it's physical characteristics,
@@ -32,7 +32,7 @@ system, the \textit{qubit}, can be defined as
 \end{equation}
 where $\alpha,\beta$ are complex numbers and
 \begin{equation}
-	\ket{0} = \begin{pmatrix} 1 \\0 \end{pmatrix}  \; \; and  \;  \;  \ket{1} = \begin{pmatrix} 0 \\1 \end{pmatrix}.
+	\ket{0} = \begin{pmatrix} 1 \\0 \end{pmatrix}  \; \; \text{and}  \;  \;  \ket{1} = \begin{pmatrix} 0 \\1 \end{pmatrix}.
 \end{equation}
 Because Hilbert spaces are also vector spaces, linear combinations of these
 states are also allowed 
@@ -100,15 +100,47 @@ known as the \textit{Hamiltonian} of the system. In principle, the Hamiltonian
 can be used to describe a system in it's entirety, however figuring out the
 Hamiltonian is generally a hard task.\par
 
-Thus far only isolated quantum systems have been considered. The next postulate
+Thus far only single quantum systems have been considered. The next postulate
 describes how one can create composite quantum systems made of smaller distinct
 systems.
 \begin{post}[Composite Systems]
 	The state space of a system composed of smaller sub-systems can be
 	described by the tensor product of the individual state spaces
-	$\mathcal{H_1}\otimes\mathcal{H_2}$. Moreover, if the first system's
+	$\mathcal{H}_1\otimes\mathcal{H}_2$. Moreover, if the first system's
 	state is $\ket{\psi_1}$ and the second is $\ket{\psi_2}$ then the state
 	of the composite system is $\ket{\psi_1} \otimes \ket{\psi_2}$.  
-\end{post}
+\end{post}\par
+%TODO: O prox paragrafo nao esta muito bom.
+The tensor product is used because of the nature of superposition in quantum
+mechanics. A system composed of subsystems $\{\ket{\psi},\ket{\varphi}\}$ can
+be denoted as $\ket{psi}\otimes\ket{\varphi}$. Applying the superposition principle,
+that tells us that any complex linear combination of states belonging to the
+system should also be allowed, the tensor product naturally follows.\par
+The tensor notation can be written in a more compact way. Considering a system
+described by $n$ component states \begin{equation}
+	\ket{\psi} = \ket{\psi_0} \otimes \ket{\psi_1} \otimes \cdots \otimes \ket{\psi_{n-1}},
+\end{equation}
+it can be rewritten as 
+\begin{equation}
+	\ket{\psi} = \ket{\psi_0}\ket{\psi_1} \cdots \ket{\psi_{n-1}},
+\end{equation}
+and even further compacted to
+\begin{equation}
+	\ket{\psi} = \ket{\psi_0 \psi_1 \cdots \psi_{n-1}}.
+\end{equation}\par
+However, not all composite systems can be described as the tensor product of
+the component states. For example, state 
+\begin{equation}
+	\label{eq:post3BellState}
+	\ket{\psi} = \frac{\ket{00} +\ket{11}}{\sqrt{2}}, 
+\end{equation}
+cannot be broken down further. These subsytems are known to be
+\textit{entangled}, and the state in equation \ref{eq:post3BellState} is called
+a \textit{Bell} state. Bell states describe the set of $2$ qubit states that
+present maximum entangled, and are used in many quantum aplications like
+\textit{quantum teleportation} and \textit{superdense coding}.
 
+\begin{post}[Measurement]
+	Bla.
+\end{post}
 \end{document}

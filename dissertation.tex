@@ -98,15 +98,14 @@ Hello!
 \pagenumbering{arabic}
 
 % CHAPTER - Introduction -------------------------
+% Artigos Intro 
+%kendon2006 - Introducao historia CQ - Pasta introqw/Coin
+%toffoli1980- Reversible Computing - Pasta intromain \\
+%gottesman1998- The Heisenberg Representation of Quantum Computers - Pasta intromain\\
+%Random walks classicas - %https://pt.wikipedia.org/wiki/Passeio_aleat%C3%B3rio 
 \chapter{Introduction}
-
 \section{Brief history of quantum computing}
 \subfile{Chapters/Chapter1/historyQC}
-% \subsection{[TEMP ARTIGOS RELEVANTES]}
-%     kendon2006 - Introducao historia CQ - Pasta introqw/Coin
-% 	toffoli1980- Reversible Computing - Pasta intromain \\
-% 	gottesman1998- The Heisenberg Representation of Quantum Computers - Pasta intromain\\
-% 	Random walks classicas - %https://pt.wikipedia.org/wiki/Passeio_aleat%C3%B3rio 
 \section{Classical and Quantum Random Walks}
 \subfile{Chapters/Chapter1/randomWalks}
 %  Balu2017 introduçao\\
@@ -115,12 +114,14 @@ Hello!
 \section{Text overview and contributions}
 \subfile{Chapters/Chapter1/txtoverview}
 
+% CHAPTER - Quantum Computing (maybe Annex). -------------------------
 \chapter{Quantum Computing}\label{chap:QuantumComp}
 \section{Mathematical foundations of quantum mechanics}
 \subfile{Chapters/Chapter2/postulatesQM}
 \section{Quantum Fourier Transform}\label{sec:chapQFT}
 \subfile{Chapters/Chapter2/qFourierT}
 
+% CHAPTER - Quantum Walks. -------------------------
 \chapter{Quantum Walks}\label{chap:QuantumWalks}
 \section{Classical Random Walk}\label{sec:chap3ClassicalWalk}
 \subfile{Chapters/Chapter3/classicalWalk}
@@ -130,11 +131,8 @@ Hello!
 \subfile{Chapters/Chapter3/continuousQuantumWalk}
 \section{Staggered Quantum Walk}\label{sec:chap3StagWalk}
 \subfile{Chapters/Chapter3/staggeredQuantumWalk}
-%\section{Grover's algorithm}
-%\subfile{Chapters/Chapter3/groverAlgorithm}
-%\section{Search problems with Quantum Walks}\label{sec:chap3Search}
-%\subfile{Chapters/Chapter3/searchProblemsQuantumWalk}
 
+% CHAPTER - Searching Problems. -------------------------
 \chapter{Searching Problems}\label{chap:searchingProblems}
 \section{Grover's algorithm}
 \subfile{Chapters/Chapter4/groverAlgorithm}
@@ -145,18 +143,15 @@ Hello!
 \section{Staggered Quantum Walk}
 \subfile{Chapters/Chapter4/stagSearch}
 
-
-% CHAPTER - Application -------------------------
+% CHAPTER - Qiskit Implementations. -------------------------
 \chapter{Implementations and Applications}\label{chap:qiskitImplementation}
-%TODO:mencionar PC IBMQ
-%TODO: Phase oracles onde implementa um operador unitario diagonal com as fases. Explorar como e que eles implementam o diag.
+%TODO: Mencionar PC IBMQ. Talvez falar sobre isto antes da primeira seccao?
 %TODO: Phase kickback?
 %\section{Phase Oracle} 
 	%% https://qiskit.org/documentation/stubs/qiskit.circuit.library.Diagonal.html
 	%% https://arxiv.org/pdf/quant-ph/0406176.pdf
 	%% Fazer o diag() sem otimizacao.
 %\section{Phase kickback}
-%\section{Grover}
 %TODO: O difusor tambem tem um phase oracle.
 \section{Coined}\label{coinedQWQiskit}
 %TODO: 1. Recapitular a eq do incremento/decremento com base no douglas Wang. 2. Explicar o quantumwalk como incremento/decremento controlado. 3. Colocar histogramas com 1,2 e 3 steps.
@@ -167,6 +162,7 @@ Hello!
 \section{Search Problems with Qiskit}
 \subfile{Chapters/Chapter5/searchProblemsQiskit}
 
+% TODO: Decidir se este capitulo sera feito.
 % CHAPTER - Conclusion/Future Work -------------- 
 %\chapter{Discussions and Conclusion}
 %discutir os resultados encontrados, o future work, o que falta fazer etc.
@@ -189,7 +185,12 @@ Hello!
 \umappendix{Appendix}
 
 % Add appendix chapters
-\chapter{Support material}
+%\chapter{Support material}
+%\section{Mathematical foundations of quantum mechanics}
+%\subfile{Chapters/Chapter2/postulatesQM}
+%\section{Quantum Fourier Transform}\label{sec:chapQFT}
+%\subfile{Chapters/Chapter2/qFourierT}
+
 %	\umbackcover{
 %	NB: place here information about funding, FCT project, etc in which the work is %framed. Leave empty otherwise.
 %	}
