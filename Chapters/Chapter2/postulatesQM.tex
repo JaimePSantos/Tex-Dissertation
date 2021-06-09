@@ -100,7 +100,7 @@ known as the \textit{Hamiltonian} of the system. In principle, the Hamiltonian
 can be used to describe a system in it's entirety, however figuring out the
 Hamiltonian is generally a hard task.\par
 
-Thus far only single quantum systems have been considered. The next postulate
+So far only single quantum systems have been considered. The next postulate
 describes how one can create composite quantum systems made of smaller distinct
 systems.
 \begin{post}[Composite Systems]
@@ -138,9 +138,22 @@ cannot be broken down further. These subsytems are known to be
 \textit{entangled}, and the state in equation \ref{eq:post3BellState} is called
 a \textit{Bell} state. Bell states describe the set of $2$ qubit states that
 present maximum entangled, and are used in many quantum aplications like
-\textit{quantum teleportation} and \textit{superdense coding}.
+\textit{quantum teleportation} and \textit{superdense coding}.\par
 
+As was aforementioned, closed quantum systems evolve unitarily in time.
+However, in order to do something useful with such a system, one must extract
+the classical information relating to the state of the system. This is achieved
+by the process of measurement, which imples some form of interaction with the
+system, thus making it no longer closed nor described by a unitary evolution.
 \begin{post}[Measurement]
-	Bla.
+Quantum measurements are described by a set $\{M_m\}$ of measurement operators that act on the state space of the system, satisfying the completeness relation $\sum_m M_m^\dag M_m = I$, where $m$ referes to the measurement outcomes of the experiment. Considering a system with state $\ket{\psi}$, immediately before measurement, then the probability of event $m$ is
+\begin{equation}
+	p(m) = \bra{\psi} M_m^\dag M_m \ket{\psi}.
+\end{equation}
+The state of the system after the measurement will be
+\begin{equation}
+\ket{\psi'} = \frac{1}{\sqrt{p(m)}} M_m \ket{\psi}.
+\end{equation}
+
 \end{post}
 \end{document}
