@@ -146,8 +146,11 @@ the classical information relating to the state of the system. This is achieved
 by the process of measurement, which imples some form of interaction with the
 system, thus making it no longer closed nor described by a unitary evolution.
 \begin{post}[Measurement]
-Quantum measurements are described by a set $\{M_m\}$ of measurement operators that act on the state space of the system, satisfying the completeness relation $\sum_m M_m^\dag M_m = I$, where $m$ referes to the measurement outcomes of the experiment. Considering a system with state $\ket{\psi}$, immediately before measurement, then the probability of event $m$ is
-\begin{equation}
+Quantum measurements are described by a set, $\{M_m\}$, of measurement operators
+that act on the state space of the system, satisfying the completeness relation
+$\sum_m M_m^\dag M_m = I$, where $m$ referes to the measurement outcomes of the
+experiment. Considering a system with state $\ket{\psi}$, immediately before
+measurement, then the probability of event $m$ is \begin{equation}
 	p(m) = \bra{\psi} M_m^\dag M_m \ket{\psi}.
 \end{equation}
 The state of the system after the measurement will be
@@ -155,13 +158,65 @@ The state of the system after the measurement will be
 \ket{\psi'} = \frac{1}{\sqrt{p(m)}} M_m \ket{\psi}.
 \end{equation}
 \end{post}\par
+%TODO: MElhorar frase.
 Measurement can be done and interpreted in several different ways, however this
-section focuses on what is called \textit{projective} measurement. Consider
-Hermitian projection operators $P_1$ and $P_2$, that are orthogonal to each
+section focuses on what is called \textit{projective} measurement. A projective
+measurement is described by an Hermitian operator, $M$, known as an
+\textit{observable}, with spectral decomposition
+\begin{equation}
+	M = \sum_m m P_m
+\end{equation}
+where $P_m$ is an Hermitian projection operator with eigenvalue $m$. For
+example, $P_1$ and $P_2$ are projection operators that are orthogonal to each
 other and whose product is a zero matrix. A set of operators with these
 characteristics obey the completeness equation 
 \begin{equation}
-	\sum_i P_i = I
+	\sum_i P_i = I.
+\end{equation}\par
+The probability of outcome $m$ associated with the measurement of state
+$\ket{\psi}$ can be written as 
+\begin{equation}
+	p(m) = \bra{\psi} P_m \ket{\psi},
 \end{equation}
+and knowing that $m$ was the result of the measurement, the state of the
+quantum system is then
+\begin{equation}
+	\frac{P_m}{\sqrt{p(m)}} \ket{\psi}.
+\end{equation}\par
+An important case of projective measurement is when it is performed in the
+\textit{computational basis} of a qubit. Given operators 
+\begin{equation}
+	M_0 = \ket{0}\bra{0} = \begin{pmatrix}
+				1 && 0\\
+				0 && 0
+				\end{pmatrix}
+	\;
+	\text{and}
+	\;
+	M_1 = \ket{0}\bra{0} = \begin{pmatrix}
+				0 && 0\\
+				0 && 1
+				\end{pmatrix},
+\end{equation}
+it is obvious that they are Hermitian and that they obey the completeness
+relation. Consider again the state $\ket{\psi}=\alpha\ket{0} + \beta\ket{1}$.
+The probability of outcome $0$ will be 
+\begin{equation}
+	p(0) = \bra{\psi}M_0^\dag M_0{\ket{\psi}} = \bra{\psi}M_0{\ket{\psi}} = |\alpha|^2
+\end{equation}
+and outcome $1$
+\begin{equation}
+	p(0) = \bra{\psi}M_0^\dag M_0{\ket{\psi}} = \bra{\psi}M_0{\ket{\psi}} = |\beta|^2.
+\end{equation}
+For each of the outcomes, the state after measurement will be
+\begin{equation} 
+	\frac{M_0}{|\alpha|} \ket{\psi} = \frac{\alpha}{|\alpha|} \ket{0},
+\end{equation}
+\begin{equation} 
+	\frac{M_1}{|\beta|} \ket{\psi} = \frac{\beta}{|\beta|} \ket{1}.
+\end{equation}\par
+%TODO: Decidir como finalizar a seccao.
+Projective measurement, in some ways, destroys the superposition of possible
+states. This is known as the \textit{collapse of the wave function}. 
 
 \end{document}
