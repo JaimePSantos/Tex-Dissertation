@@ -1,0 +1,54 @@
+\documentclass[../../dissertation.tex]{subfiles}
+\begin{document}
+
+As was seen in section \ref{sec:chap3StagWalk}, the elements of each
+tesselation of a discretely numbered cycle can be described by states
+\begin{equation}
+        \ket{\alpha_x} = \frac{\ket{2x} + \ket{2x+1}}{\sqrt{2}}
+\end{equation}
+\begin{equation}
+        \ket{β_x} = \frac{\ket{2x+1}+\ket{2x+2}}{\sqrt{2}}.
+\end{equation}
+These states allow the construction of the Hamiltonians
+\begin{equation}
+        H_\alpha = 2\sum_{x=-\infty}^{+\infty}\ket{\alpha_{x}}\bra{\alpha_x} - I
+\end{equation}
+\begin{equation}
+        H_\beta = 2\sum_{x=-\infty}^{+\infty}\ket{\beta_{x}}\bra{\beta_x} - I
+\end{equation}
+as was seen in equations \ref{eq:stagSimulHalpha} and \ref{eq:stagSimulHbeta}.
+As was shown by \cite{acasiete2020}, these operators cane be rewritten in
+matrix form 
+\begin{equation}
+	H_\alpha = I \otimes X
+\end{equation}
+%TODO: ESCREVER EQUACAO MATRICIAL DO HBETA
+\begin{equation} 
+	H_\beta = 
+\end{equation} 
+which are very useful representations when constructing the circuit.\par 
+
+As was shown in equation \ref{q:stagSimulUniOp}, the unitary evolution operator
+is
+%TODO: DESCOBRIR SE A OS US ESTAO NA ORDEM CORRETA. 
+\begin{equation}
+	U = e^{i\theta H_\beta}e^{i\theta H_\alpha} = U_\beta U_\alpha, 
+\end{equation} 
+and knowing that
+%TODO: TENTAR DESCOBRIR MELHOR MANEIRA DE REPRESENTAR ISTO. SERA QUE PRECISO DA MATRIZ TODA?  
+\begin{equation} 
+	R_x(\theta) = e^{\frac{-i\theta X}{2}, 
+\end{equation} 
+then each of the operators associated with the different tesselation
+Hamiltonians can be written as
+\begin{equation} 
+	U_\alpha = I \otimes R_x(\theta) 
+\end{equation}
+%TODO: Escrever Beta
+\begin{equation} 
+	U_\beta = 
+\end{equation}
+
+
+%TODO: 
+\end{document}

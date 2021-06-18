@@ -39,13 +39,16 @@ Each element of the tessellation has a corresponding state, and the uniform supe
 One can now define Hamiltonians $H_\alpha$ and $H_\beta$ as 
 \begin{equation}
 	H_\alpha = 2\sum_{x=-\infty}^{+\infty}\ket{\alpha_{x}}\bra{\alpha_x} - I
+	\label{eq:stagSimulHalpha}
 \end{equation}
 \begin{equation}
 	H_\beta = 2\sum_{x=-\infty}^{+\infty}\ket{\beta_{x}}\bra{\beta_x} - I
+	\label{eq:stagSimulHbeta}
 \end{equation}\par
 The Hamiltonian evolution operator reduces to
 \begin{equation}
 	U = e^{i\theta H_\beta}e^{i\theta H_\alpha}
+	\label{eq:stagSimulUniOp}
 \end{equation}
 and applying it to an initial condition $\ket{\Psi(0)}$ results in the time evolution operator
 \begin{equation}
