@@ -247,12 +247,41 @@ The results of measurement are shown in figure \ref{fig:contSearchResultCircQist
 Recalling from section \ref{sec:StagSearchSimul}, the staggered quantum walk on
 a complete graph requires a single tessellation with associated polygon
 \begin{equation}
-	\ket{\alpha} = \frac{1}{\sqrt{N}} \sum_{v=0}^{N-1} \ket{v}.
+	\ket{\alpha} = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} \ket{x}.
 \end{equation}
 The Hamiltonian will then be 
 \begin{equation}
-	H_\alpha = 2\sum_0^1\ket{\alpha}\bra{\alpha} - I = 2\ket{\alpha_0}\bra{\alpha_0} - I
+	H_\alpha = 2\sum_0^1\ket{\alpha}\bra{\alpha} - I = H^{\otimes n} (2\ket{0}\bra{0} - I) H^{\otimes n} = H^{\otimes n} \mathcal{O}_0 H^{\otimes n},
 \end{equation}
+which is equivalent to the Grover diffusion operator, meaning it can be
+implemented in a similar fashion. The evolution operator for the staggered
+quantum walk on the complete graph will then be 
+\begin{equation}
+	U = e^{i\theta H_\alpha} = e^{i\theta(H^{\otimes n} \mathcal{O}_0 H^{\otimes n})} = H^{\otimes n} e^{i\theta\mathcal{O}_0} H^{\otimes n}.
+\end{equation}
+This is a very useful representation since the exponent part of the operator is
+a diagonal matrix, which means implementing the circuit in Qiskit is a
+straightforward task.\par 
 
-
+Now that the staggered quantum walk associated with the
+complete graph is defined, what remains is to add an oracle to the evolution
+operator as was done in equation \ref{eq:stagSearchSimulModEvoOp},
+\begin{equation}
+        U' = U\mathcal{O},
+        \label{eq:stagSearchQiskitModEvoOp}
+\end{equation}
+where
+\begin{equation}
+	\mathcal{O} = I_N - 2\sum_{m \in M}\ket{m}\bra{m},
+\end{equation}
+and $M$ is the set of marked elements.\par
+The general circuit for implementing the staggered quantum walk search problem in a complete graph will then be as shown in figure \ref{fig:stagSearchCircuit}. 
+\begin{figure}[!h]
+	\[ \Qcircuit @C=1.8em @R=1.5em { &&&& \mbox{Repeat $O(\sqrt{N})$ times.} & &\\
+	&\lstick{\ket{\psi_0}} & {/^{\otimes n}} \qw&\gate{\mathcal{O}} &\gate{H}  & \gate{e^{i\theta\mathcal{O}_0}} &  \gate{H} &\qw &\qw \gategroup{2}{4}{2}{7}{.8em}{--} \\
+		          } \]
+	\centering
+	\caption{Temp}
+	\label{fig:stagSearchCircuit}
+\end{figure}
 \end{document}
