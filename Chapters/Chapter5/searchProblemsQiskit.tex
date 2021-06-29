@@ -275,7 +275,9 @@ where
 	\mathcal{O} = I_N - 2\sum_{m \in M}\ket{m}\bra{m},
 \end{equation}
 and $M$ is the set of marked elements.\par
-The general circuit for implementing the staggered quantum walk search problem in a complete graph will then be as shown in figure \ref{fig:stagSearchCircuit}. 
+The general circuit for implementing the staggered quantum walk search problem
+in a complete graph will then be as shown in figure
+\ref{fig:stagSearchCircuit}.  
 \begin{figure}[!h]
 	\[ \Qcircuit @C=1.8em @R=1.5em { &&&& \mbox{Repeat $O(\sqrt{N})$ times.} & &\\
 	&\lstick{\ket{\psi_0}} & {/^{\otimes n}} \qw&\gate{\mathcal{O}} &\gate{H}  & \gate{e^{i\theta\mathcal{O}_0}} &  \gate{H} &\qw &\qw \gategroup{2}{4}{2}{7}{.8em}{--} \\
@@ -284,4 +286,12 @@ The general circuit for implementing the staggered quantum walk search problem i
 	\caption{Temp}
 	\label{fig:stagSearchCircuit}
 \end{figure}
+Since only one tesselation is required, there is no need for the Suzuki-Trotter
+aproximation. However, several iterations will be needed in order to achieve
+maximum probability for the marked vertex. Because the staggered quantum walk
+search on a complete graph is equivalent to Grover's algorithm, the optimum
+number of steps will also be $\frac{\pi}{4}\sqrt{\frac{N}{K}}$, where K is the
+number of solutions.\par
+
+
 \end{document}
