@@ -258,6 +258,7 @@ implemented in a similar fashion. The evolution operator for the staggered
 quantum walk on the complete graph will then be 
 \begin{equation}
 	U = e^{i\theta H_\alpha} = e^{i\theta(H^{\otimes n} \mathcal{O}_0 H^{\otimes n})} = H^{\otimes n} e^{i\theta\mathcal{O}_0} H^{\otimes n}.
+	\label{eq:unmodEvolOperatorStagSearch}
 \end{equation}
 This is a very useful representation since the exponent part of the operator is
 a diagonal matrix, which means implementing the circuit in Qiskit is a
@@ -277,10 +278,10 @@ where
 and $M$ is the set of marked elements.\par
 The general circuit for implementing the staggered quantum walk search problem
 in a complete graph will then be as shown in figure
-\ref{fig:stagSearchCircuit}.  
+\ref{fig:stagSearchCircuit}. 
 \begin{figure}[!h]
-	\[ \Qcircuit @C=1.8em @R=1.5em { &&&& \mbox{Repeat $O(\sqrt{N})$ times.} & &\\
-	&\lstick{\ket{\psi_0}} & {/^{\otimes n}} \qw&\gate{\mathcal{O}} &\gate{H}  & \gate{e^{i\theta\mathcal{O}_0}} &  \gate{H} &\qw &\qw \gategroup{2}{4}{2}{7}{.8em}{--} \\
+	\[ \Qcircuit @C=1.8em @R=1.5em { &&&&& \mbox{Repeat $O(\sqrt{N})$ times.} & &\\
+	&\lstick{\ket{\psi_0}} & {/^{\otimes n}} \qw& \gate{H} &\gate{\mathcal{O}} &\gate{H}  & \gate{e^{i\theta\mathcal{O}_0}} &  \gate{H} &\qw &\qw \gategroup{2}{5}{2}{8}{.8em}{--} \\
 		          } \]
 	\centering
 	\caption{Temp}
@@ -292,6 +293,39 @@ maximum probability for the marked vertex. Because the staggered quantum walk
 search on a complete graph is equivalent to Grover's algorithm, the optimum
 number of steps will also be $\frac{\pi}{4}\sqrt{\frac{N}{K}}$, where K is the
 number of solutions.\par
+%TODO: Definir para todas as walks N grande = numero total de elementos e n pequeno = numero de qubits.
+Consider the case of $N=8$ and one marked vertex, $\ket{m}=\ket{4}$. The number of steps
+that maximizes the probability of the marked element is
+$\frac{\pi}{4}\sqrt{\frac{8}{1}} \approx 2$. Translating to Qiskit, $n=3$
+qubits will be needed and the circuit will be as in figure \ref{fig:stagSearchCircQistkit}. 
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{img/Qiskit/StaggeredQW/Search/Circuits/StagSearchCircuit_N3_M0_S3.png}
+	\caption{Temp}
+	\label{fig:stagSearchCircQistkit}
+\end{figure}
+Similar to previous examples, the circuit begins with the uniform superposition
+achieved through Hadamard gates. The next operation of the search problem is
+the oracle, which was implemented through the use of Qiskit's \textit{diagonal}
+function that produces a circuit similar to the one in figure
+\ref{fig:groverOracleCircuitQistkit}. Next, an analogue of Grover's diffusion
+operator is applied, where the operation named \textit{UniOp} is a diagonal
+matrix, easily translated to Qiskit as is shown in figure
+\ref{fig:stagSearchUniOpCircQistkit}.  
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.40]{img/Qiskit/StaggeredQW/Search/Circuits/StagUniOpCircuit_N3_M0_S3.png}
+	\caption{Temp}
+	\label{fig:stagSearchUniOpCircQistkit}
+\end{figure}
+This circuit is very similar to the one in figure
+\ref{fig:groverDiffCircuitQistkit}, the difference being that in the staggered
+quantum walk search model one can control the value of $\theta$, as can be seen
+in equation \ref{eq:unmodEvolOperatorStagSearch}, which influences how fast
+maxmimum probability of the marked element is achieved. Since Grover's
+algorithm is optimal, a value of $\theta=\frac{pi}{2}$ yields a diffusion
+circuit equal to the one in figure \ref{fig:groverDiffCircuitQistkit}, implying
+that the staggered quantum walk is a more general model of quantum searching. 
 
 \end{document}
