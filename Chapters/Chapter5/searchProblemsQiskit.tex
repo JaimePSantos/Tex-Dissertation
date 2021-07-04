@@ -324,8 +324,34 @@ This circuit is very similar to the one in figure
 quantum walk search model one can control the value of $\theta$, as can be seen
 in equation \ref{eq:unmodEvolOperatorStagSearch}, which influences how fast
 maxmimum probability of the marked element is achieved. Since Grover's
-algorithm is optimal, a value of $\theta=\frac{pi}{2}$ yields a diffusion
+algorithm is optimal, a value of $\theta=\frac{\pi}{2}$ yields a diffusion
 circuit equal to the one in figure \ref{fig:groverDiffCircuitQistkit}, implying
-that the staggered quantum walk is a more general model of quantum searching. 
+that the staggered quantum walk is a more general model of quantum searching.
+Finally, measurement is performed and the resuls for several steps of the walk
+are shown in figure \ref{fig:stagSearchResultsToronto}.  
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.40]{img/Qiskit/StaggeredQW/Search/stagSearchToronto_N3_S0123.png}
+	\caption{Temp}
+	\label{fig:stagSearchResultsToronto}
+\end{figure}
+The circuit for each step of the walk was run both in the \textit{Qasm}
+simulator and IBM's backend named Toronto. The experiment was performed with
+$3000$ shots in both cases, and the probability distributions show that,
+unlike the simulator, maximum probability of the marked vertex was achieved
+withing $1$ step of the walk instead of the predicted $2$ steps. This is the
+case because of the noisy nature of current quantum software. Looking at the
+$1$ step case in the simulator, one can see that the probability of vertex
+$\ket{4}$ is very close to the maximum, while the circuit has about half of the
+operations of the $2$ step case. This means it is not suprising that the
+smaller circuit produces higher results for the probability of the marked
+vertex. 
+%TODO: Talvez melhorar as fidelidades com o intervalo de confianca.
+%TODO: Definir a metrica para fidelidade.
+This can be further confirmed by the fidelities of each of the states,
+which are aproximately $0.954$ and $0.780$ for $1$ step and $2$ steps,
+respectively, implying that the former circuit produces better results because
+of the number of operations, even though that the latter should theoretically
+yield the highest probability. 
 
 \end{document}
