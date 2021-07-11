@@ -114,34 +114,29 @@ Hello!
 \section{Text overview and contributions}
 \subfile{Chapters/Chapter1/txtoverview}
 
-% CHAPTER - Quantum Computing (maybe Annex). -------------------------
-%\chapter{Quantum Computing}\label{chap:QuantumComp}
-%\section{Mathematical foundations of quantum mechanics}
-%\subfile{Chapters/Chapter2/postulatesQM}
-%\section{Quantum Fourier Transform}\label{sec:chapQFT}
-%\subfile{Chapters/Chapter2/qFourierT}
-
 % CHAPTER - Quantum Walks. -------------------------
 \chapter{Quantum Walks}\label{chap:QuantumWalks}
 \section{Classical Random Walk}\label{sec:chap3ClassicalWalk}
-\subfile{Chapters/Chapter3/classicalWalk}
+\subfile{Chapters/Chapter2/classicalWalk}
 \section{Coined Quantum Walk}\label{sec:chap3Coinedwalk}
-\subfile{Chapters/Chapter3/coinedQuantumWalk}
-\section{Continuous-Time Quantum Walk}\label{sec:chap3Contwalk}
-\subfile{Chapters/Chapter3/continuousQuantumWalk}
+\subfile{Chapters/Chapter2/coinedQuantumWalk}
 \section{Staggered Quantum Walk}\label{sec:chap3StagWalk}
-\subfile{Chapters/Chapter3/staggeredQuantumWalk}
+\subfile{Chapters/Chapter2/staggeredQuantumWalk}
+\section{Continuous-Time Quantum Walk}\label{sec:chap3Contwalk}
+\subfile{Chapters/Chapter2/continuousQuantumWalk}
+
 
 % CHAPTER - Searching Problems. -------------------------
 \chapter{Searching Problems}\label{chap:searchingProblems}
 \section{Grover's algorithm}\label{sec:GrovSearchSimul}
-\subfile{Chapters/Chapter4/groverAlgorithm}
+\subfile{Chapters/Chapter3/groverAlgorithm}
 \section{Coined Quantum Walk}\label{sec:CoinedSearchSimul}
-\subfile{Chapters/Chapter4/coinedSearch}
-\section{Continuous-Time Quantum Walk}\label{sec:ContSearchSimul}
-\subfile{Chapters/Chapter4/contSearch}
+\subfile{Chapters/Chapter3/coinedSearch}
 \section{Staggered Quantum Walk}\label{sec:StagSearchSimul}
-\subfile{Chapters/Chapter4/stagSearch}
+\subfile{Chapters/Chapter3/stagSearch}
+\section{Continuous-Time Quantum Walk}\label{sec:ContSearchSimul}
+\subfile{Chapters/Chapter3/contSearch}
+
 
 % CHAPTER - Qiskit Implementations. -------------------------
 \chapter{Implementations and Applications}\label{chap:qiskitImplementation}
@@ -155,18 +150,20 @@ Hello!
 %TODO: O difusor tambem tem um phase oracle.
 \section{Coined}\label{coinedQWQiskit}
 %TODO: 1. Recapitular a eq do incremento/decremento com base no douglas Wang. 2. Explicar o quantumwalk como incremento/decremento controlado. 3. Colocar histogramas com 1,2 e 3 steps.
-\subfile{Chapters/Chapter5/coinedQWQiskit}
-\section{Continuous}
-\subfile{Chapters/Chapter5/contQWQiskit}
+\subfile{Chapters/Chapter4/coinedQWQiskit}\label{sec:CoinedQiskit}
 \section{Staggered}
-\subfile{Chapters/Chapter5/stagQWQiskit}
+\subfile{Chapters/Chapter4/stagQWQiskit}\label{sec:StagQiskit}
+\section{Continuous}
+\subfile{Chapters/Chapter4/contQWQiskit}\label{sec:ContQiskit}
 \section{Search Problems with Qiskit}
-\subfile{Chapters/Chapter5/searchProblemsQiskit}
+\subfile{Chapters/Chapter4/searchProblemsQiskit}
 
 % CHAPTER - Conclusion/Future Work -------------- 
 \chapter{Discussions and Conclusion}
 \section{Conclusions}
+\subfile{Chapters/Chapter5/Conclusions}
 \section{Prospect for future work}
+\subfile{Chapters/Chapter5/FutureWork}
 
 \bookmarksetup{startatroot} % Ends last part.
 \addtocontents{toc}{\bigskip} % Making the table of contents look good.
@@ -184,12 +181,14 @@ Hello!
 \umappendix{Appendix}
 
 % Add appendix chapters
-\chapter{Support material}
-\section{Mathematical foundations of quantum mechanics}
-\subfile{Chapters/Chapter2/postulatesQM}
+\chapter{Mathematical Foundations}
+\section{Postulates of quantum mechanics}\label{sec:PostulatesQM}
+\subfile{Chapters/Annex/MathematicalFoundations/postulatesQM}
+\chapter{Circuits}
 \section{Quantum Fourier Transform}\label{sec:chapQFT}
-\subfile{Chapters/Chapter2/qFourierT}
-
+\subfile{Chapters/Annex/Circuits/qFourierT}
+\section{Multi-Controlled NOT gate}\label{sec:mcxQiskit}
+\subfile{Chapters/Annex/Circuits/mcx}
 %	\umbackcover{
 %	NB: place here information about funding, FCT project, etc in which the work is %framed. Leave empty otherwise.
 %	}
